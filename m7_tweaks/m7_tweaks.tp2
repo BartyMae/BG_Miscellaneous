@@ -1,0 +1,134 @@
+/******************************************************************************
+ *                                                                            *
+ *                                                                            *
+ *	Basic TP2 Stuff                                                           *
+ *                                                                            *
+ *                                                                            *
+ ******************************************************************************/
+
+
+BACKUP ~m7_tweaks/backup~
+
+AUTHOR ~FlameWing~
+
+VERSION ~v1.0~
+
+NO_IF_EVAL_BUG
+
+LANGUAGE "English" "english" ~m7_tweaks/languages/english.tra~
+
+
+/******************************************************************************
+ *                                                                            *
+ *                                                                            *
+ *	Convenient Deck of Many Things: Always win against Aesgareth              *
+ *                                                                            *
+ *                                                                            *
+ ******************************************************************************/
+
+BEGIN @1000000 DESIGNATED 1
+	REQUIRE_PREDICATE FILE_EXISTS ~Data/25Dialog.bif~ @1 // ToB
+	COPY_EXISTING ~gorcamb.dlg~ ~override~
+	COMPILE ~m7_tweaks/gorcamb/gorcamb.d~
+	COPY ~m7_tweaks/gorcamb/spin606.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin607.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin608.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin609.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin610.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin611.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin612.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin613.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin614.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin615.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin616.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin617.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin618.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin619.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin621.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin622.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin623.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin624.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin625.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin626.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin630.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin632.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin634.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin635.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin637.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/spin639.spl~ ~override~  
+	COPY ~m7_tweaks/gorcamb/deck01.eff~ ~override~  
+	COPY ~m7_tweaks/gorcamb/deck01a.eff~ ~override~  
+	COPY ~m7_tweaks/gorcamb/deck02.eff~ ~override~  
+	COPY ~m7_tweaks/gorcamb/deck02b.eff~ ~override~  
+	COPY ~m7_tweaks/gorcamb/deck03.eff~ ~override~  
+	COPY ~m7_tweaks/gorcamb/deck03b.eff~ ~override~  
+	COPY ~m7_tweaks/gorcamb/deck04.eff~ ~override~  
+	COPY_EXISTING player1.dlg override
+    DECOMPILE_DLG_TO_D
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~ReputationInc(-2)"~ ~ ~
+    COMPILE_D_TO_DLG
+
+/******************************************************************************
+ *                                                                            *
+ *                                                                            *
+ *	Convenient/Cheesy/Cheating Deck of Many Things                            *
+ *                                                                            *
+ *                                                                            *
+ ******************************************************************************/
+
+BEGIN @1100001 DESIGNATED 10
+	SUBCOMPONENT @1100000
+	REQUIRE_PREDICATE FILE_EXISTS ~Data/25Dialog.bif~ @1 // ToB
+	COPY_EXISTING ~domt.dlg~ ~override~
+	COMPILE ~m7_tweaks/domt/domt.d~
+	        ~m7_tweaks/domt/domt0.d~
+
+BEGIN @1100002 DESIGNATED 11
+	SUBCOMPONENT @1100000
+	COPY_EXISTING ~domt.dlg~ ~override~
+	COMPILE ~m7_tweaks/domt/domt.d~
+	        ~m7_tweaks/domt/domt1.d~
+
+BEGIN @1100003 DESIGNATED 12
+	SUBCOMPONENT @1100000
+	COPY_EXISTING ~domt.dlg~ ~override~
+	COMPILE ~m7_tweaks/domt/domt.d~
+	        ~m7_tweaks/domt/domt2.d~
+
+BEGIN @1100004 DESIGNATED 13
+	SUBCOMPONENT @1100000
+	COPY_EXISTING ~domt.dlg~ ~override~
+	COMPILE ~m7_tweaks/domt/domt.d~
+	        ~m7_tweaks/domt/domt3.d~
+
+
+/******************************************************************************
+ *                                                                            *
+ *                                                                            *
+ *	Convenient/Cheating Machine of Lum the Mad                                *
+ *                                                                            *
+ *                                                                            *
+ ******************************************************************************/
+
+BEGIN @1200001 DESIGNATED 20
+	SUBCOMPONENT @1200000
+	REQUIRE_PREDICATE FILE_EXISTS ~Data/25Dialog.bif~ @1 // ToB
+	COPY_EXISTING ~gorlum2.dlg~ ~override~
+	COMPILE ~m7_tweaks/lum/gorlum2a.d~
+
+BEGIN @1200002 DESIGNATED 21
+	SUBCOMPONENT @1200000
+	COPY_EXISTING ~gorlum2.dlg~ ~override~
+	COMPILE ~m7_tweaks/lum/gorlum2b.d~
+
+
+/******************************************************************************
+ *                                                                            *
+ *                                                                            *
+ *	Fix Glaicas Uncharm (De'Arnise Hold)                                      *
+ *                                                                            *
+ *                                                                            *
+ ******************************************************************************/
+
+BEGIN @1300000 DESIGNATED 30
+	EXTEND_TOP ~ar1303.bcs~ ~m7_tweaks/glaicas/glaicas_fix.baf~
