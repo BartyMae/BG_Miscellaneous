@@ -21,7 +21,7 @@ COPY ~aTweaks/SPL/SPIN101.SPL~ ~override~                                       
 COPY ~aTweaks/SPL/SPIN104.SPL~ ~override~                                         // Larloch's Minor Drain Bhaalpower
   SAY NAME1 @243 SAY NAME2 @243                                                   // change name to Drain Life
 COPY ~aTweaks/SPL/SPIN104A.SPL~ ~override~                                        // Magic resistance check
-COPY ~aTweaks/EFF/SPIN104.EFF~ ~override~                                         // Drain Life (immunity effect for constructs, undead, extraplanars, etc.)
+COPY ~aTweaks/EFF/SPIN104I.EFF~ ~override~                                        // Immunity effect for undead, constructs, elementals, etc.
 COPY ~aTweaks/SPL/SPIN104A.BAM~ ~override~                                        // Hand graphics
 COPY ~aTweaks/SPL/SPIN104B.BAM~ ~override~ 
 COPY ~aTweaks/SPL/SPIN104C.BAM~ ~override~ 
@@ -69,9 +69,12 @@ COPY ~aTweaks/SPL/SPIN102.SPL~ ~override~                                       
    END
  END
 
+ 
 // Cause Affliction (formerly Horror)
 COPY ~aTweaks/SPL/SPIN105.SPL~ ~override~                                         // Horror Bhaalpower
  SAY NAME1 @245 SAY NAME2 @245                                                    // change name to Cause Affliction
+COPY ~aTweaks/EFF/SPIN105I.EFF~ ~override~                                        // Immunity effect for undead, constructs, elementals, etc.
+
 
 // Divine Might (formerly Draw Upon Holy Might)
 COPY ~aTweaks/SPL/SPIN103.SPL~ ~override~                                         // Cure Light Wounds Bhaalpower
