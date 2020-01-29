@@ -1,7 +1,7 @@
 //Basic TP2 Stuff
 BACKUP ~bart_tweaks/backup~
 AUTHOR ~Bartimaeus~
-VERSION ~Version 1.1.0~
+VERSION ~Version 1.1.1~
 NO_IF_EVAL_BUG
 LANGUAGE "English" "english" ~bart_tweaks/languages/english.tra~
 
@@ -10,6 +10,12 @@ LANGUAGE "English" "english" ~bart_tweaks/languages/english.tra~
 // -----------------------------
 BEGIN ~No Reputation Loss from Slayer Form (Cheat)~
 INCLUDE ~bart_tweaks/lib/slayer_cheat.tpa~
+
+// -----------------------------
+// Debug Ring (Cheat)
+// -----------------------------
+BEGIN ~Debug Ring (Cheat)~
+INCLUDE ~bart_tweaks/lib/debug_ring.tpa~
 
 // -----------------------------
 // No Random Treasures
