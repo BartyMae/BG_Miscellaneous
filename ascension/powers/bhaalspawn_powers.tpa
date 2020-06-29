@@ -1,0 +1,214 @@
+DEFINE_ACTION_FUNCTION bhaalspawn_powers BEGIN
+
+LAM load_ascension_tras
+
+//////////////////////////////////////////////////////////////////////////////////////
+// Extend the Pocket Plane script (this applies all the changes)
+//
+// On EE, we don't need the journal entries, which just serve to document the powers
+//////////////////////////////////////////////////////////////////////////////////////
+
+     EXTEND_TOP ar4500.bcs "%MOD_FOLDER%/powers/baf/ar4500.baf"
+          PATCH_IF enhanced_edition BEGIN
+             REPLACE_TEXTUALLY "AddJournalEntry([^)]*)" " "
+          END
+
+//////////////////////////////////////////////////////////////////////////////////////
+// The actual powers
+//
+// These powers are already in game, but require a few fixes
+//////////////////////////////////////////////////////////////////////////////////////
+
+ADD_PROJECTILE ~ascension/bhlspwnpwr/bhaal1a.pro~
+COPY ~ascension/bhlspwnpwr/bhaal1a.spl~         ~override~
+  SAY NAME1 @1069 SAY NAME2 @1069
+  SET "loop" = 6
+  WHILE (%loop% > 0) BEGIN
+    WRITE_SHORT (0x98 + 0x28 * (%loop% - 1) ) %bhaal1a%
+    SET "loop" = %loop% - 1
+  END
+COPY ~ascension/bhlspwnpwr/bhaal1b.spl~         ~override~
+COPY ~ascension/bhlspwnpwr/bhaal2a.spl~         ~override~
+  SAY NAME1 @1070 SAY NAME2 @1070
+COPY ~ascension/bhlspwnpwr/bhaal2b.spl~         ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3a.spl~         ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b.spl~         ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b1.spl~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b2.spl~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b3.spl~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b4.spl~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b5.spl~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b6.spl~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b7.spl~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b8.spl~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b1.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b2.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b3.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b4.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b5.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b6.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b7.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3b8.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3ba.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3bb.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3bc.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3bd.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3be.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3bf.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3bg.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal3bh.eff~        ~override~
+COPY ~ascension/bhlspwnpwr/bhaal4a.spl~         ~override~
+
+// hand of murder re-uses the 'draw upon holy might' icon; recolor it.
+
+LAF hand_of_murder_bam END
+
+//////////////////////////////////////////////////////////////////////////////////////
+// The descriptions
+//
+// They only matter on EE, and for the most part are patched in already. But Resurrection
+// and Regeneration are fobbed off with spell clones; give them their own.
+//////////////////////////////////////////////////////////////////////////////////////
+
+WITH_TRA "%ascension_tra_loc%/english/description.tra" "%ascension_tra_loc%/%LANGUAGE%/description.tra" BEGIN
+
+COPY_EXISTING "bhaal1b.spl" override
+      SAY 0x50 @7
+BUT_ONLY
+COPY_EXISTING "bhaal4a.spl" override
+      SAY 0x50 @8
+BUT_ONLY
+
+END
+
+//////////////////////////////////////////////////////////////////////////////////////
+/// restore lost BG1 powers
+//////////////////////////////////////////////////////////////////////////////////////
+
+  LAF check_ini STR_VAR ini=no_restored_bg1_powers RET value END
+  ACTION_IF !value BEGIN
+      LAF bg1_bhaalspawn_powers END
+  END
+  
+////////////////////
+/// end of function
+////////////////////
+
+END
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+/// DavidW's function to restore lost BG1 Bhaal powers at the start of ToB (i.e., 
+/// as soon as you defeat Irenicus)
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+DEFINE_ACTION_FUNCTION bg1_bhaalspawn_powers BEGIN
+
+// in SoA, powers are controlled by 'abstart.2da'. We parse it, and construct nine spells, one for
+// each alignment, that restore the powers
+
+// because, irritatingly, ToB is hardcoded to remove the powers, we have to make copies of the powers
+
+COPY_EXISTING abstart.2da "%workspace%"
+    READ_2DA_ENTRIES_NOW bhaal_powers 7
+    FOR (row=0;row<bhaal_powers;row+=1) BEGIN
+      READ_2DA_ENTRY_FORMER bhaal_powers row 0 align
+      FOR (col=1;col<7;col+=1) BEGIN
+         READ_2DA_ENTRY_FORMER bhaal_powers row col spell
+         INNER_PATCH_SAVE spell_new "%spell%" BEGIN
+            REPLACE_TEXTUALLY SPIN FINP
+         END
+         INNER_ACTION BEGIN 
+            COPY_EXISTING "%spell%.spl" "override/%spell_new%.spl"
+         END
+         SPRINT $bhaal_power("%col%") "%spell_new%"
+      END
+      INNER_ACTION BEGIN
+           COPY_EXISTING "%LOSE_ALL%.spl" "override/finpo%align%.spl"
+               WRITE_LONG NAME1 "-1"
+               WRITE_LONG NAME2 "-1"
+               LPF DELETE_EFFECT END
+               LPF ADD_SPELL_EFFECT INT_VAR opcode=139 target=2 timing=1 parameter1=RESOLVE_STR_REF(@1044) END
+               FOR (entry=1;entry<7;entry+=1) BEGIN
+                  SPRINT resource $bhaal_power("%entry%")
+                  LPF ADD_SPELL_EFFECT INT_VAR opcode=171 target=2 timing=1 STR_VAR resource END
+               END
+           BUT_ONLY
+      END
+    END
+BUT_ONLY
+
+ACTION_FOR_EACH lc_align IN LAWFUL NEUTRAL CHAOTIC BEGIN
+   ACTION_FOR_EACH ge_align IN GOOD NEUTRAL EVIL BEGIN
+      OUTER_SPRINT alignment "%lc_align%_%ge_align%"
+      OUTER_INNER_PATCH_SAVE spell "%alignment%" BEGIN
+           REPLACE_TEXTUALLY "^\([LNC]\)[^_]*_\([GNE]\).*$" "FINPO\1_\2"
+      END
+      ACTION_IF "%alignment%" STRING_EQUAL_CASE "NEUTRAL_NEUTRAL" BEGIN
+         OUTER_SPRINT alignment NEUTRAL
+      END
+
+      <<<<<<<< .../stratagems-inline/extend.baf
+      IF
+        GlobalGT("Chapter","GLOBAL",%bg2_chapter_7%)
+        !Global("fin_bg1_powers_restored","GLOBAL",1)
+        Alignment(Player1,%alignment%)
+      THEN
+          RESPONSE #100
+                   SetGlobal("fin_bg1_powers_restored","GLOBAL",1)
+                   ApplySpellRES("%spell%",Player1)
+                   Continue()
+      END
+      >>>>>>>>
+      EXTEND_BOTTOM "ar4000.bcs" ".../stratagems-inline/extend.baf" EVALUATE_BUFFER
+      EXTEND_BOTTOM "ar3000.bcs" ".../stratagems-inline/extend.baf" EVALUATE_BUFFER // allow for SCS change of start location
+   END
+END
+
+
+
+
+
+END
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+/// Main and helper functions to recolor the Hand of Murder
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+DEFINE_ACTION_FUNCTION hand_of_murder_bam BEGIN
+
+   COPY_EXISTING sppr214b.bam "override/finmurb.bam"
+       LPF patch_colors STR_VAR condition=is_blue action=col_swap END
+   BUT_ONLY
+
+   COPY_EXISTING "bhaal3b.spl" override
+        REPLACE_TEXTUALLY sppr214b finmurb (8)
+   BUT_ONLY
+END
+
+DEFINE_PATCH_FUNCTION col_swap
+    INT_VAR red=0 green=0 blue=0
+    RET red green blue
+BEGIN
+    SET blue_old=blue
+    SET red_old=red
+    SET green_old=green
+    SET red=blue_old
+    SET blue=red / 2
+    SET green=red / 2
+END
+
+DEFINE_PATCH_FUNCTION is_blue
+    STR_VAR red=0 green=0 blue=0
+    RET value
+BEGIN
+    SET value=(blue - red)>=50
+END
+
+

@@ -1,0 +1,190 @@
+/////////////////////////////////////////////////////////////////////////
+// Creatures
+/////////////////////////////////////////////////////////////////////////
+@500 = ~Babau~
+
+/////////////////////////////////////////////////////////////////////////
+// Spells
+/////////////////////////////////////////////////////////////////////////
+@1003 = ~Transform into Bat~ 
+@1006 = ~Shockwave~ 
+@1007 = ~Lightning Aura~ 
+@1009 = ~Telekinesis~ 
+@1012 = ~Flip Resistances~
+@1013 = ~Control Demon~ 
+@1014 = ~Focus~ 
+@1016 = ~Divine Mantle~ 
+@1017 = ~Draw Power~ 
+@1018 = ~Divine Spell Shield~ 
+@1019 = ~Command Demon~ 
+@1020 = ~Banish~ 
+@1022 = ~Unleash~ 
+@1024 = ~Feedback~ 
+@1025 = ~Divine Restoration~ 
+@1026 = ~Divine Cleansing~ 
+@1027 = ~Paralyzation Aura~ 
+@1029 = ~Lava Bomb~ 
+@1031 = ~Symbol, Slow~ 
+@1037 = ~Ravager Change~ 
+@1038 = ~Melissan: Command the Minions of the Abyss~
+@1039 = ~Bhaalspawn Power gained: Immunity to Energy Drain~
+@1040 = ~Bhaalspawn Power gained: 25% physical damage resistance~
+@1041 = ~Transfixed~
+@1042 = ~Weapons weakened by Babau slime~
+@1043 = ~Grabbed~
+@1044 = ~Regains Bhaal powers~
+@1045 = ~You have regained control for now.~
+@1046 = ~Magic Resistance lowered by 5%~
+@1047 = ~Magic Resistance lowered by 5%~
+@1048 = ~Slayer transformation enhanced~
+@1049 = ~The demon bows to your will~
+@1050 = ~The demon defies your will~
+@1051 = ~This power only affects demons~
+@1052 = ~The demon bows to Melissan's will~
+@1053 = ~The demon defies Melissan's will~
+@1054 = ~Bhaalspawn Power gained: Unleash~
+@1055 = ~Bhaalspawn Power gained: immunity to death magic~
+@1056 = ~Bhaalspawn Power gained: immunity to vorpal effects~
+@1057 = ~Bhaalspawn Power gained: Dimension Door~
+@1058 = ~Bhaalspawn Power gained: Control Demons~
+@1059 = ~Bhaalspawn Power gained: immunity to Maze and Imprisonment~
+@1060 = ~Bhaalspawn Power gained: Focus~
+@1061 = ~Bhaalspawn Power gained: immunity to Taint of the Slayer~
+@1062 = ~Divine Gift~
+@1063 = ~Magic Resistance Restored~
+@1064 = ~Antimagic Protections Removed~
+@1065 = ~Combat Protections Removed~
+@1066 = ~AI deactivated~
+@1067 = ~AI activated~
+@1068 = ~Lunar Malison~
+@1069 = ~Mass Heal~
+@1070 = ~Divine Resistance~
+
+/////////////////////////////////////////////////////////////////////////
+// Scripts
+/////////////////////////////////////////////////////////////////////////
+@2000 = ~Bhaalspawn Powers
+
+<CHARNAME> has gained the ability, usable once per day: 
+
+Mass Heal
+School: Necromancy
+Sphere: Healing
+Range: Personal
+Duration: Permanent
+Casting Time: 1
+Area of Effect: Sight
+Saving Throw: None
+
+When using this ability, the Bhaalspawn must picture the faces of <PRO_HISHER> fellow party members clearly and focus on the unity of the group. <CHARNAME> can restore 20 + 2/two levels to all party members within sight, up to a maximum of 40 at 20th level. Other conditions, including disease, blindness, and deafness, are also cured with this ability.~
+@2001 = ~Bhaalspawn Powers
+
+<CHARNAME> has gained the ability, usable once per day: 
+
+Regeneration
+School: Necromancy
+Sphere: Healing
+Range: Personal
+Duration: 2 rounds/level
+Casting Time: 7
+Area of Effect: 1 creature
+Saving Throw: None
+
+This powerful ability enables the Bhaalspawn to imbue themselves with the ability to regenerate, which will heal any wounds and even regenerate lost limbs. <CHARNAME> will regain 1 hit point per second for the duration of the spell. Multiple castings of this spell are not cumulative.~
+@2002 = ~Bhaalspawn Powers
+
+<CHARNAME> has gained the ability, usable once per day: 
+
+Divine Resistance
+School: Alteration
+Sphere: Protection
+Range: Personal
+Duration: 1 turn
+Casting Time: 1
+Area of Effect: Caster
+Saving Throw: None
+
+Upon using this ability, the Bhaalspawn's resistance to all forms of magic is increased by 2% per level, up to a maximum of 50% at 25th level. Furthermore, the <CHARNAME>'s physical resistances are increased by 1% per level, up to a maximum of 25% at 25th level.~
+@2003 = ~Bhaalspawn Powers
+
+<CHARNAME> has gained the ability, usable once per day: 
+
+Dark Taint
+School: Alteration, Necromancy
+Sphere: Combat, Necromantic
+Range: Short
+Duration: 1 round/2 levels
+Casting Time: 1
+Area of Effect: 30' radius
+Saving Throw: Poison partial
+
+Through this ability, the Bhaalspawn can expel the corruption of their evil sire onto a group of victims. Opponents within the area of effect suffer an initial 1D4 poison damage for every two experience levels of the Bhaalspawn, up to a maximum of 10D4 at level 20. Furthermore, they will also be slowed and poisoned, suffering 1 damage every second for one round for the duration of the spell. Those affected cannot avoid the initial damage, but they may make a save vs. poison at a -2 penalty to negate the slowness and poison.~
+@2004 = ~Bhaalspawn Powers
+
+<CHARNAME> has permanently gained Negative Plane Protection and a +10% bonus to magic resistance.~
+@2005 = ~Bhaalspawn Powers
+
+<CHARNAME> has gained the ability, usable once per day: 
+
+Hand of Murder
+School: Necromancy
+Sphere: Combat, Necromantic
+Range: Personal
+Duration: 5 rounds
+Casting Time: 1
+Area of Effect: Caster
+Saving Throw: None
+
+When this power is called upon by the Bhaalspawn, <CHARNAME> deals extra damage with melee weapons, which <PRO_HESHE> then absorbs as healing. <CHARNAME> will deal 1 extra damage for every 3 experience levels, up to a maximum of 10 at level 30.~
+@2006 = ~Bhaalspawn Powers
+
+<CHARNAME> has gained the ability, usable once per day: 
+
+Resurrection
+School: Necromancy
+Sphere: Necromantic
+Range: Touch
+Duration: Permanent
+Casting Time: 1
+Area of Effect: 1 creature
+Saving Throw: None
+
+Like the 5th level spell Raise Dead, Resurrection will return a character back to life. However, Resurrection also fully heals the character so that they are ready for the adventuring life once more.~
+@2007 = ~Bhaalspawn Powers
+
+<CHARNAME> has permanently gained a +25% bonus to physical resistances (slashing, piercing, crushing, and missile damage).~
+
+/////////////////////////////////////////////////////////////////////////
+// Items
+/////////////////////////////////////////////////////////////////////////
+@3000 = ~Sword of Chaos +4~
+@3001 = ~Sarevok's Sword of Chaos
+The blade of Sarevok, brother of <CHARNAME>, used in the battle they fought in faraway Baldur's Gate. <CHARNAME> prevailed, destroying Sarevok's plans and rescuing the Sword Coast from the brink of war. Now Sarevok has joined with <CHARNAME>'s cause and his blade has been restored to him. Sarevok describes the weapon as a Deathbringer blade and has restored some of the weapon's old power. Without his Bhaalspawn essence to channel through the sword, however, it cannot achieve the power it once had. Still, however, it is a formidable weapon...and one that Sarevok warns would become increasingly difficult to wield in the hands of one who was not a Deathbringer, if they could use it at all.
+
+STATISTICS:
+
+Equipped Abilities:
+ Magic Resistance: +10% bonus
+
+Combat Abilities:
+ Vampiric: creatures struck are drained 1D4 hit points and transfer them to the wielder
+
+Damage: 1D10 + 4
+THAC0: +4 bonus
+Damage type: slashing
+Weight: 10
+Speed Factor: 8
+Proficiency Type: Two-Handed Sword
+Type: 2-handed
+Requires: 14 Strength, 18 Constitution
+Not Usable By:
+Lawful-aligned characters
+Neutral-aligned characters
+Cleric
+Mage
+Paladin
+Ranger
+Druid~
+@3002 = ~Sendai's Potion~
+@3003 = ~Sendai's Potion
+Possibly a brew of Sendai's own, this is an incredibly potent healing potion capable of fully restoring the hit points of any who use it.~
