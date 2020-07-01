@@ -85,7 +85,7 @@ COPY ~aTweaks/SPL/SPIN103.SPL~ ~override~                                       
 COPY ~aTweaks/SPL/SPIN106.SPL~ ~override~                                         // Vampiric Touch Bhaalpower
   SAY NAME1 @247 SAY NAME2 @247                                                   // change name to Divine Wrath
 
-COPY ~aTweaks/EFF/SPIN106.EFF~ ~override~                                         // Divine Wrath pushback immunity effect (for large creatures)
+COPY ~aTweaks/EFF/SPIN106I.EFF~ ~override~                                         // Divine Wrath pushback immunity effect (for large creatures)
      ~aTweaks/SPL/SPIN106A.SPL~ ~override~                                        // Divine Wrath secondary spell (pushback)
      ~aTweaks/SPL/SPIN106B.SPL~ ~override~                                        // Divine Wrath tertiary spell (unholy red glow visual)
 
