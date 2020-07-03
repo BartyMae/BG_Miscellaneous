@@ -1,0 +1,1853 @@
+
+IF
+  Global("ag_monk1_wis1","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player1,2,WIS)
+  CheckStatLT(Player1,3,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw1",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",1)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis2","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player1,4,WIS)
+  CheckStatLT(Player1,5,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw2",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",1)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis3","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player1,6,WIS)
+  CheckStatLT(Player1,7,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw3",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",1)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis4","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player1,8,WIS)
+  CheckStatLT(Player1,9,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw4",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",1)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis5","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player1,10,WIS)
+  CheckStatLT(Player1,11,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw5",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",1)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis6","GLOBAL",0)
+  OR(2)
+  CheckStat(Player1,12,WIS)
+  CheckStat(Player1,13,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw6",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",1)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis7","GLOBAL",0)
+  OR(2)
+  CheckStat(Player1,14,WIS)
+  CheckStat(Player1,15,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw7",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",1)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis8","GLOBAL",0)
+  OR(2)
+  CheckStat(Player1,16,WIS)
+  CheckStat(Player1,17,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw8",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",1)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis9","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player1,18,WIS)
+  CheckStatLT(Player1,19,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw9",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",1)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis10","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player1,20,WIS)
+  CheckStatLT(Player1,21,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw10",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",1)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis11","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player1,22,WIS)
+  CheckStatGT(Player1,23,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw11",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",1)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk1_wis12","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player1,24,WIS)
+  CheckStatGT(Player1,25,WIS)
+  Class(Player1,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw12",Player1)
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",1)
+END
+
+IF
+  OR(12)
+  Global("ag_monk1_wis1","GLOBAL",1)
+  Global("ag_monk1_wis2","GLOBAL",1)
+  Global("ag_monk1_wis3","GLOBAL",1)
+  Global("ag_monk1_wis4","GLOBAL",1)
+  Global("ag_monk1_wis5","GLOBAL",1)
+  Global("ag_monk1_wis6","GLOBAL",1)
+  Global("ag_monk1_wis7","GLOBAL",1)
+  Global("ag_monk1_wis8","GLOBAL",1)
+  Global("ag_monk1_wis9","GLOBAL",1)
+  Global("ag_monk1_wis10","GLOBAL",1)
+  Global("ag_monk1_wis11","GLOBAL",1)
+  Global("ag_monk1_wis12","GLOBAL",1)
+  CheckStatLT(Player1,50,TRACKING)
+  Class(Player1,MONK)
+THEN
+ RESPONSE #100
+    SetGlobal("ag_monk1_wis1","GLOBAL",0)
+    SetGlobal("ag_monk1_wis2","GLOBAL",0)
+    SetGlobal("ag_monk1_wis3","GLOBAL",0)
+    SetGlobal("ag_monk1_wis4","GLOBAL",0)
+    SetGlobal("ag_monk1_wis5","GLOBAL",0)
+    SetGlobal("ag_monk1_wis6","GLOBAL",0)
+    SetGlobal("ag_monk1_wis7","GLOBAL",0)
+    SetGlobal("ag_monk1_wis8","GLOBAL",0)
+    SetGlobal("ag_monk1_wis9","GLOBAL",0)
+    SetGlobal("ag_monk1_wis10","GLOBAL",0)
+	SetGlobal("ag_monk1_wis11","GLOBAL",0)
+	SetGlobal("ag_monk1_wis12","GLOBAL",0)
+END
+
+
+IF
+  Global("ag_monk2_wis1","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player2,2,WIS)
+  CheckStatLT(Player2,3,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw1",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",1)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis2","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player2,4,WIS)
+  CheckStatLT(Player2,5,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw2",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",1)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis3","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player2,6,WIS)
+  CheckStatLT(Player2,7,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw3",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",1)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis4","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player2,8,WIS)
+  CheckStatLT(Player2,9,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw4",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",1)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis5","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player2,10,WIS)
+  CheckStatLT(Player2,11,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw5",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",1)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis6","GLOBAL",0)
+  OR(2)
+  CheckStat(Player2,12,WIS)
+  CheckStat(Player2,13,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw6",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",1)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis7","GLOBAL",0)
+  OR(2)
+  CheckStat(Player2,14,WIS)
+  CheckStat(Player2,15,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw7",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",1)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis8","GLOBAL",0)
+  OR(2)
+  CheckStat(Player2,16,WIS)
+  CheckStat(Player2,17,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw8",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",1)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis9","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player2,18,WIS)
+  CheckStatLT(Player2,19,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw9",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",1)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis10","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player2,20,WIS)
+  CheckStatLT(Player2,21,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw10",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",1)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis11","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player2,22,WIS)
+  CheckStatGT(Player2,23,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw11",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",1)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk2_wis12","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player2,24,WIS)
+  CheckStatGT(Player2,25,WIS)
+  Class(Player2,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw12",Player2)
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",1)
+END
+
+IF
+  OR(12)
+  Global("ag_monk2_wis1","GLOBAL",1)
+  Global("ag_monk2_wis2","GLOBAL",1)
+  Global("ag_monk2_wis3","GLOBAL",1)
+  Global("ag_monk2_wis4","GLOBAL",1)
+  Global("ag_monk2_wis5","GLOBAL",1)
+  Global("ag_monk2_wis6","GLOBAL",1)
+  Global("ag_monk2_wis7","GLOBAL",1)
+  Global("ag_monk2_wis8","GLOBAL",1)
+  Global("ag_monk2_wis9","GLOBAL",1)
+  Global("ag_monk2_wis10","GLOBAL",1)
+  Global("ag_monk2_wis11","GLOBAL",1)
+  Global("ag_monk2_wis12","GLOBAL",1)
+  CheckStatLT(Player2,50,TRACKING)
+  Class(Player2,MONK)
+THEN
+ RESPONSE #100
+    SetGlobal("ag_monk2_wis1","GLOBAL",0)
+    SetGlobal("ag_monk2_wis2","GLOBAL",0)
+    SetGlobal("ag_monk2_wis3","GLOBAL",0)
+    SetGlobal("ag_monk2_wis4","GLOBAL",0)
+    SetGlobal("ag_monk2_wis5","GLOBAL",0)
+    SetGlobal("ag_monk2_wis6","GLOBAL",0)
+    SetGlobal("ag_monk2_wis7","GLOBAL",0)
+    SetGlobal("ag_monk2_wis8","GLOBAL",0)
+    SetGlobal("ag_monk2_wis9","GLOBAL",0)
+    SetGlobal("ag_monk2_wis10","GLOBAL",0)
+	SetGlobal("ag_monk2_wis11","GLOBAL",0)
+	SetGlobal("ag_monk2_wis12","GLOBAL",0)
+END
+
+
+IF
+  Global("ag_monk3_wis1","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player3,2,WIS)
+  CheckStatLT(Player3,3,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw1",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",1)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis2","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player3,4,WIS)
+  CheckStatLT(Player3,5,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw2",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",1)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis3","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player3,6,WIS)
+  CheckStatLT(Player3,7,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw3",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",1)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis4","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player3,8,WIS)
+  CheckStatLT(Player3,9,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw4",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",1)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis5","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player3,10,WIS)
+  CheckStatLT(Player3,11,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw5",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",1)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis6","GLOBAL",0)
+  OR(2)
+  CheckStat(Player3,12,WIS)
+  CheckStat(Player3,13,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw6",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",1)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis7","GLOBAL",0)
+  OR(2)
+  CheckStat(Player3,14,WIS)
+  CheckStat(Player3,15,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw7",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",1)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis8","GLOBAL",0)
+  OR(2)
+  CheckStat(Player3,16,WIS)
+  CheckStat(Player3,17,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw8",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",1)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis9","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player3,18,WIS)
+  CheckStatLT(Player3,19,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw9",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",1)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis10","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player3,20,WIS)
+  CheckStatLT(Player3,21,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw10",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",1)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis11","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player3,22,WIS)
+  CheckStatGT(Player3,23,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw11",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",1)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk3_wis12","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player3,24,WIS)
+  CheckStatGT(Player3,25,WIS)
+  Class(Player3,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw12",Player3)
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",1)
+END
+
+IF
+  OR(12)
+  Global("ag_monk3_wis1","GLOBAL",1)
+  Global("ag_monk3_wis2","GLOBAL",1)
+  Global("ag_monk3_wis3","GLOBAL",1)
+  Global("ag_monk3_wis4","GLOBAL",1)
+  Global("ag_monk3_wis5","GLOBAL",1)
+  Global("ag_monk3_wis6","GLOBAL",1)
+  Global("ag_monk3_wis7","GLOBAL",1)
+  Global("ag_monk3_wis8","GLOBAL",1)
+  Global("ag_monk3_wis9","GLOBAL",1)
+  Global("ag_monk3_wis10","GLOBAL",1)
+  Global("ag_monk3_wis11","GLOBAL",1)
+  Global("ag_monk3_wis12","GLOBAL",1)
+  CheckStatLT(Player3,50,TRACKING)
+  Class(Player3,MONK)
+THEN
+ RESPONSE #100
+    SetGlobal("ag_monk3_wis1","GLOBAL",0)
+    SetGlobal("ag_monk3_wis2","GLOBAL",0)
+    SetGlobal("ag_monk3_wis3","GLOBAL",0)
+    SetGlobal("ag_monk3_wis4","GLOBAL",0)
+    SetGlobal("ag_monk3_wis5","GLOBAL",0)
+    SetGlobal("ag_monk3_wis6","GLOBAL",0)
+    SetGlobal("ag_monk3_wis7","GLOBAL",0)
+    SetGlobal("ag_monk3_wis8","GLOBAL",0)
+    SetGlobal("ag_monk3_wis9","GLOBAL",0)
+    SetGlobal("ag_monk3_wis10","GLOBAL",0)
+	SetGlobal("ag_monk3_wis11","GLOBAL",0)
+	SetGlobal("ag_monk3_wis12","GLOBAL",0)
+END
+
+
+IF
+  Global("ag_monk4_wis1","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player4,2,WIS)
+  CheckStatLT(Player4,3,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw1",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",1)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis2","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player4,4,WIS)
+  CheckStatLT(Player4,5,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw2",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",1)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis3","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player4,6,WIS)
+  CheckStatLT(Player4,7,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw3",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",1)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis4","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player4,8,WIS)
+  CheckStatLT(Player4,9,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw4",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",1)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis5","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player4,10,WIS)
+  CheckStatLT(Player4,11,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw5",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",1)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis6","GLOBAL",0)
+  OR(2)
+  CheckStat(Player4,12,WIS)
+  CheckStat(Player4,13,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw6",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",1)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis7","GLOBAL",0)
+  OR(2)
+  CheckStat(Player4,14,WIS)
+  CheckStat(Player4,15,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw7",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",1)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis8","GLOBAL",0)
+  OR(2)
+  CheckStat(Player4,16,WIS)
+  CheckStat(Player4,17,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw8",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",1)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis9","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player4,18,WIS)
+  CheckStatLT(Player4,19,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw9",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",1)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis10","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player4,20,WIS)
+  CheckStatLT(Player4,21,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw10",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",1)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis11","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player4,22,WIS)
+  CheckStatGT(Player4,23,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw11",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",1)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk4_wis12","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player4,24,WIS)
+  CheckStatGT(Player4,25,WIS)
+  Class(Player4,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw12",Player4)
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",1)
+END
+
+IF
+  OR(12)
+  Global("ag_monk4_wis1","GLOBAL",1)
+  Global("ag_monk4_wis2","GLOBAL",1)
+  Global("ag_monk4_wis3","GLOBAL",1)
+  Global("ag_monk4_wis4","GLOBAL",1)
+  Global("ag_monk4_wis5","GLOBAL",1)
+  Global("ag_monk4_wis6","GLOBAL",1)
+  Global("ag_monk4_wis7","GLOBAL",1)
+  Global("ag_monk4_wis8","GLOBAL",1)
+  Global("ag_monk4_wis9","GLOBAL",1)
+  Global("ag_monk4_wis10","GLOBAL",1)
+  Global("ag_monk4_wis11","GLOBAL",1)
+  Global("ag_monk4_wis12","GLOBAL",1)
+  CheckStatLT(Player4,50,TRACKING)
+  Class(Player4,MONK)
+THEN
+ RESPONSE #100
+    SetGlobal("ag_monk4_wis1","GLOBAL",0)
+    SetGlobal("ag_monk4_wis2","GLOBAL",0)
+    SetGlobal("ag_monk4_wis3","GLOBAL",0)
+    SetGlobal("ag_monk4_wis4","GLOBAL",0)
+    SetGlobal("ag_monk4_wis5","GLOBAL",0)
+    SetGlobal("ag_monk4_wis6","GLOBAL",0)
+    SetGlobal("ag_monk4_wis7","GLOBAL",0)
+    SetGlobal("ag_monk4_wis8","GLOBAL",0)
+    SetGlobal("ag_monk4_wis9","GLOBAL",0)
+    SetGlobal("ag_monk4_wis10","GLOBAL",0)
+	SetGlobal("ag_monk4_wis11","GLOBAL",0)
+	SetGlobal("ag_monk4_wis12","GLOBAL",0)
+END
+
+
+IF
+  Global("ag_monk5_wis1","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player5,2,WIS)
+  CheckStatLT(Player5,3,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw1",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",1)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis2","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player5,4,WIS)
+  CheckStatLT(Player5,5,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw2",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",1)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis3","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player5,6,WIS)
+  CheckStatLT(Player5,7,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw3",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",1)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis4","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player5,8,WIS)
+  CheckStatLT(Player5,9,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw4",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",1)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis5","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player5,10,WIS)
+  CheckStatLT(Player5,11,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw5",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",1)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis6","GLOBAL",0)
+  OR(2)
+  CheckStat(Player5,12,WIS)
+  CheckStat(Player5,13,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw6",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",1)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis7","GLOBAL",0)
+  OR(2)
+  CheckStat(Player5,14,WIS)
+  CheckStat(Player5,15,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw7",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",1)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis8","GLOBAL",0)
+  OR(2)
+  CheckStat(Player5,16,WIS)
+  CheckStat(Player5,17,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw8",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",1)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis9","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player5,18,WIS)
+  CheckStatLT(Player5,19,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw9",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",1)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis10","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player5,20,WIS)
+  CheckStatLT(Player5,21,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw10",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",1)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis11","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player5,22,WIS)
+  CheckStatGT(Player5,23,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw11",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",1)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk5_wis12","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player5,24,WIS)
+  CheckStatGT(Player5,25,WIS)
+  Class(Player5,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw12",Player5)
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",1)
+END
+
+IF
+  OR(12)
+  Global("ag_monk5_wis1","GLOBAL",1)
+  Global("ag_monk5_wis2","GLOBAL",1)
+  Global("ag_monk5_wis3","GLOBAL",1)
+  Global("ag_monk5_wis4","GLOBAL",1)
+  Global("ag_monk5_wis5","GLOBAL",1)
+  Global("ag_monk5_wis6","GLOBAL",1)
+  Global("ag_monk5_wis7","GLOBAL",1)
+  Global("ag_monk5_wis8","GLOBAL",1)
+  Global("ag_monk5_wis9","GLOBAL",1)
+  Global("ag_monk5_wis10","GLOBAL",1)
+  Global("ag_monk5_wis11","GLOBAL",1)
+  Global("ag_monk5_wis12","GLOBAL",1)
+  CheckStatLT(Player5,50,TRACKING)
+  Class(Player5,MONK)
+THEN
+ RESPONSE #100
+    SetGlobal("ag_monk5_wis1","GLOBAL",0)
+    SetGlobal("ag_monk5_wis2","GLOBAL",0)
+    SetGlobal("ag_monk5_wis3","GLOBAL",0)
+    SetGlobal("ag_monk5_wis4","GLOBAL",0)
+    SetGlobal("ag_monk5_wis5","GLOBAL",0)
+    SetGlobal("ag_monk5_wis6","GLOBAL",0)
+    SetGlobal("ag_monk5_wis7","GLOBAL",0)
+    SetGlobal("ag_monk5_wis8","GLOBAL",0)
+    SetGlobal("ag_monk5_wis9","GLOBAL",0)
+    SetGlobal("ag_monk5_wis10","GLOBAL",0)
+	SetGlobal("ag_monk5_wis11","GLOBAL",0)
+	SetGlobal("ag_monk5_wis12","GLOBAL",0)
+END
+
+
+IF
+  Global("ag_monk6_wis1","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player6,2,WIS)
+  CheckStatLT(Player6,3,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw1",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",1)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis2","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player6,4,WIS)
+  CheckStatLT(Player6,5,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw2",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",1)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis3","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player6,6,WIS)
+  CheckStatLT(Player6,7,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw3",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",1)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis4","GLOBAL",0)
+  OR(2)
+  CheckStatLT(Player6,8,WIS)
+  CheckStatLT(Player6,9,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw4",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",1)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis5","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player6,10,WIS)
+  CheckStatLT(Player6,11,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw5",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",1)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis6","GLOBAL",0)
+  OR(2)
+  CheckStat(Player6,12,WIS)
+  CheckStat(Player6,13,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw6",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",1)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis7","GLOBAL",0)
+  OR(2)
+  CheckStat(Player6,14,WIS)
+  CheckStat(Player6,15,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw7",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",1)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis8","GLOBAL",0)
+  OR(2)
+  CheckStat(Player6,16,WIS)
+  CheckStat(Player6,17,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw8",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",1)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis9","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player6,18,WIS)
+  CheckStatLT(Player6,19,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw9",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",1)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis10","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player6,20,WIS)
+  CheckStatLT(Player6,21,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw10",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",1)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis11","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player6,22,WIS)
+  CheckStatGT(Player6,23,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw11",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",1)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
+
+IF
+  Global("ag_monk6_wis12","GLOBAL",0)
+  OR(2)
+  CheckStatGT(Player6,24,WIS)
+  CheckStatGT(Player6,25,WIS)
+  Class(Player6,MONK)
+THEN
+  RESPONSE #100
+    ApplySpellRES("ag#mw12",Player6)
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",1)
+END
+
+IF
+  OR(12)
+  Global("ag_monk6_wis1","GLOBAL",1)
+  Global("ag_monk6_wis2","GLOBAL",1)
+  Global("ag_monk6_wis3","GLOBAL",1)
+  Global("ag_monk6_wis4","GLOBAL",1)
+  Global("ag_monk6_wis5","GLOBAL",1)
+  Global("ag_monk6_wis6","GLOBAL",1)
+  Global("ag_monk6_wis7","GLOBAL",1)
+  Global("ag_monk6_wis8","GLOBAL",1)
+  Global("ag_monk6_wis9","GLOBAL",1)
+  Global("ag_monk6_wis10","GLOBAL",1)
+  Global("ag_monk6_wis11","GLOBAL",1)
+  Global("ag_monk6_wis12","GLOBAL",1)
+  CheckStatLT(Player6,50,TRACKING)
+  Class(Player6,MONK)
+THEN
+ RESPONSE #100
+    SetGlobal("ag_monk6_wis1","GLOBAL",0)
+    SetGlobal("ag_monk6_wis2","GLOBAL",0)
+    SetGlobal("ag_monk6_wis3","GLOBAL",0)
+    SetGlobal("ag_monk6_wis4","GLOBAL",0)
+    SetGlobal("ag_monk6_wis5","GLOBAL",0)
+    SetGlobal("ag_monk6_wis6","GLOBAL",0)
+    SetGlobal("ag_monk6_wis7","GLOBAL",0)
+    SetGlobal("ag_monk6_wis8","GLOBAL",0)
+    SetGlobal("ag_monk6_wis9","GLOBAL",0)
+    SetGlobal("ag_monk6_wis10","GLOBAL",0)
+	SetGlobal("ag_monk6_wis11","GLOBAL",0)
+	SetGlobal("ag_monk6_wis12","GLOBAL",0)
+END
