@@ -1,0 +1,429 @@
+BACKUP ~bggraphics/backup~
+AUTHOR ~www.shsforums.net/forum/~
+VERSION ~v1.8 BWP Fix~
+//MODDER setup_tra NONE
+//launch the ReadMe file immediately
+README ~bggraphics/bggraphics-readme.html~
+
+LANGUAGE ~English~ ~English~ ~bggraphics/language/english/bggraphics_setup.tra~
+
+// Quest title
+BEGIN @1
+INCLUDE ~bggraphics/bggraphics.tph~
+PRINT @4
+//**************************************************
+// Optional component - expanded Iron Throne
+//**************************************************
+PRINT @3
+ACTION_READLN ironthrone
+OUTER_WHILE NOT(IS_AN_INT %ironthrone%) || (%ironthrone% > 2) || (%ironthrone% < 1) BEGIN
+ PRINT @3
+ ACTION_READLN ironthrone
+END
+
+//**************************************************
+// Optional component - get rid of the night purple patches
+//**************************************************
+PRINT @2
+ACTION_READLN purplepatches
+OUTER_WHILE NOT(IS_AN_INT %purplepatches%) || (%purplepatches% > 2) || (%purplepatches% < 1) BEGIN
+ PRINT @2
+ ACTION_READLN purplepatches
+END
+
+//**************************************************
+// Common files
+//**************************************************
+// Bams
+	COPY ~bggraphics/bam/.~ ~override/.~
+
+//**************************************************
+// Bitmaps
+	COPY ~bggraphics/bmp/.~ ~override/.~
+
+//**************************************************
+// Mos
+	COPY ~bggraphics/mos/.~ ~override/.~
+
+//**************************************************
+// Wed
+	COPY ~bggraphics/wed/.~ ~override/.~
+
+//**************************************************
+// Add torches to the temple in Candlekeep
+//**************************************************
+ACTION_DEFINE_ARRAY ccxs BEGIN 3933 4086 4201 4321 END
+ACTION_DEFINE_ARRAY ccys BEGIN 416 253 323 360 END
+
+ACTION_PHP_EACH ccxs AS index => ccx BEGIN
+  COPY_EXISTING "ar0015.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ccxs("%index%")
+       	fj_loc_y = $ccys("%index%")
+       	fj_schedule = 0b111111111111111111111111 //Hours always
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Torch
+       	fj_bam_resref = flamblu2
+    END
+  BUT_ONLY
+END
+
+ACTION_PHP_EACH ccxs AS index => ccx BEGIN
+  COPY_EXISTING "ar6526.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ccxs("%index%")
+       	fj_loc_y = $ccys("%index%")
+       	fj_schedule = 0b111111111111111111111111 //Hours always
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Torch
+       	fj_bam_resref = flamblu2
+    END
+  BUT_ONLY
+END
+
+//**************************************************
+// Add some braziers in Baldur's Gate
+//**************************************************
+ACTION_DEFINE_ARRAY ar1xs BEGIN 2853 2246 133 310 386 2165 END
+ACTION_DEFINE_ARRAY ar1ys BEGIN 499 555 1645 2295 3155 1279 END
+
+ACTION_PHP_EACH ar1xs AS index => ar1x BEGIN
+  COPY_EXISTING "ar7200.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ar1xs("%index%")
+       	fj_loc_y = $ar1ys("%index%")
+       	fj_schedule = 0b111000000000000000111111 //Hours 22.00 - 07.00
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Brazier
+       	fj_bam_resref = fire_3
+    END
+  BUT_ONLY
+END
+
+ACTION_DEFINE_ARRAY ar2xs BEGIN 941 3314 END
+ACTION_DEFINE_ARRAY ar2ys BEGIN 80 207 END
+
+ACTION_PHP_EACH ar2xs AS index => ar2x BEGIN
+  COPY_EXISTING "ar7300.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ar2xs("%index%")
+       	fj_loc_y = $ar2ys("%index%")
+       	fj_schedule = 0b111000000000000000111111 //Hours 22.00 - 07.00
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Brazier
+       	fj_bam_resref = fire_3
+    END
+  BUT_ONLY
+END
+
+ACTION_DEFINE_ARRAY ar2bxs BEGIN 2056 2251 END
+ACTION_DEFINE_ARRAY ar2bys BEGIN 1510 1699 END
+
+ACTION_PHP_EACH ar2bxs AS index => ar2bx BEGIN
+  COPY_EXISTING "ar7300.are" override
+  	LPF fj_are_structure
+    	INT_VAR
+      	fj_loc_x = $ar2bxs("%index%")
+      	fj_loc_y = $ar2bys("%index%")
+      	fj_schedule = 0b111000000000000000111111 //Hours 22.00 - 07.00
+      	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+    	STR_VAR
+      	fj_structure_type = animation
+      	fj_name = Brazier
+      	fj_bam_resref = flame2l
+  	END
+  BUT_ONLY
+END
+
+ACTION_DEFINE_ARRAY ar3xs BEGIN 247 933 1583 2928 841 1124 1270 1369 1479 1735 END
+ACTION_DEFINE_ARRAY ar3ys BEGIN 361 428 529 2327 3130 2411 2108 1898 1659 1120 END
+
+ACTION_PHP_EACH ar3xs AS index => ar3x BEGIN
+  COPY_EXISTING "ar7400.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ar3xs("%index%")
+       	fj_loc_y = $ar3ys("%index%")
+       	fj_schedule = 0b111000000000000000111111 //Hours 22.00 - 07.00
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Brazier
+       	fj_bam_resref = fire_3
+    END
+  BUT_ONLY
+END
+
+ACTION_DEFINE_ARRAY ar6xs BEGIN 385 383 556 END
+ACTION_DEFINE_ARRAY ar6ys BEGIN 81 420 2478 END
+
+ACTION_PHP_EACH at6xs AS index => ar6x BEGIN
+  COPY_EXISTING "ar7600.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $xs("%index%")
+       	fj_loc_y = $ys("%index%")
+       	fj_schedule = 0b111000000000000000111111 //Hours 22.00 - 07.00
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Brazier
+       	fj_bam_resref = fire_3
+    END
+  BUT_ONLY
+END
+
+ACTION_DEFINE_ARRAY ar7xs BEGIN 3186 3637 4121 END
+ACTION_DEFINE_ARRAY ar7ys BEGIN 1670 1566 1083 END
+
+ACTION_PHP_EACH ar7xs AS index => ar7x BEGIN
+  COPY_EXISTING "ar7700.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ar7xs("%index%")
+       	fj_loc_y = $ar7ys("%index%")
+       	fj_schedule = 0b111000000000000000111111 //Hours 22.00 - 07.00
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Brazier
+       	fj_bam_resref = fire_3
+    END
+  BUT_ONLY
+END
+
+ACTION_DEFINE_ARRAY ar8xs BEGIN 3311 3337 3422 853 715 585 168 END
+ACTION_DEFINE_ARRAY ar8ys BEGIN 2614 2392 295 42 203 446 814 END
+
+ACTION_PHP_EACH ar8xs AS index => ar8x BEGIN
+  COPY_EXISTING "ar7800.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ar8xs("%index%")
+       	fj_loc_y = $ar8ys("%index%")
+       	fj_schedule = 0b111000000000000000111111 //Hours 22.00 - 07.00
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Brazier
+       	fj_bam_resref = fire_3
+    END
+  BUT_ONLY
+END
+
+ACTION_DEFINE_ARRAY ar11xs BEGIN 322 552 241 1309 2145 END
+ACTION_DEFINE_ARRAY ar11ys BEGIN 1172 1969 824 2810 2912 END
+
+ACTION_PHP_EACH ar11xs AS index => ar11x BEGIN
+  COPY_EXISTING "ar8000.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ar11xs("%index%")
+       	fj_loc_y = $ar11ys("%index%")
+       	fj_schedule = 0b111000000000000000111111 //Hours 22.00 - 07.00
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Brazier
+       	fj_bam_resref = fire_3
+    END
+  BUT_ONLY
+END
+
+//**************************************************
+// Light the wall sconces in the Ducal Palace
+//**************************************************
+ACTION_DEFINE_ARRAY ar607xs BEGIN 226 305 420 542 671 1170 1260 1346 1438 1546 1492 1406 1316 1291 1209 1405 1533 1654 860 803 713 627 481 566 656 END
+ACTION_DEFINE_ARRAY ar607ys BEGIN 434 355 397 457 522 459 368 282 217 271 354 440 531 844 927 883 947 1007 970 1049 1141 1226 1155 1069 978 END
+
+ACTION_PHP_EACH ar607xs AS index => ar607x BEGIN
+  COPY_EXISTING "ar7607.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ar607xs("%index%")
+       	fj_loc_y = $ar607ys("%index%")
+       	fj_schedule = 0b111111111111111111111111 //Hours All
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Sconce
+       	fj_bam_resref = flame2m
+    END
+  BUT_ONLY
+END
+
+//**************************************************
+// Light the candles in the Ducal Palace
+//**************************************************
+ACTION_DEFINE_ARRAY ar607cxs BEGIN 871 896 1031 1003 END
+ACTION_DEFINE_ARRAY ar607cys BEGIN 769 744 810 836 END
+
+ACTION_PHP_EACH ar607cxs AS index => ar607cx BEGIN
+  COPY_EXISTING "ar7607.are" override
+    LPF fj_are_structure
+      INT_VAR
+       	fj_loc_x = $ar607cxs("%index%")
+       	fj_loc_y = $ar607cys("%index%")
+       	fj_schedule = 0b111111111111111111111111 //Hours All
+       	fj_flags = 0b00000000000000000001000001000011	// Visible, blend colours, not covered by wall, don't remove in combat
+     	STR_VAR
+        fj_structure_type = animation
+       	fj_name = Candle
+       	fj_bam_resref = flame2s
+    END
+  BUT_ONLY
+END
+
+//**************************************************
+// Patch the .are files in batches to set the Extended Night flag - Baldur's Gate is already done
+// Turn off flying actors at night because they have no night colouration - non in Baldur's Gate
+//**************************************************
+ACTION_DEFINE_ASSOCIATIVE_ARRAY turn_off_at_night BEGIN
+  _bird => 1
+  _eagle => 1
+	_vultur => 1
+	_seagul => 1
+END
+
+ACTION_FOR_EACH are IN ~ar7500~ ~ar7900~ ~aru000~ ~ar8300~ ~arw500~ ~ar8400~ ~ar8500~ ~ar8600~ ~ar8700~ ~arw000~ ~ar8800~ ~ar7000~ ~ar6800~ ~ar8900~ ~ar0015~ ~ar6526~ ~ar6600~ ~ar6900~ ~ar9000~ ~ar9100~ ~ar9200~ ~ar7100~ ~ar6700~ ~ar9300~ ~ar9400~ ~ar9500~ ~ar9600~ ~ar9700~ ~ar9799~ ~ar9900~ ~ara100~ ~ar3100~ ~ar3200~ ~ar3300~ ~ar3400~ ~ar3499~ ~ar3498~ ~ar3700~ ~ar3800~ ~ar3900~ ~ar4100~ ~ar4200~ ~ar4300~ ~ar4400~ ~ar4600~ ~ar4700~ ~ar4800~ ~ar4900~ ~ar5100~ ~ar5300~ ~ar5400~ BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%are%.are~ BEGIN
+    COPY_EXISTING ~%are%.are~ ~override~
+      PATCH_IF SOURCE_SIZE > 0x11b BEGIN // Valid size check
+        WRITE_BYTE 0x48 (THIS BOR 0b01000000) // Toggle extended night flag on whether on or off
+      END
+		  GET_OFFSET_ARRAY actors 0x54 4 0x58 2 0 0 0x110
+  		PHP_EACH actors AS i => off BEGIN
+    		READ_ASCII off + 0x80 cre_resref
+    		TO_LOWER cre_resref
+    		PATCH_IF VARIABLE_IS_SET $turn_off_at_night("%cre_resref%") BEGIN
+      		WRITE_LONG off + 0x40 0x1ffe0 // 05:30 to 17:29
+    		END
+  		END
+    BUT_ONLY
+  END
+END
+
+//**************************************************
+// Expand the tiz files
+//**************************************************
+	ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~ = 1) BEGIN
+  	ACTION_BASH_FOR ~bggraphics/tiz~ ~.+\.tiz$~ BEGIN
+    	AT_NOW ~bggraphics\tiz\tisunpack.exe -s -f -o override\%BASH_FOR_RES%.tis bggraphics\tiz\%BASH_FOR_RES%.tiz~
+  	END
+	END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~ = 1) BEGIN
+  	AT_NOW ~shopt -s nocaseglob~
+  	ACTION_BASH_FOR ~bggraphics/tiz~ ~.+\.tiz$~ BEGIN
+    	AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/tiz/%BASH_FOR_RES%.tiz~
+  	END
+	END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~unix~ = 1) BEGIN
+  	AT_NOW ~shopt -s nocaseglob~
+  	ACTION_BASH_FOR ~bggraphics/tiz~ ~.+\.tiz$~ BEGIN
+    	AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/tiz/%BASH_FOR_RES%.tiz~
+  	END
+	END
+
+//**************************************************
+// Play nice with other mods section
+//**************************************************
+// Gavin by Berelinde
+LAUNCH_ACTION_MACRO ~patchGavin~
+
+//**************************************************
+//Optional component - expanded AR7621 Iron Throne
+//**************************************************
+	ACTION_IF %ironthrone% = 1 BEGIN
+//**************************************************
+		COPY ~bggraphics/621/area/.~ ~override/.~
+
+		ACTION_IF %purplepatches% = 1 BEGIN
+			COPY ~bggraphics/621/patch/mos/AR7621N.MOS~ ~override/AR7621N.MOS~
+			ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~ = 1) BEGIN
+  			ACTION_BASH_FOR ~bggraphics/621/patch/tiz~ ~.+\.tiz$~ BEGIN
+    			AT_NOW ~bggraphics\tiz\tisunpack.exe -s -f -o override\%BASH_FOR_RES%.tis bggraphics\621\patch\tiz\%BASH_FOR_RES%.tiz~
+  			END
+			END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~ = 1) BEGIN
+  			AT_NOW ~shopt -s nocaseglob~
+  			ACTION_BASH_FOR ~bggraphics/621/patch/tiz~ ~.+\.tiz$~ BEGIN
+    			AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/621/patch/tiz/%BASH_FOR_RES%.tiz~
+  			END
+			END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~unix~ = 1) BEGIN
+  			AT_NOW ~shopt -s nocaseglob~
+  			ACTION_BASH_FOR ~bggraphics/621/patch/tiz~ ~.+\.tiz$~ BEGIN
+    			AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/621/patch/tiz/%BASH_FOR_RES%.tiz~
+  			END
+			END
+		END
+
+		ACTION_IF %purplepatches% = 2 BEGIN
+			ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~ = 1) BEGIN
+  			ACTION_BASH_FOR ~bggraphics/621/tiz~ ~.+\.tiz$~ BEGIN
+    			AT_NOW ~bggraphics\tiz\tisunpack.exe -s -f -o override\%BASH_FOR_RES%.tis bggraphics\621\tiz\%BASH_FOR_RES%.tiz~
+  			END
+			END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~ = 1) BEGIN
+  			AT_NOW ~shopt -s nocaseglob~
+  			ACTION_BASH_FOR ~bggraphics/621/tiz~ ~.+\.tiz$~ BEGIN
+    			AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/621/tiz/%BASH_FOR_RES%.tiz~
+  			END
+			END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~unix~ = 1) BEGIN
+  			AT_NOW ~shopt -s nocaseglob~
+  			ACTION_BASH_FOR ~bggraphics/621/tiz~ ~.+\.tiz$~ BEGIN
+    			AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/621/tiz/%BASH_FOR_RES%.tiz~
+  			END
+  		END
+		END
+	END
+
+//**************************************************
+//Optional component - get rid of the night purple patches
+//**************************************************
+	ACTION_IF %purplepatches% = 1 BEGIN
+		COPY ~bggraphics/mos/ground/.~ ~override/.~
+		ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~ = 1) BEGIN
+  		ACTION_BASH_FOR ~bggraphics/tiz/ground~ ~.+\.tiz$~ BEGIN
+    		AT_NOW ~bggraphics\tiz\tisunpack.exe -s -f -o override\%BASH_FOR_RES%.tis bggraphics\tiz\ground\%BASH_FOR_RES%.tiz~
+  		END
+		END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~ = 1) BEGIN
+  		AT_NOW ~shopt -s nocaseglob~
+  		ACTION_BASH_FOR ~bggraphics/tiz/ground~ ~.+\.tiz$~ BEGIN
+    		AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/tiz/ground/%BASH_FOR_RES%.tiz~
+  		END
+		END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~unix~ = 1) BEGIN
+  		AT_NOW ~shopt -s nocaseglob~
+  		ACTION_BASH_FOR ~bggraphics/tiz/ground~ ~.+\.tiz$~ BEGIN
+    		AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/tiz/ground/%BASH_FOR_RES%.tiz~
+  		END
+		END
+	END
+
+//**************************************************
+//Optional component - Keep the night purple patches
+//**************************************************
+	ACTION_IF %purplepatches% = 2 BEGIN
+		ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~win32~ = 1) BEGIN
+  		ACTION_BASH_FOR ~bggraphics/tiz/purple~ ~.+\.tiz$~ BEGIN
+    		AT_NOW ~bggraphics\tiz\tisunpack.exe -s -f -o override\%BASH_FOR_RES%.tis bggraphics\tiz\purple\%BASH_FOR_RES%.tiz~
+  		END
+		END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~osx~ = 1) BEGIN
+  		AT_NOW ~shopt -s nocaseglob~
+  		ACTION_BASH_FOR ~bggraphics/tiz/purple~ ~.+\.tiz$~ BEGIN
+    		AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/tiz/purple/%BASH_FOR_RES%.tiz~
+  		END
+		END ELSE ACTION_IF (~%WEIDU_OS%~ STRING_EQUAL_CASE ~unix~ = 1) BEGIN
+  		AT_NOW ~shopt -s nocaseglob~
+  		ACTION_BASH_FOR ~bggraphics/tiz/purple~ ~.+\.tiz$~ BEGIN
+    		AT_NOW ~bggraphics/tiz/tisunpack -s -f -o override/%BASH_FOR_RES%.tis bggraphics/tiz/purple/%BASH_FOR_RES%.tiz~
+  		END
+		END
+	END
