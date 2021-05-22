@@ -156,18 +156,18 @@ Saving Throw: Spell negates
 
 This spell causes a feeling of doom to overwhelm the target. For the duration of the spell, the target suffers a -2 penalty to THAC0, damage, and saving throws. The creature may make a save vs. spell at a penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level. Multiple castings of this spell or similar effects are not cumulative.~
 
-@25=~Sunscorch~
-@26=~Sunscorch
+@25=~Faerie Fire~
+@26=~Faerie Fire
 Level: 1
 School: Evocation
-Sphere: Sun
+Sphere: Weather
 Range: Long
-Duration: Special
-Casting Time: 4
-Area of Effect: 1 creature
-Saving Throw: Breath partial
+Duration: 5 rounds
+Casting Time: 1
+Area of Effect: 20' radius
+Saving Throw: Special
 
-When this spell is cast, a brilliant ray of scorching heat slants down from the sky and strikes a creature chosen by the caster. The target struck by the ray is blinded for 1 round and suffers 1D6 + 1/level fire damage, up to a maximum of 1D6 + 10 at 10th level. The target may make a save vs. breath to avoid being blinded and receive only half damage. Undead creatures and other monsters vulnerable to bright light suffer double damage and double length blindness. Magic resistance does not affect this spell.~
+When this spell is cast, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Invisible creatures are revealed, and those who do not successfully make a saving throw vs. spell are distinctly outlined for the next 5 rounds. Outlined creatures do not benefit from the concealment normally provided by stealth, invisibility, or similar effects, and suffer a -2 penalty to AC. The faerie fire light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light, and does not cause any harm to the objects or creatures thus outlined. Multiple castings of this spell or similar effects are not cumulative.~
 
 @27=~Strength of Stone~
 @28=~Strength of Stone
@@ -182,18 +182,18 @@ Saving Throw: None
 
 Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone, setting their strength to 18 and adding an additional +50 exceptional strength on top of this, and they receive any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram.~
 
-@29=~Faerie Fire~
-@30=~Faerie Fire
+@29=~Sunscorch~
+@30=~Sunscorch
 Level: 1
 School: Evocation
-Sphere: Weather
+Sphere: Sun
 Range: Long
-Duration: 5 rounds
-Casting Time: 1
-Area of Effect: 20' radius
-Saving Throw: Special
+Duration: Special
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: Breath partial
 
-When this spell is cast, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Invisible creatures are revealed, and those who do not successfully make a saving throw vs. spell are distinctly outlined for the next 5 rounds. Outlined creatures do not benefit from the concealment normally provided by stealth, invisibility, or similar effects, and suffer a -2 penalty to AC. The faerie fire light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light, and does not cause any harm to the objects or creatures thus outlined. Multiple castings of this spell or similar effects are not cumulative.~
+When this spell is cast, a brilliant ray of scorching heat slants down from the sky and strikes a creature chosen by the caster. The target struck by the ray is blinded for 1 round and suffers 1D6 + 1/level fire damage, up to a maximum of 1D6 + 10 at 10th level. The target may make a save vs. breath to avoid being blinded and receive only half damage. Undead creatures and other monsters vulnerable to bright light suffer double damage and double length blindness. Magic resistance does not affect this spell.~
 
 @301=~Regenerate Light Wounds~
 @302=~Regenerate Light Wounds
@@ -465,8 +465,8 @@ Saving Throw: None
 
 When this spell is cast, the priest's body shudders and glows with a shimmering aura as it becomes a vessel for the power of their god. When they do this, they gain a +1 bonus to Strength, Dexterity, and Constitution scores for every three levels of the caster, up to a maximum of +3 at 9th level. Multiple castings of this spell or similar effects are not cumulative.~
 
-@59=~Cure Moderate Wounds~
-@60=~Cure Moderate Wounds
+@59=~Cure Medium Wounds~
+@60=~Cure Medium Wounds
 Level: 2
 School: Necromancy
 Sphere: Healing
@@ -519,8 +519,8 @@ Saving Throw: Special
 
 This spell creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 6 feet must make a save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) as well as any insect swarms in the caster's current area.~
 
-@317=~Cause Moderate Wounds~
-@318=~Cause Moderate Wounds
+@317=~Cause Medium Wounds~
+@318=~Cause Medium Wounds
 Level: 2
 School: Necromancy
 Sphere: Necromantic
@@ -530,7 +530,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is the reverse of Cure Moderate Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 2D10 + 2/level magic damage, up to a maximum of 2D10 + 20 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
+This spell is the reverse of Cure Medium Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 2D10 + 2/level magic damage, up to a maximum of 2D10 + 20 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
 
 @323=~Animal Summoning II~
 @324=~Animal Summoning II
@@ -616,7 +616,7 @@ Casting Time: 1 round
 Area of Effect: 360' radius
 Saving Throw: Breath half
 
-Immediately upon completion of the spell and once per round thereafter, the caster causes a 30-foot-long vertical bolt of lightning to come crashing down upon an enemy. The spell calls forth one lightning bolt for every three experience levels of the caster, up to a maximum of 5 lightning bolts at 15th level. The lightning will strike first at the target of the spell, dealing 6D6 electrical damage. Those who make a save vs. breath at a -2 penalty will receive only half damage. For the remainder of the storm's duration, the bolts will strike out randomly at the enemies of the caster.~
+Immediately upon completion of the spell and once per round thereafter, the caster causes a 30 foot-long vertical bolt of lightning to come crashing down upon an enemy. The spell calls forth one lightning bolt for every three experience levels of the caster, up to a maximum of 5 lightning bolts at 15th level. The lightning will strike first at the target of the spell, dealing 6D6 electrical damage. Those who make a save vs. breath at a -2 penalty will receive only half damage. For the remainder of the storm's duration, the bolts will strike out randomly at the enemies of the caster.~
 
 @75=~Dispel Magic~
 @76=~Dispel Magic
@@ -836,8 +836,8 @@ Wolf (3 HD):
 Special Characteristics:
  Pack Attack: each wolf within 10' receives a +1 bonus to THAC0~
 
-@107=~Cause Serious Wounds~
-@108=~Cause Serious Wounds
+@107=~Cause Moderate Wounds~
+@108=~Cause Moderate Wounds
 Level: 3
 School: Necromancy
 Sphere: Necromantic
@@ -847,10 +847,10 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is the reverse of Cure Serious Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 3D10 + 3/level magic damage, up to a maximum of 3D10 + 30 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
+This spell is the reverse of Cure Moderate Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 3D10 + 3/level magic damage, up to a maximum of 3D10 + 30 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
 
-@109=~Cure Serious Wounds~
-@110=~Cure Serious Wounds
+@109=~Cure Moderate Wounds~
+@110=~Cure Moderate Wounds
 Level: 3
 School: Necromancy
 Sphere: Healing
@@ -875,8 +875,8 @@ Saving Throw: None
 
 This spell surrounds the caster with invisible curtains of stormy winds that move with them. Non-magical missile weapons are deflected away while gases cannot penetrate the barrier, and the wind wall also grants the caster a +3 bonus to saving throws vs. breath and a +4 bonus to AC vs. missile. Insect swarms cannot pass through the storm shield. Multiple castings of this spell are not cumulative.~
 
-@305=~Regenerate Serious Wounds~
-@306=~Regenerate Serious Wounds
+@305=~Regenerate Medium Wounds~
+@306=~Regenerate Medium Wounds
 Level: 3
 School: Alteration
 Sphere: Healing
@@ -943,8 +943,8 @@ This spell causes a major disease and weakness in a creature. For the following 
 
 /*------------------Level 4------------------*/
 
-@111=~Cure Critical Wounds~
-@112=~Cure Critical Wounds
+@111=~Cure Serious Wounds~
+@112=~Cure Serious Wounds
 Level: 4
 School: Necromancy
 Sphere: Healing
@@ -1155,8 +1155,8 @@ Saving Throw: None
 
 When a Negative Plane Protection spell is cast, the recipient receives complete protection from negative energy attacks. This spell also affords the recipient partial protection from monsters with Negative Energy plane connections (such as vampires) and certain weapons and spells that drain levels. A protected creature is immune to any form of level drain for the duration of the spell, though they will still suffer normal hit point damage from the physical attack, if applicable.~
 
-@137=~Cause Critical Wounds~
-@138=~Cause Critical Wounds
+@137=~Cause Serious Wounds~
+@138=~Cause Serious Wounds
 Level: 4
 School: Necromancy
 Sphere: Necromantic
@@ -1166,7 +1166,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is the reverse of Cure Critical Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 4D10 + 4/level magic damage, up to a maximum of 4D10 + 40 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
+This spell is the reverse of Cure Serious Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 4D10 + 4/level magic damage, up to a maximum of 4D10 + 40 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
 
 @139=~Farsight~
 @140=~Farsight
@@ -1222,8 +1222,8 @@ Saving Throw: None
 
 When this spell is cast, great magical hailstones pound down for 5 rounds within a 30 foot radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 80% and receive 2D8 cold damage for each round they remain inside the storm.~
 
-@307=~Regenerate Critical Wounds~
-@308=~Regenerate Critical Wounds
+@307=~Regenerate Serious Wounds~
+@308=~Regenerate Serious Wounds
 Level: 4
 School: Alteration
 Sphere: Healing
@@ -1281,8 +1281,8 @@ Special Characteristics:
  Protected Against: Entangle, Grease, Web, and Poison
  Asp's Venom: target suffers 1 poison damage every second for 5 rounds (save vs. poison at -2 neg.)~
 
-@153=~Cure Mortal Wounds~
-@154=~Cure Mortal Wounds
+@153=~Cure Critical Wounds~
+@154=~Cure Critical Wounds
 Level: 5
 School: Necromancy
 Sphere: Healing
@@ -1400,10 +1400,10 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-Upon the casting of this spell, the recipient receives a +2% bonus to magic resistance for every experience level of the caster, up to a maximum of 50% at 25th level. Multiple castings of this spell are not cumulative.~
+Upon the casting of this spell, the recipient receives a +2% bonus to magic resistance for every experience level of the caster, up to a maximum of 40% at 20th level. Multiple castings of this spell are not cumulative.~
 
-@169=~Cause Mortal Wounds~
-@170=~Cause Mortal Wounds
+@169=~Cause Critical Wounds~
+@170=~Cause Critical Wounds
 Level: 5
 School: Necromancy
 Sphere: Healing
@@ -1413,7 +1413,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is the reverse of Cure Mortal Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 5D10 + 5/level magic damage, up to a maximum of 5D10 + 50 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
+This spell is the reverse of Cure Critical Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 5D10 + 5/level magic damage, up to a maximum of 5D10 + 50 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
 
 @171=~Slay Living~
 @172=~Slay Living
@@ -1585,6 +1585,19 @@ Area of Effect: 30' radius
 Saving Throw: None
 
 When this spell is cast, the caster causes all friendly animals within range to become tougher and more tenacious, granting them a +2 bonus to THAC0, damage, AC, and saving throws. The spell also increases their hit points by 50%, and these bonus hit points are lost first when they take damage. Multiple castings of this spell are not cumulative.~
+
+@30700=~Regenerate Critical Wounds~
+@30800=~Regenerate Critical Wounds
+Level: 5
+School: Alteration
+Sphere: Healing
+Range: Touch
+Duration: 5 rounds
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell enables the caster to mend the wounds and injuries of the target by granting them temporary regeneration. The affected creature will regenerate 75 + 7.5/two levels hit points over the duration of the spell, up to a maximum of 150 at 20th level.~
 
 
 /*------------------Level 6------------------*/
@@ -2449,7 +2462,7 @@ Known Spells:
  1° Bless (x3), Resist Fear (x3)
  2° Aid (x3), Find Trap, Know Opponent, Draw Upon Divine Might
  3° Cure Disease (x2), Holy Smite (x2), Break Enchantment (x2)
- 4° Cure Critical Wounds (x2), Neutralize Poison (x2), Magic Circle Against Evil
+ 4° Cure Serious Wounds (x2), Neutralize Poison (x2), Magic Circle Against Evil
  5° Mass Cure, Raise Dead, True Seeing
  6° Blade Barrier, Heal
  7° Holy Word~
@@ -2662,7 +2675,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: Spell partial
 
-This spell causes a 2-foot-diameter sphere to appear in the caster's hand. When thrown, the sphere heads unerringly towards its target, dealing magic damage and causing different effects depending upon its color. As the level of the caster improves, both the damage dealt and number of colors known increases. The color of any given orb is chosen randomly from the colors known at the mage's level, and the orb is occasionally even multicolored, causing multiple effects. The target cannot avoid the initial damage, but can save vs. spell to negate the secondary effects.
+This spell causes a 2 foot-diameter sphere to appear in the caster's hand. When thrown, the sphere heads unerringly towards its target, dealing magic damage and causing different effects depending upon its color. As the level of the caster improves, both the damage dealt and number of colors known increases. The color of any given orb is chosen randomly from the colors known at the mage's level, and the orb is occasionally even multicolored, causing multiple effects. The target cannot avoid the initial damage, but can save vs. spell to negate the secondary effects.
 
 1st: White, 1D4 damage - Light, -4 penalty to saving throws
 3rd: Aquamarine, 1D6 damage - Magnetism, -4 penalty to AC
