@@ -1,5 +1,5 @@
 @1000 = ~Amulet~
-@1001 = ~Amulet of Protection +1~
+@1001 = ~Amulet of Protection +1~ // BG1/BG2: The Protector: The royal guard of King Pyronan, ruler of Impiltur, were given 'The Protector' as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves as to whom the amulet should go to. After years of internal hostility, the item was lost and the guards replaced by less greedy individuals.
 @1002 = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.~
 @1003 = ~Amulets, cloaks and rings of this sort are infused with protective spells, and are among the most popular and numerous magic items on the market. The original design may have originated in the earliest of arcane guilds, but the current makers of these items are varied and widespread. Unfortunately, multiple protective enchantments of these kind don't stack, and thus no other amulet, cloak, or ring of protection can be worn while wearing this amulet.
 
@@ -11,8 +11,8 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1004 = ~Shield Amulet~
-@1005 = ~Made by the Harpell clan of wizards in Longsaddle, these simple but elegant amulets project a shielding field of invisible force that protects the wearer from physical attacks just as though they were wearing armor. This sphere of energy is particularly effective against missile weapons which are slowed somewhat and often end up falling to the ground before reaching the target. The barrier also protects the wearer from the spell Magic Missile.
+@1004 = ~Shield Amulet~ // BG1/BG2: This amulet can be activated by a simple command word and a touch with each use acting as one charge. The effect is a duplication of the 1st level wizard spell 'Shield'. For the duration of the spell, the wearer will have a base Armor Class of 4. This is cumulative with any modifiers due to shields and magical devices.
+@1005 = ~Made by the Harpell clan of wizards in Longsaddle, these simple but elegant amulets generate a shield-sized invisible wall of force that stays with the amulet and can be wielded by the wearer as if it were a normal shield. This sphere of energy is particularly effective against missile weapons and the barrier also protects the wearer from the spell Magic Missile.
 
 STATISTICS:
 
@@ -25,7 +25,7 @@ Not Usable By:
  Wizard Slayer~
 @1006 = ~Amulet of Metaspell Influence~
 @1007 = ~The Amplifier
-Known for its ability to enhance spellcasting, the Amulet of Metaspell Influence is highly sought after by practitioners of magic. It was created by Elairdrin Mellwith who resided in the Star Mountains. His reasons for fabricating such an item stemmed from his womanizing habits, and to this end the Amplifier served his purpose well. It was later taken from him by a wizardress with a more destructive intent, but records detailing the change of hands vary widely.
+Known for its ability to enhance spellcasting, the Amulet of Metaspell Influence is highly sought after by magic practitioners. It was created by Elairdrin Mellwith who resided in the Star Mountains. His reasons for fabricating such an item stemmed from his womanizing habits, and to this extent the Amplifier served his purpose well. It was later taken from him by a mage with a more destructive intent, but records detailing the change of hands vary widely.
 
 STATISTICS:
 
@@ -40,10 +40,8 @@ Usable By:
  Mage
  Paladin
  Ranger~
-@1008 = ~Greenstone Amulet~ //NOTE: This amulet does not confer complete immunity to psionics.
-@1009 = ~Creatures that attack the mind are the stuff of nightmares, so it is not surprising that items protecting against them might acquire some of their disrepute. Greenstone amulets, for example, have been linked to a claim that when the drow first retreated underground they fed on intellect devourers, and that eating such a creature without wearing a greenstone amulet produced a mind flayer. This is all, of course, nothing more than superstitious tavern talk. Nonetheless these mind shielding amulets are indeed used by drows who have to deal with the illithids, as they call them, being it a peaceful deal, or a not so peaceful one.
-
-These highly prized items are fist-sized green stone worked into some kind of smooth shape, usually like a flattened egg, but sometimes like a shield or helmet. When worn, the greenstone protects the wearer from all forms of mind attacks, including psionics.
+@1008 = ~Greenstone Amulet~
+@1009 = ~The deep green stone at the center of the amulet seems to shimmer with an iridescent light, almost as if it has a life of its own. Even without the powerful magics that are bestowed upon the amulet, it would be an extremely valuable addition to any collection.
 
 STATISTICS:
 
@@ -52,7 +50,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1010 = ~Silver Charm~
+@1010 = ~Silver Charm~ // BG1: Wolfsbane Charm: A silver amulet containing powdered wolfsbane.
 @1011 = ~Lore holds that some shapeshifters and fiends are especially vulnerable to the bite of silver weaponry. This amulet contains powdered silver and seems to protect the wearer from the attacks of those creatures.
 
 STATISTICS:
@@ -63,7 +61,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1012 = ~Amulet of Energy Shielding~
-@1013 = ~Commissioners working for the Athkatla city council often wear these amulets while searching for spell users. The amulet provides some small protection against devious mages who resist being imprisoned or killed.
+@1013 = ~Commissioners working for the Athkatla city council often wear these amulets while searching for spell users. The amulet provides some small protection against devious mages who resist any efforts at being imprisoned or killed.
 
 STATISTICS:
 
@@ -73,7 +71,7 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1014 = ~Kaligun's Amulet of Magic Resistance~
-@1015 = ~This particular amulet has the initials KP on its back surface. KP, or Kaligun Poonil, was the general of a small force sent into the woodlands to clear out Red Wizards. Being particularly fearful of magic, he wore this amulet along with other magical protections. Overconfident in these protections, Kaligun finally died when he foolishly ambushed three high level Red Wizards who lowered his magic resistance before destroying him with their spells.
+@1015 = ~This particular amulet has the initials KP on its back surface. KP, or Kaligun Poonil, was the general of a small force sent into the woodlands to clear out Red Wizards. Being particularly fearful of magic, he wore this amulet into battle. Overconfident in the protection offered by this amulet, Kaligun finally died when he foolishly ambushed three high-level Red Wizards who lowered his magic resistance before destroying him with their spells.
 
 STATISTICS:
 
@@ -85,12 +83,12 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1016 = ~Amulet of Power~
+@1016 = ~Amulet of Power~ // BG2: This amulet bears the signature enchantments of Conster Damon, an archmage that fell in the Year of the Dracorage (1018 DR). The crispness of its etchings may have faded with fire and time, but it still echoes his famous defiant cries: "Your magic denied!" "I will be heard!" "Defeat comes swiftly!" "Take nothing from me!" It has seen much use, and changed hands many times through blood and battle.
 @1017 = ~Arduelth, a young witch, had spent her life living under the shadow of Thay, and wished to study for a magical means to empower Rashemen, so she left on a dajemma - the customary Rashemi journey of self-discovery. Years later she returned, a haunted look in her eyes. Around her neck she wore an amulet that glowed with power - only the first of the artifacts she claimed to have learned how to create. She spoke long and passionately of how they could make use of such items - to not only bring peace to Rashemen, but break the back of Thay. The hathrans narrowed their eyes behind their masks as she spoke, fearing the young woman's intensity: but they listened, and gravely made her one of them.
 
 Before long, the witches began to regret their decision. The young woman seemed obsessed with the idea of creating more items of greater and more sinister properties... and her plans grew more and more elaborate, from freeing the slaves of Thay to enslaving the Red Wizards in their place, sapping them of their power for her own devices. It was suspected that Arduelth had become a durthan, eternal enemy of the hathrans - but another witch saw once that she communed with something far darker. Though the young woman still dreamed of peace and freedom for her people, she had given herself over to a dark entity - her pure intentions savaged by the lengths she would dare go to achieve them.
 
-Though it seems Arduelth's life has come to an end, the amulet still glows with a same promising light...
+Though it seems Arduelth's life has come to an end, the amulet still glows with a same promising light... as if it carried a fraction of its former wearer's soul, and the determination to see her plans come to fruition - whatever the cost.
 
 STATISTICS:
 
@@ -105,8 +103,8 @@ Usable By:
  Mage
  Paladin
  Ranger~
-@1018 = ~Periapt of Proof Against Poison~
-@1019 = ~This periapt, which has to be be worn next to the skin, makes the wearer immune to all poisons. Items with similar functions are in common circulation, created for nobles or merchants fearing poison. Eunuchs from Kara-Tur wear amulets such as this when sampling their emperor's food, and The Purple Dragons use rings with similar powers to protect the Obarskyr royal family from assassination attempts.
+@1018 = ~Periapt of Proof Against Poison~ // BG2: This periapt is a large gemstone hanging on a thick golden chain. Eunuchs from Kara-Tur would wear this particular periapt when sampling their emperor's food.
+@1019 = ~This periapt is a large gemstone hanging on a thick golden chain; worn next to the skin, it makes the wearer immune to all poisons. Items with similar functions are in common circulation, created for nobles or merchants fearing poison. Eunuchs from Kara-Tur would wear this particular periapt when sampling their emperor's food, and The Purple Dragons use rings with similar powers to protect the Obarskyr royal family from assassination attempts.
 
 STATISTICS:
 
@@ -116,9 +114,9 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1020 = ~Periapt of Life Protection~
-@1021 = ~Natnea Chesh was one of the first priestesses of Kelemvor in the Moonshae Islands, and became known as "The Defender of the Dead", when she helped stop a necromancer from raising an army of undead. As a gift for her heroic deeds, Kelemvor gave her this amulet, along with the secret of making copies for other clerics dedicated to the destruction of powerful undead creatures.
+@1021 = ~Natnea Chesh was one of the first priestesses of Kelemvor in the Moonshae Islands, and became known as "The Defender of the Dead" when she helped stop a necromancer from raising an army of undead. As a gift for her heroic deeds, Kelemvor gave her this amulet, along with the secret of making copies for other clerics dedicated to the destruction of powerful undead creatures.
 
-A heart-sized sapphire sits at the end of a thin silver wire. When worn, this periapt radiates life energy, infusing the wearer with power. The inscription on the back reads: 'Against Death we must all fail, but with this gem we may still prevail!'
+A heart-sized sapphire sits at the end of a thin silver wire. When worn, this periapt radiates life energy, infusing the wearer with power. The inscription on the back reads: "Against death we must all fail, but with this gem, we may still prevail!"
 
 STATISTICS:
 
@@ -127,8 +125,8 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@1022 = ~Periapt of Form Stability~
-@1023 = ~Dydaar'a of the Altered was a witch of great temper who rewarded the slightest insult with harsh punishment. Often the offender would spend several weeks transformed into some form of wild beast or a statue for her garden, a practice which of course earned her many enemies. It is recorded that she once fought a mage named Maxell who had previously suffered such a fate. For his return he had prepared this necklace, designed to protect him from her most powerful alteration spells, but he could not shield those around him as well. Apparently an impromptu army of farmers-turned-bears eventually overwhelmed him.
+@1022 = ~Periapt of Form Stability~ // BG2: Necklace of Form Stability
+@1023 = ~Dydaar'a of the Altered was a witch of great temper who rewarded the slightest insult with harsh punishment. Often this meant several weeks transformed into some form of wild beast, which of course earned her many enemies. It is recorded that she once fought a mage named Maxell who had previously suffered such a fate. For his return he had prepared this necklace, designed to prevent her changing his form, but he could not shield those around him as well. Apparently, an impromptu army of farmers-turned-bears eventually overwhelmed him.
 
 STATISTICS:
 
@@ -138,19 +136,19 @@ Equipped Abilities:
 Not Usable By:
  Wizard Slayer~
 @1024 = ~Amulet of Spell Warding~
-@1025 = ~A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting. These potent defensive amulets are much in demand in areas where duels between rival spellcasters are common. Armed with one of these items, even a relatively inexperienced caster can withstand the attack of an archmage - albeit briefly.
+@1025 = ~A favorite item of protection for a mage entering a magical duel, this amulet provides protection against spells, but does not interfere with the mage's own spellcasting. These potent defensive amulets are high in demand in areas where duels between rival spellcasters are common. Armed with one of these items, even a relatively inexperienced caster can withstand the attack of an archmage - albeit briefly.
 
 STATISTICS:
 
 Special Abilities:
- Spell Deflection (1x per day): 1 turn
+ Spell Deflection (1x per day): 5 turns
 
 Equipped Abilities:
  Saving Throws: +2 bonus
 
 Not Usable By:
  Wizard Slayer~
-@1026 = ~Amulet of Cheetah Speed~
+@1026 = ~Amulet of Cheetah Speed~ // BG2: This amulet grants its wearer fleetness of foot. Not surprisingly, it is popular among fleeing felons, travelers, and cowards.
 @1027 = ~Shamans of many barbarian clans have long looked upon the cheetah as one of the most nimble and swift hunters. Warriors of these clans rely on agility and quick movements instead of pure strength and they get across the battlefield like a whirlwind. Barbarian shamans would sometimes create spells that would temporarily imbue the warriors with inhuman quickness and fleetness of foot. However, since these spells were temporary, often times the spell would wear off at inopportune times.
 
 Thus a group of barbarian shamans once congregated to find a way to better harness the swift agility of the cheetah. For nearly a year the shamans remained out of sight from their home clans, busily focusing their attentions towards the magic to create such items. Then one day, the shamans returned to their respective clans, each holding a small necklace, with a pendant that resembled a cheetah's paw. The shamans gave this pendant to their strongest warrior of each clan. Once placed around the neck of the warrior, the speed of the cheetah filled their powerful bodies. From then on, the Amulet of Cheetah Speed, as it became known, would become one of the most prized artifacts within barbarian clans. Only the mightiest warriors wore the amulet, and it became the goal of all young warriors to one day be adorned with an amulet such as this.
@@ -183,7 +181,7 @@ NOTE: Multiple Protection from Evil effects are not cumulative.
 
 Usable By:
  All~
-@1030 = ~Amulet of the Master Harper~
+@1030 = ~Amulet of the Master Harper~ // BG2: This medallion is highly sought after by both thieves and bards, though for different reasons. In addition to providing powerful magical protection against physical attacks, the amulet increases the wearer's proficiency in several rogue skills. But even more valuable, from the bard's perspective, is the amulet's ability to grant the wearer immunity to all forms of silence.
 @1031 = ~Ciressa Gind'ra was a cunning arcane trickster who infiltrated the Night Masks for the Harpers, before she was found drowned in a two-inch puddle outside her residence. To infiltrate them, Ciressa created an amulet that allowed her to boost her abilities to that of a master thief. One night she used it to break into the Night King's private quarters. Unfortunately, she didn't anticipate the Night King's Faithful Hound, who was summoned to guard the room. The phantom watchdog immediately commenced a loud barking, revealing her presence to the Night King himself. When he was finished with her, he took the amulet, and since it had qualities useful for many adventurers, he made copies of it, which he sold throughout the land.
 
 STATISTICS:
@@ -208,7 +206,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1034 = ~Arrow +1~ //BG1: The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. These enchanted arrows will fly truer, thus having a greater chance of striking their target and doing more damage, and have the ability to strike opponents that are immune to normal weapons.
+@1034 = ~Arrow +1~ // BG1: The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. These enchanted arrows will fly truer, thus having a greater chance of striking their target and doing more damage, and have the ability to strike opponents that are immune to normal weapons.
 @1035 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long.~
 @1036 = ~The flight arrow, as its name implies, is built for distance. These are lightweight arrows and are often used for hunting. Most of these arrows are made of ash or birch and are 30 to 40 inches long. Magical enchantments guarantee these arrows improved accuracy and damage.
 
@@ -219,7 +217,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1037 = ~Arrow of Acid +2~ //BG1: This arrow is coated in acid so that when it strikes an enemy, it will not only pierce its flesh but also begin to eat away at the wound, enlarging and deepening its severity.
+@1037 = ~Arrow of Acid +2~ // BG1: This arrow is coated in acid so that when it strikes an enemy, it will not only pierce its flesh but also begin to eat away at the wound, enlarging and deepening its severity.
 @1038 = ~This arrow is coated in acid. When it strikes an enemy, it not only pierces flesh but also eats it away, enlarging and deepening the wound.
 
 STATISTICS:
@@ -232,7 +230,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1039 = ~Arrow of Biting~ //BG1: The Arrow of Biting was designed as a deadly complement to the archer. The barbed arrow tip has been coated in a nasty poison that will infiltrate the bloodstream of its victims, causing agony and oft-times, death.
+@1039 = ~Arrow of Biting~ // BG1: The Arrow of Biting was designed as a deadly complement to the archer. The barbed arrow tip has been coated in a nasty poison that will infiltrate the bloodstream of its victims, causing agony and oft-times, death.
 @1040 = ~The Arrow of Biting was designed as a deadly compliment to the archer. Poison smeared on the barbed arrowhead infiltrates the bloodstream of its victims, causing agony and often death.
 
 STATISTICS:
@@ -250,13 +248,13 @@ Launcher: Bow~
 STATISTICS:
 
 Combat Abilities:
- Explosion: 6D6 fire damage within 30' (save vs. breath half)
+ Explosion: 6D6 fire damage to those within 30' (save vs. breath half)
 
 Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1043 = ~Arrow of Dispelling +1~ //BG1: The arrow of dispelling will remove the magical enchantments that its victim is surrounded by. //BG2: This arrow will remove the magical enchantments that its victim is surrounded by.
+@1043 = ~Arrow of Dispelling +1~ // BG1: The arrow of dispelling will remove the magical enchantments that its victim is surrounded by. // BG2: This arrow will remove the magical enchantments that its victim is surrounded by.
 @1044 = ~The Arrow of Dispelling will remove all magical enchantments affecting its target.
 
 STATISTICS:
@@ -269,7 +267,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1045 = ~Arrow of Fire +1~ //BG2: This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
+@1045 = ~Arrow of Fire +1~ // BG2: This is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set to flame.
 @1046 = ~The Arrow of Fire is a magical arrow that will burst into flames as it is fired at an enemy. The effect is similar to an arrow doused in oil and set aflame.
 
 STATISTICS:
@@ -282,7 +280,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1047 = ~Arrow of Ice +1~ //BG2: This arrow is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
+@1047 = ~Arrow of Ice +1~ // BG2: This arrow is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
 @1048 = ~The Arrow of Ice is magically enhanced so as to burst into a rolling ball of ice and cold when fired. When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
 
 STATISTICS:
@@ -295,7 +293,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1049 = ~Arrow of Piercing +3~ //BG1: The Arrow of Piercing is long and thin, imbued with powerful magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
+@1049 = ~Arrow of Piercing +3~ // BG1: The Arrow of Piercing is long and thin, imbued with powerful magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
 @1050 = ~This arrow is long and thin, imbued with magical properties that allow it to 'push' itself through armor, striking out towards the heart of the victim.
 
 STATISTICS:
@@ -308,7 +306,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1051 = ~Arrow +2~ //These arrows were enhanced through magical means when they were created. They appear slightly straighter than the average arrow, and almost alive as they effortlessly leave your bow and streak towards their target with deadly accuracy.
+@1051 = ~Arrow +2~
 @1052 = ~This arrow was enhanced through magical means when it was created. It appears slightly straighter than the average arrow, and almost alive as it effortlessly leaves your bow and streaks towards its target with deadly accuracy.
 
 STATISTICS:
@@ -318,7 +316,7 @@ Damage: 1D6
 Damage Type: Missile
 Weight: 0
 Launcher: Bow~
-@1053 = ~Arrow +3~ //These enchanted missiles far surpass the craftsmanship of any arrow, magical or otherwise, you have ever seen.
+@1053 = ~Arrow +3~
 @1054 = ~This enchanted missile far surpasses the craftsmanship of any arrow, magical or otherwise, you have ever seen.
 
 STATISTICS:
@@ -394,7 +392,8 @@ Not Usable By:
 STATISTICS:
 
 Damage: 1D6 + 1
-Damage Type: Missile
+Damage Type (Melee): Slashing
+Damage Type (Thrown): Missile
 Weight: 3
 Speed Factor: 4
 Proficiency Type: Axe
@@ -408,7 +407,8 @@ Not Usable By:
  Thief
  Beast Master~
 @1064 = ~Bala's Axe~
-@1065 = ~Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a cruel elven mage in Thesk. Though Bala managed to escape the more cowardly traits of his race, he was even more filthy and obnoxious than the average gully dwarf. Sickened by his enslavement, Bala crept into the mage's lair and cracked the elf's skull open. Although rumor has it that it was the dwarf's stench which overcame the mage, it was, in fact, his enchanted axe that dispelled the elf's magical defenses. It is obvious from the poor workmanship that Bala himself crafted the axe. The mystery lies in where its power originates, especially considering a detect magic spell reveals the axe has no magical properties. After a lengthy career of mage slaying, Bala died, never having revealed his secret to those who were willing to risk a lice infestation by approaching him. Some say that the axe was powered by Bala's intense hatred of wizards.
+@1065 = ~Wizard Slayer
+Bala was a foul-tempered prince of a gully dwarf clan, which was enslaved by a cruel elven mage in Thesk. Though Bala managed to escape the more cowardly traits of his race, he was even more filthy and obnoxious than the average gully dwarf. Sickened of his enslavement, Bala crept into the mage's lair and cracked the elf's skull open. Although rumor has it that it was the dwarf's stench that overcame the mage, it was, in fact, his enchanted axe that dispelled the elf's magical defenses. It is obvious from the poor workmanship that Bala himself crafted the axe. The mystery lies in where its power originates. After a lengthy career of mage-slaying, Bala died, never having revealed his secret to those who were willing to risk a lice infestation by approaching him. Some say that the axe was powered by Bala's intense hatred of wizards.
 
 STATISTICS:
 
@@ -491,8 +491,8 @@ NOTE: Azuredge is always considered to be of +3 enchantment when determining wha
 STATISTICS:
 
 Combat Abilities:
- Disruption: undead creatures are destroyed (save vs. spell neg.)
  Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
+ Disruption: undead creatures are destroyed (save vs. spell neg.)
  Returning: returns to the wielder's hand instantly after an attack is made
 
 THAC0: +1 bonus
@@ -572,7 +572,7 @@ Equipped Abilities:
 THAC0: +4 bonus
 Damage: 1D8 + 4
 Damage Type: Slashing
-Weight: 7
+Weight: 6
 Speed Factor: 3
 Proficiency Type: Axe
 Type: One-Handed
@@ -588,7 +588,7 @@ Not Usable By:
 @1080 = ~Lonesome Road
 This was the weapon of a cursed soul, doomed to wander the length and breadth of Faerûn for his crimes against the elves of Myth Drannor. Denell Harband was a human involved with the creation of the "Halfaxe Trail." Under the orders of his commander, Halvan the Dark, he forged ahead through elven forests despite protests and repeated attacks. When he was finally captured by the elves, he stated emphatically that he was free of guilt because he was just following his orders. The elven council deemed that Denell be placed under a High Geas to carry his axe from the Sword Coast of Faerûn to its borders in the east, and from the Great Glacier to Lurien. It took Denell thirty years to complete his task. When he finished, he was an accomplished warrior, weathered and beaten by years on foreign roads. On his way back to his home, he passed by Harrowdale and saw a wooden statue of Halvan the Dark raised proudly in a small town square. With a single-handed blow, he lodged his huge axe into Halvan's forehead. Never breaking stride, he decided to extend his never ending journey indefinitely, and he was last seen disappearing in the deepest caverns beneath the Marching Mountains.
 
-Enhanced by the magic of the Baalor's Claw, the Axe of the Unyielding is now a most fearsome weapon - a vorpal-edged axe capable of severing an opponents head with a single blow.
+Enhanced by the magic of the Baalor's Claw, the Axe of the Unyielding is now a most fearsome weapon - a vorpal-edged axe capable of severing an opponent's head with a single blow.
 
 STATISTICS:
 
@@ -602,7 +602,7 @@ Combat Abilities:
 THAC0: +5 bonus
 Damage: 1D8 + 5
 Damage Type: Slashing
-Weight: 7
+Weight: 6
 Speed Factor: 2
 Proficiency Type: Axe
 Type: One-Handed
@@ -663,8 +663,8 @@ Not Usable By:
 @1085 = ~Girdle~
 @1086 = ~Golden Girdle~
 @1087 = ~Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.~
-@1088 = ~Swordsman's Belt
-To honor those warriors who accomplish great deeds within the ranks of the Purple Dragon Knights, King Azoun IV had the Royal Magician Vangerdahast create several of these belts. His daughter, Alusair, now continues that tradition, occasionally offering these belts to entice proven adventurers into joining the ranks of the Purple Dragons.
+@1088 = ~Golden Girdle of Urnst
+Created to protect a powerful wizard against malevolent warriors, this magical garment is made of red silk strewn with golden flakes. It is enchanted to give limited protection against slashing weapons of any type.
 
 STATISTICS:
 
@@ -676,7 +676,7 @@ Not Usable By:
  Wizard Slayer~
 @1089 = ~Girdle of Bluntness~
 @1090 = ~Destroyer of the Hills
-Having lost friends and loved ones to a series of raids by hill giants, Garrar the Powerful made it his mission to cleanse his homeland of their presence. It is not known where he acquired this item, but with it he singlehandedly dispatched dozens of the creatures, all the while protected from the blows of their clubs. The surviving giants fled to neighboring lands.
+Having lost friends and loved ones to a series of raids by hill giants, Garrar the Powerful made it his mission to cleanse his homeland of their presence. It is not known where he acquired this item, but with it he single-handedly dispatched dozens of the creatures, all the while protected from the blows of their clubs. The remaining giants fled to neighboring lands, lands that lacked a similar champion and did not fare as well.
 
 STATISTICS:
 
@@ -687,7 +687,8 @@ Weight: 1
 Not Usable By:
  Wizard Slayer~
 @1091 = ~Girdle of Piercing~
-@1092 = ~The life of a swashbuckler is full of bravery, grand adventure, and epic fencing duels. Aside from being remarkably good-looking, this belt allow the wearer to dodge opponent's strikes with great flair. Highly prized by thieves and mages alike, belts such as this allow even a relatively inexperienced adventurer to avoid the thrusting attacks of an assassin's dagger or a bandit's short sword.
+@1092 = ~Elves' Bane
+An infamous highwayman in his day, Pandar of Scardale made quite a name for himself vexing the elves of Cormanthor forest. To their annoyance, he continually used the wood to escape the law, and with the aid of this girdle, the elves' arrows as well. Unfortunately for Pandar, pit-traps and starvation proved a slower, but effective, substitution.
 
 STATISTICS:
 
@@ -696,7 +697,7 @@ Armor Class: +4 bonus vs. piercing weapons
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1093 = ~Girdle of Beatification~
+@1093 = ~Girdle of Beatification~ // BG2: Girdle of Hill Giant Strength: This plain belt makes the wearer as strong as a hill giant, but does not make him or her giant size. Many a cocky warrior has been surprised by a much smaller opponent with remarkable strength. More often than not, a belt such as this is the reason.
 @1094 = ~Priests of the Red Knight in the Citadel of Strategic Militancy, just north of Baldur's Gate, consecrated this belt and gave it to the warrior Thom Wainwright, who had performed a number of great services for the Order of the Red Falcons. Thom wore the girdle proudly until he fell into severe debt in his later years. To his undying regret, he auctioned it off to a well-known priest of Tempus.
 
 STATISTICS:
@@ -709,7 +710,7 @@ NOTE: Multiple Bless effects are not cumulative.
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1095 = ~Girdle of Priestly Might~
+@1095 = ~Girdle of Priestly Might~ // BG2: Girdle of Stone Giant Strength: As a young boy, Stewart Elttil was kidnapped by raiding kobolds after his family was slain. However, en route to their den, the kobolds surprised a family of stone giants. These giants rescued Stewart and raised him as their own. It soon became apparent that the boy, no matter how hard he tried, could not compete in the family rock-throwing contests. The stone giant father bartered with a local wizard for this girdle, which made Stewart as strong as his brothers and sisters. When Stewart met an untimely end, the girdle was stolen away.
 @1096 = ~These items first appeared after the Time of Troubles, and Priests of Mystra took it to be a sign that the goddess had regained her power. It is not known exactly how many other girdles of this type have appeared in the Realms. Given the new, more active stance that powers have been forced to take in the Realms, it is thought that there may be more than a few of these items, and that many deities may have granted such girdles to their more devoted and powerful followers.
 
 STATISTICS:
@@ -721,7 +722,7 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1097 = ~Girdle of Giant Strength~
+@1097 = ~Girdle of Giant Strength~ // BG2: Girdle of Frost Giant Strength: This belt is actually the woven hair from a frost giant's beard. When worn, the belt greatly increases the wearer's strength, making him or her as strong as a frost giant.
 @1098 = ~As a young boy, Stewart Elttil was kidnapped by raiding kobolds after his family was slain. However, en route to their den the kobolds surprised a family of stone giants. These giants rescued Stewart and raised him as their own. It soon became apparent that the boy, no matter how hard he tried, could not compete in the family rock throwing contests. The stone giant father bartered with a local wizard for this girdle, which made Stewart as strong as his brothers and sisters. When Stewart met an untimely end, the girdle was stolen away.
 
 STATISTICS:
@@ -732,7 +733,7 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1099 = ~Girdle of Trollish Fortitude~
+@1099 = ~Girdle of Trollish Fortitude~ // BG2: Girdle of Fortitude
 @1100 = ~This girdle greatly increases the wearer's constitution. King Violos used it when leading an expedition against marsh trolls. He'd been severely sickened the previous winter and was no longer the healthy man he once was. The belt gave extra years to his life and inspired his men to renew their confidence in their king once more.
 
 STATISTICS:
@@ -746,8 +747,8 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1101 = ~Belt of Inertial Barrier~
-@1102 = ~When worn, this belt creates a dense curtain of air around the wearer, forming a barrier which provides superior protection against breath attacks as well as missile weapons. The barrier is not strong enough to keep enemies out, but it can slow them a bit. By the scorch marks on the worn leather, it is obvious that this belt has been worn at least once against a dragon.
+@1101 = ~Belt of Inertial Barrier~ // BG2: When worn, this belt creates a dense curtain of air around the wearer. This curtain, or barrier, provides superior protection against breath attacks as well as magic. By the scorch marks on the worn leather, it is obvious that this belt has been worn at least once against a dragon.
+@1102 = ~When worn, this belt creates a dense curtain of air around the wearer. This curtain, or barrier, provides superior protection against breath attacks as well as missile weapons. The barrier is not strong enough to keep enemies out, but it can slow them down a bit. By the scorch marks on the worn leather, it is obvious that this belt has been worn at least once against a dragon.
 
 STATISTICS:
 
@@ -759,7 +760,7 @@ Equipped Abilities:
 Weight: 1
 Not Usable By:
  Wizard Slayer~
-@1103 = ~Girdle of the Champion~
+@1103 = ~Girdle of the Champion~ // BG2: Girdle of Fire Giant Strength: This belt is actually the woven hair from a fire giant's beard. When worn the belt greatly increases the wearer's strength.
 @1104 = ~Graena's Triumph
 The famous barbarian explorer Graena was a member of the Sky Pony tribe of the Uthgardt northerners. When she tried to leave the tribe to seek her fortune in southern lands, the elders of the tribe told her she could not leave. At that time, only men were allowed to leave the tribe. The elders believed women were too valuable to let go. In order to prove herself to the elders, Graena had to run a gauntlet of the strongest warriors in the tribe and wrest the belt of the head warrior from his body. Graena underwent the challenge and emerged bloody and broken, but victorious. According to tribal law, she was now the head warrior of the tribe and effectively male. The elders knew she was going to leave, but they gave her a warrior's name, Graena Blood-Has-Dried. She left the tribe, relinquished her position to the old head warrior, and returned his belt to him. But before she left, she swore to never harm a member of the tribe if she encountered one in the future.
 
@@ -936,8 +937,8 @@ NOTE: The Root of the Problem is always considered to be of +3 enchantment when 
 STATISTICS:
 
 Combat Abilities:
- Entangling: target is entangled for 1 round (save vs. breath neg.)
  Monster Bane: +3 bonus to THAC0 and +5 bonus to damage against monsters
+ Entangling: target is entangled for 1 round (save vs. breath neg.)
 
 THAC0: +1 bonus
 Damage: 1D6 + 1
@@ -960,8 +961,8 @@ NOTE: Mace of Disruption is always considered to be of +3 enchantment when deter
 STATISTICS:
 
 Combat Abilities:
- Disruption: undead creatures are destroyed (save vs. spell neg.)
  Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
+ Disruption: undead creatures are destroyed (save vs. spell neg.)
 
 THAC0: +1 bonus
 Damage: 1D6 + 2
@@ -1095,8 +1096,8 @@ STATISTICS:
 
 Combat Abilities:
  Bone Breaking: target suffers a -3 penalty to maximum hit points for 1 turn
- Crushing Blow: 15% chance of dealing 3D8 crushing damage
  Human Bane: +3 bonus to THAC0 and +5 bonus to damage against humanoids
+ Crushing Blow: 15% chance of dealing 3D8 crushing damage
 
 THAC0: +1 bonus
 Damage: 1D6 + 2
@@ -1202,8 +1203,8 @@ NOTE: Bone Club is always considered to be of +3 enchantment when determining wh
 STATISTICS:
 
 Combat Abilities:
- Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
  Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
+ Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
 
 THAC0: +1 bonus
 Damage: 1D6 + 1
@@ -1248,8 +1249,8 @@ Equipped Abilities:
  Spell: Negative Plane Protection
 
 Combat Abilities:
- Disruption: undead creatures are destroyed (save vs. spell neg.)
  Undead Bane: +3 bonus to THAC0 and +5 bonus to damage against undead
+ Disruption: undead creatures are destroyed (save vs. spell neg.)
 
 THAC0: +2 bonus
 Damage: 1D6 + 3
@@ -1283,7 +1284,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Fiery: target suffers 1D6 fire damage
- Detonation: 5% chance of dealing 6D6 fire damage to target and opponents within 15' (save vs. breath half)
+ Detonation: 5% chance of dealing 6D6 fire damage to those within 20' (save vs. breath half)
 
 THAC0: +4 bonus
 Damage: 1D6 + 4
@@ -1317,7 +1318,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Fiery: target suffers 1D8 fire damage
- Detonation: 15% chance of dealing 6D6 fire damage to target and opponents within 15' (save vs. breath half)
+ Detonation: 15% chance of dealing 6D6 fire damage to target and opponents within 20' (save vs. breath half)
 
 THAC0: +5 bonus
 Damage: 1D6 + 5
@@ -1371,8 +1372,8 @@ Equipped Abilities:
 
 Combat Abilities:
  Shocking: target suffers 1D8 electrical damage
- Chain Lightning: 15% chance lightning leaps at the target dealing 6D6 electrical damage before arcing towards other enemies within 30' who suffer 3D6 electrical damage
  Lightning Shield: creatures who strike the wielder are struck by lightning for 1D6 electrical damage
+ Chain Lightning: 15% chance lightning leaps at the target dealing 6D6 electrical damage before arcing towards other enemies within 30' who suffer 3D6 electrical damage
 
 THAC0: +5 bonus
 Damage: 1D6 + 6
@@ -1557,6 +1558,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Bitter Cold: target suffers 1D3 cold and piercing damage
+ Frozen Doom: 15% chance target is turned to ice and dies (save vs. polymorph for 1 round hold and 3D6 cold damage)
 
 THAC0: +4 bonus
 Damage: 2D4 + 4
@@ -1605,7 +1607,7 @@ Damage: 1D8
 Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
-@1186 = ~Bolt of Biting~ //BG1: The bolt of biting was designed as a deadly compliment to the crossbow. Its barbed tip is coated in a nasty poison that will infiltrate the bloodstream of its victims causing agony and oft-times, death. //BG2: This bolt was designed as a deadly complement to the crossbow. Poison smeared on its barbed tip infiltrates the bloodstream of its victims, causing agony and often death. //BG2: The Bolt of Biting was designed as a deadly compliment to the crossbow. With the barbed tip coated in a nasty poison, it will infiltrate the bloodstream of its victims causing agony and oft-times, death.
+@1186 = ~Bolt of Biting~ // BG1: The bolt of biting was designed as a deadly compliment to the crossbow. Its barbed tip is coated in a nasty poison that will infiltrate the bloodstream of its victims causing agony and oft-times, death. // BG2: The Bolt of Biting was designed as a deadly compliment to the crossbow. With the barbed tip coated in a nasty poison, it will infiltrate the bloodstream of its victims causing agony and oft-times, death.
 @1187 = ~The Bolt of Biting was designed as a deadly complement to the crossbow. Poison smeared on its barbed tip infiltrates the bloodstream of its victims, causing agony and often death. 
 
 STATISTICS:
@@ -1617,7 +1619,7 @@ Damage: 1D8
 Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
-@1188 = ~Bolt +2~ //BG2: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target. It will strike its target more easily and do more damage, and can strike opponents that are immune to normal weapons. //BG2: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.
+@1188 = ~Bolt +2~ // BG1: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target. // BG2: Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size. However, this bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target. It will strike its target more easily and do more damage, and can strike opponents that are immune to normal weapons.
 @1189 = ~This bolt has been imbued with magical properties which enhances performance in flight, almost as if the bolt was guided towards its target.
 
 STATISTICS:
@@ -1627,7 +1629,7 @@ Damage: 1D8
 Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
-@1190 = ~Bolt +3~ //These enchanted missiles far surpass the craftsmanship of any bolt, magical or otherwise, you have ever seen.
+@1190 = ~Bolt +3~
 @1191 = ~This enchanted missile far surpasses the craftsmanship of any bolt, magical or otherwise, you have ever seen.
 
 STATISTICS:
@@ -1638,7 +1640,7 @@ Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
 @1192 = ~Boots~
-@1193 = ~Boots of Speed~
+@1193 = ~Boots of Speed~ // BG1/BG2: These enchanted boots were once the property of a deadly assassin fond of chasing down his prey. He moved with such speed that his targets often didn't have the opportunity to respond, even on horseback. Over time, the assassin's fame spread, and though his name was never known, all knew to fear the words last heard by his victims: "You can hide, but you cannot run!"
 @1194 = ~Boots are normally hand-made by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.~
 @1195 = ~The Paws of the Cheetah
 These enchanted boots were once the property of a deadly Sword Coast assassin who purportedly moved with such speed that his targets often didn't have the opportunity to respond, even if on horseback. Over time the assassin's fame spread, and though his name was never known, all knew to fear the words last heard by his victims: "You can hide, but you cannot run!". These boots were the source of his ability, though it is also believed that he formed an elite guild wherein each member was equipped identically, thus explaining why he was not just fast, but could seemingly appear in several places at once.
@@ -1679,8 +1681,8 @@ Weight: 2
 Usable By:
  All~
 @1200 = ~Boots of Avoidance~
-@1201 = ~Elves' Bane
-An infamous highwayman in his day, Pandar of Scardale made quite a name for himself vexing the elves of Cormanthor forest. To their annoyance, he continually used the wood to escape the law; and with the aid of these boots, the elves' arrows as well. Unfortunately for Pandar, pit-traps and starvation proved a slower, but effective, substitute.
+@1201 = ~Senses of the Cat
+The magic of these boots was specifically designed to detect incoming missiles and aid the wearer in avoiding them. They were originally commissioned by the instructor of an archery academy, who had tired of suffering 'accidents' at the hands of his inexperienced students.
 
 STATISTICS:
 
@@ -1702,7 +1704,7 @@ Equipped Abilities:
 Weight: 3
 Usable By:
  All~
-@1204 = ~Boots of Elvenkind~
+@1204 = ~Boots of Elvenkind~ // BG2: These soft boots make the wearer move as silently as the woodland elves. Thieves love to get their hands on these boots, but the elves are reluctant about exporting them, fearful that they may be used for illegal purposes.
 @1205 = ~Several pairs of this type of boots were made for elven battalions during the Year of Singing Arrows, 884 DR. These boots allow their wearer to walk freely and silently among the briars and thorns of the most dense forests, and the scouts equipped with this stealthy footwear turned the tide of at least two major battles against Sembian mercenaries. Thieves love to get their hands on these boots, but the elves are reluctant about exporting them, fearful that they may be used for illegal purposes.
 
 STATISTICS:
@@ -1717,8 +1719,8 @@ Usable By:
  Monk
  Ranger
  Thief~
-@1206 = ~Boots of Phasing~
-@1207 = ~This item is cursed and can only be removed with a magical spell. Whether by mistake or malicious purposes the creator of these boots enchanted them with dangerous magic. When worn the wearer is constantly teleported from opponent to opponent, until either the wearer or all opponents in sight are slain. However, due to the boots' ability to phase striking the wearer becomes much more difficult.
+@1206 = ~Boots of Phasing~ // BG2: This item is cursed and can only be removed with a remove curse spell. Whether by mistake or malicious purposes, the creator of these boots enchanted them with dangerous magic. When, the wearer is constantly teleported from opponent to opponent, until either the wearer or all opponents in sight are slain. However, due to the boots' ability to phase the wearer receives a +2 AC bonus.
+@1207 = ~This item is cursed and can only be removed with magic. Whether by mistake or malicious purposes, the creator of these boots enchanted them with dangerous magic. When worn, the wearer is constantly teleported from opponent to opponent, until either the wearer or all opponents in sight are slain. However, due to the boots' ability to phase, striking the wearer becomes much more difficult.
 
 STATISTICS:
 
@@ -1731,14 +1733,14 @@ Equipped Abilities:
 Weight: 2
 Usable By:
  All~
-@1208 = ~Boots of Etherealness~
+@1208 = ~Boots of Etherealness~ // BG2: Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any mage to become intangible to attacks while devastating an opponent with offensive magic.
 @1209 = ~Boots of the Plane Strider
 Said to be sewn together from scraps of the planes themselves, these strange boots not only grant their user the ability to shift from the Material Plane to the Ethereal Plane, but allow the wearer to remain anchored to whichever Plane he wishes. Why these boots were ever made has long been the subject of speculation among the sages of Candlekeep. Some suggest that a certain noblewoman was gifted them by an ethereal lover, so that she could join him for a tryst. Others simply point out that the boots are useful for any plane-traveling adventurer.
 
 STATISTICS:
 
 Special Abilities:
- Etherealness (1x per day): for 5 rounds, the wearer is effectively invulnerable, cannot be seen, and regenerates 2 hp/second, but cannot attack or use abilities
+ Etherealness (1x per day): the wearer is effectively invulnerable, cannot be seen, and regenerates 2 hp/second, but cannot attack or use abilities for 5 rounds
 
 Equipped Abilities:
  Dimensional Anchor: wearer is unaffected by Teleport Field, Maze, Imprisonment, and other similar effects
@@ -1751,11 +1753,11 @@ Usable By:
 
 STATISTICS:
 
-Special Abilities:
- Stoneskin (3x per day): 1 turn
-
 Equipped Abilities:
  Protects Against: Backstabs
+ Gargoyle Skin: 5 stoneskins are generated per turn
+
+NOTE: Multiple Stoneskin effects are not cumulative.
 
 Weight: 2
 Usable By:
@@ -2073,7 +2075,7 @@ NOTE: Tansheron's Bow requires no ammunition, but normal arrows cannot be fired 
 STATISTICS:
 
 Combat Abilities:
- Phantom Arrow: 50% chance target flees in terror for 2 rounds (save vs. spell neg.)
+ Phantom Arrow: target either flees or is frozen in terror for 1 round (save vs. spell neg.)
 
 THAC0: +3 bonus
 Damage: 1D6
@@ -2090,7 +2092,7 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@1245 = ~Composite Long Bow +2~ //This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This magical bow requires great strength to use.
+@1245 = ~Composite Long Bow +2~ // BG2: This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality. This magical bow requires great strength to use.
 @1246 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
@@ -2282,7 +2284,7 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@1261 = ~Composite Long Bow +3~ //This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
+@1261 = ~Composite Long Bow +3~ // BG2: This long bow is marked with the seal of a sunburst. It was probably once used by guards in the service of the god Amaunator. These guards would use enchanted bows to keep the priests of that long dead faith safe. Few of these bows still exist, so they are sought after by many archers looking to improve both their accuracy and their lethality.
 @1262 = ~Composite bows are long bows or short bows whose staves are made from more than one type of material. This gives greater flexibility, and makes arrows fired from such bows deliver more damage. This magical bow requires requires great strength to use.
 
 STATISTICS:
@@ -2362,7 +2364,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1273 = ~Bracers of Defense AC 6~
+@1273 = ~Bracers of Defense AC 6~ // BG1: Bracers to the Death: These bracers were held for decades by an undefeated gladiator, and found extensive use in arena combat. The death of this champion marked the disappearance of this magical item, but rumors persist that they are used to this day in competitive combat across the lands.
 @1274 = ~Bracers are thick bands of metal or leather that are strapped, belted, or tied to a character's forearm. These magical bracers surround the wearer with an invisible but tangible field of force, granting him AC 6, just as though he were wearing armor. Both bracers must be worn for the magic to be effective.
 
 STATISTICS:
@@ -2374,7 +2376,7 @@ Not Usable By:
  Wizard Slayer~
 @1275 = ~Bracers of Archery~
 @1276 = ~The Dale's Protector
-During a dangerous meeting with a rival ruler, the King of the Great Dale requested the protection of his best archers in addition to his usual guard. The archers, each equipped with an enchanted bow and bracers, hid within range of the gathering. As predicted, enemy troops attempted to seize the King, but none had anticipated the amazing accuracy and lethality of the hidden archers. The King was able to escape unharmed; in fact, none of the ambush members even lived to approach him.
+During a dangerous meeting with a rival ruler, the King of the Great Dale requested the protection of his best archers in addition to his usual guard. The archers, each equipped with an enchanted bow and bracers, hid within range of the gathering. As predicted, enemy troops attempted to seize the King and force their will over his rule, but none had anticipated the amazing accuracy and lethality of the hidden archers. The King was able to escape unharmed; in fact, none of the ambush members even lived to approach him. 
 
 STATISTICS:
 
@@ -2389,7 +2391,8 @@ Not Usable By:
 @1277 = ~Gauntlets~
 @1278 = ~Gauntlets of Ogre Power~
 @1279 = ~Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.~
-@1280 = ~While these magical items have been around for thousands of years, their popularity never seems to decrease. Recently, a party of adventurers out of Calimshan uncovered a vast treasure trove, filled with magical items like these. The sudden influx of magical gauntlets does not seem to have decreased their value, as every adventurer across the land clamors for the assistance of these useful artifacts.
+@1280 = ~Hands of Takkok
+The Hands of Takkok are exactly that: his very hands. He lost them when he attacked a strange man crossing the Spine of the World. The mysterious man turned out to be a mage of incredible power, and he used Takkok's hands to create this pair of ogre skin gauntlets.
 
 STATISTICS:
 
@@ -2413,7 +2416,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1283 = ~Gauntlets of Parrying~
+@1283 = ~Gauntlets of Parrying~ // BG1/BG2: Gauntlets of Weapon Skill: Xarrnous' Second Sword Arm: Perhaps the most well-known owner of these gauntlets was a mercenary, named Xarrnous. He specialized in smuggling, and frequently loaned these gauntlets to clients if they were to travel with him. In his eyes, an extra sword arm was always handy.
 @1284 = ~Gauntlets of Swordplay
 It was the infamous swashbuckler, Eisneid Clume, who first requested magical assistance to help her parrying ability. She had been run through in seven duels before she had the gauntlets made. Once the gauntlets were in her possession, Eisneid won over thirty duels without a single scratch. Finally, word of her magical assets leaked out, and the level of swordplay in Hillsfar increased dramatically.
 
@@ -2441,7 +2444,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1287 = ~Bracers of Defense AC 5~
-@1288 = ~Sometimes known as the Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five, but the weight of his armor was getting harder and harder to bear. His companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
+@1288 = ~Baron Tiri of the North commanded ten of these bracers to be made, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would-be attackers. Of course, Baron Tiri himself never wore a set of bracers and it was this unfortunate oversight that led to his death at the hands of an assassin's poison dagger.
 
 STATISTICS:
 
@@ -2450,7 +2453,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@128800000 = ~Sometimes known as the Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five, but the weight of his armor was getting harder and harder to bear. His companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
+@128800000 = ~Baron Tiri of the North commanded ten of these bracers to be made, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would-be attackers. Of course, Baron Tiri himself never wore a set of bracers and it was this unfortunate oversight that led to his death at the hands of an assassin's poison dagger.
 
 STATISTICS:
 
@@ -2460,7 +2463,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1289 = ~Bracers of Defense AC 4~
-@1290 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
+@1290 = ~Sometimes known as Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five but the weight of his armor was getting harder and harder to bear. A companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
 
 STATISTICS:
 
@@ -2469,7 +2472,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@129000000 = ~Baron Tiri of the North requisitioned ten of these bracers, one for each of his bodyguards. The Baron thought it amusing when bandits - thinking them easy targets for they wore no armor - would attack him and his men as they made excursions across the land. The Guards of Tiri swiftly dealt with the would be attackers. Of course, Baron Tiri himself never wore a set of bracers, and it was this unfortunate oversight that led to his death at the hands of an assassin's poisoned dagger.
+@129000000 = ~Sometimes known as Gauntlets of Chain Mail, these bracers were first worn by Tapid Gornoak. He was still an active warrior at the age of seventy-five but the weight of his armor was getting harder and harder to bear. A companion, the sorceress Nadalarin, created these bracers for him. She also cast a permanent illusion over him so that his men would think he still wore his heavy chain. Tapid died twenty years later, his hands wrapped around the neck of an orc chief when old age took him.
 
 STATISTICS:
 
@@ -2479,7 +2482,7 @@ Not Usable By:
  Kensai
  Wizard Slayer~
 @1291 = ~Bracers of Defense AC 3~
-@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies who watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush Glen forget to don his bracers. Glen died with a confused grin on his face after the knight's sword struck him, never knowing his own folly.
+@1292 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor -  he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
 
 STATISTICS:
 
@@ -2488,7 +2491,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@129200000 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies who watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush Glen forget to don his bracers. Glen died with a confused grin on his face after the knight's sword struck him, never knowing his own folly.
+@129200000 = ~Grinning Glen, the Knight of Fools, wore these bracers while competing in jousting tourneys. With his skill, charm, and bravado - no man other than he would joust without armor - he soon became a favorite to the ladies that watched the events. Too much of a favorite it would seem, for one afternoon he was caught frolicking with a knight's betrothed. A challenge was issued, but in his rush, Glen forget to don his bracers. Glen died with a confused grin on his face as the knight's sword struck him, never knowing his own folly.
 
 STATISTICS:
 
@@ -2497,8 +2500,8 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1293 = ~Bracers of the Blinding Strike~
-@1294 = ~Ardulia the Agile often said, 'Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours.' He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+@1293 = ~Bracers of the Blinding Strike~ // BG2: Knight Wesic of the Most Noble Order of the Radiant Heart often said, "attack swiftly and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in righteous battle, he would unlock the magic of the Blinding Strike and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+@1294 = ~Ardulia the Agile often said, "Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
 
 STATISTICS:
 
@@ -2510,7 +2513,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@129400000 = ~Ardulia the Agile often said, 'Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours.' He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
+@129400000 = ~Ardulia the Agile often said, "Attack swiftly, and your enemy will be so overwhelmed that the battle will be yours." He lived this principle through these bracers. Before engaging in battle, he would unlock the magic of these bracers and quickly rush at his enemy. More often than not, his opponent would fall within the first few seconds of battle.
 
 STATISTICS:
 
@@ -2522,7 +2525,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1295 = ~Gloves of the Rogue~
+@1295 = ~Gloves of the Rogue~ // BG2: Gloves of Pickpocketing: A few years back, Fong Moo, a famous cutpurse known in both Baldur's Gate and Athkatla, was found dead on the road between the Gate and Beregost. Seems he'd stolen an artifact from a powerful mage and tried escaping, with little success. His possessions went to a nephew, who took up the same trade as his uncle, and became especially good at pickpocketing. Whether these gloves were magical before falling into Fong's hands or if they are somehow imbued with the master's essence is not known.
 @1296 = ~The elderly Oghmanyte Milladolin found that age was affecting her and her fellows quite rapidly, causing their hands to shake and preventing them from performing many of their priestly duties. With Oghma's blessings, Milladolin created magical gloves that steadied their hands and heightened their muscle control. Years later, a young Oghmanyte was caught for thievery - guilty of using the gloves. Word spread, and soon the gloves themselves were stolen away.
 
 STATISTICS:
@@ -2537,12 +2540,12 @@ Weight: 1
 Usable By:
  Thief~
 @1297 = ~Gloves of Missile Snaring~
-@1298 = ~Foik Morur demonstrated the effectiveness of these gloves at a community fair near Beregost several years back. He paid a local archer to fire arrows at him. As the arrows approached, Foik's hands would move of their own accord, either knocking the arrow away or catching it. He earned more than a few pieces of gold for his troubles, and these earnings attracted some shadowy figures to Foik's tent that evening. The next morning Foik was found dead, and the gloves were missing.
+@1298 = ~Foik Morur demonstrated the effectiveness of these gloves at a community fair near Beregost several years back. He paid a local archer to fire arrows at him. As the arrows approached, Foik's hands would move of their own accord, either knocking the arrow away or catching it. He earned more than a few pieces of gold for his troubles, and these earnings attracted some shadowy figures to Foik's tent that evening. The next morning Foik was found dead and the gloves missing.
 
 STATISTICS:
 
 Equipped Abilities:
- Missile Deflection: deflects missile weapons
+ Missile Deflection: missile weapons are harmlessly deflected
  Off-Hand THAC0: -20 penalty
 
 NOTE: Magically created missiles like Melf's Acid Arrows, Flame Arrows, and Melf's Minute Meteors can be deflected, while magical projectiles like Lightning Bolts, Fireballs, and Magic Missiles cannot be.
@@ -2566,7 +2569,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1301 = ~Gauntlets of Healing~
+@1301 = ~Gauntlets of Healing~ // BG2: These gloves are usually given to novices of the Most Noble Order of the Radiant Heart who have yet to acquire the ability to cast spells. For anyone outside of the Order to wear these gloves is a rare honor.
 @1302 = ~Healing Hands
 These armored gloves are usually given to members of the Most Noble Order of the Radiant Heart to aid them in their duties. For anyone outside of the Order to wear these gloves is a rare honor.
 
@@ -2582,9 +2585,9 @@ Weight: 1
 Usable By:
  Cleric
  Paladin~
-@1303 = ~Gauntlets of Weapon Mastery~
+@1303 = ~Gauntlets of Weapon Mastery~ // BG2: Gauntlets of Extraordinary Specialization: These rarest of gauntlets are highly sought after by duelists, warriors, and fighters of all kinds.
 @1304 = ~Gauntlets to the Death
-These rarest of gauntlets are highly sought after by duelists, warriors, and fighters of all kinds. They were held for decades by an undefeated gladiator, and found extensive use in arena combat. The death of this champion marked the disappearance of his magical gauntlets, but rumors persist that they are used to this day in competitive combat across the lands.
+These rarest of gauntlets are highly sought after by duelists, warriors, and fighters of all kinds. These gauntlets were held for decades by an undefeated gladiator, and found extensive use in arena combat. The death of this champion marked the disappearance of this magical item, but rumors persist that they are used to this day in competitive combat across the lands.
 
 STATISTICS:
 
@@ -2598,7 +2601,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@1305 = ~Paladin's Bracers~
+@1305 = ~Paladin's Bracers~ // BG2: Defenders of justice are ever eager to acquire another tool which may be used to thwart the machinations of evil. However, these particular gauntlets can only be worn by a warrior of the purest heart.
 @1306 = ~Durin d'Artham, one of the most devoted paladins of Lathander, lay on his deathbed after decades of service to his god, and decided that he had not done enough to serve his god. Summoning the most accomplished spellcasters available, he begged them to bind his soul into a mighty pair of bracers for centuries to come, granting his strength and skill to those devoted to their deity. The spell worked, and Durin still serves warriors of the purest heart.
 
 STATISTICS:
@@ -2606,13 +2609,13 @@ STATISTICS:
 Equipped Abilities:
  Saving Throws: +1 bonus
  THAC0: +1 bonus
- Maximum Hit Points: +5 bonus
+ Maximum Hit Points: +10 bonus
 
 Weight: 1
 Usable By:
  Cleric
  Paladin~
-@1307 = ~Blessed Bracers~
+@1307 = ~Blessed Bracers~ // BG2: The willing sacrifice of a vast fortune in gold, combined with the holy venerations of the sanctifying ceremony, have convinced the blessed powers to transform these already formidable gauntlets into gloves of awesome righteous power.
 @1308 = ~Durin d'Artham, one of the most devoted paladins of Lathander, lay on his deathbed after decades of service to his god, and decided that he had not done enough to serve his god. Summoning the most accomplished spellcasters available, he begged them to bind his soul into a mighty pair of bracers for centuries to come, granting his strength and skill to those devoted to their deity. The spell worked, and Durin still serves warriors of the purest heart.
 
 The willing sacrifice of a vast fortune in gold, combined with the holy venerations of the sanctifying ceremony, have convinced the blessed powers to transform these already formidable gauntlets into gloves of awesome righteous power.
@@ -2632,7 +2635,7 @@ Weight: 1
 Usable By:
  Cleric
  Paladin~
-@1309 = ~Bard's Gloves~
+@1309 = ~Bard's Gloves~ // BG2: These leather gloves do not appear to have any special properties, though they are quite fashionable.
 @1310 = ~Maynard, a young genius of a bard (but with little wisdom to spare), found himself the victim of theft when the magic gloves that enhanced his memory were stolen. Instead of outwitting the rogues, Maynard simply recreated the gloves - over and over again. The finished product was stolen each time, and this eventually evolved into an odd working partnership, though never once did Maynard realize he was in business supplying his wondrous Bard's Gloves.
 
 STATISTICS:
@@ -2643,7 +2646,7 @@ Equipped Abilities:
 Weight: 1
 Usable By:
  Bard~
-@1311 = ~Wondrous Gloves~
+@1311 = ~Wondrous Gloves~ // BG2: These gem-studded leather gloves are enchanted so as to augment the skills of any bard.
 @1312 = ~Maynard, a young genius of a bard (but with little wisdom to spare), found himself the victim of theft when the magic gloves that enhanced his memory were stolen. Instead of outwitting the rogues, Maynard simply recreated the gloves - over and over again. The finished product was stolen each time, and this eventually evolved into an odd working partnership, though never once did Maynard realize he was in business supplying his wondrous Bard's Gloves.
 
 These gem-studded leather gloves have been further echanted so as to augment the skills of any bard.
@@ -2657,7 +2660,7 @@ Equipped Abilities:
 Weight: 1
 Usable By:
  Bard~
-@1313 = ~Bands of Focus~
+@1313 = ~Bands of Focus~ // BG2: Tzu-Zan's Bracers: Although monks traditionally shun armor, these gauntlets of Grandmaster Tzu-Zan are highly sought after by the practitioners of weaponless combat.
 @1314 = ~Bands of the Master
 When the last kensai of Kamjin-Doh, the Master of Razors, was slain in the fields of western Kara-Tur, these simple leather bands were ripped from his arms... and his arms ripped from his shoulders... as punishment for his destruction of the Kamjin-Doh. The identities of those who defeated him are not known, but the rumors in Kara Tur were that his slayers were the spirits of three sword saints of Kamjin-Doh, returned from death to end the crimes of the renegade kensai.
 
@@ -2747,7 +2750,7 @@ Damage: 1D4 + 4
 Damage Type: Missile
 Weight: 0
 Launcher: Sling~
-@1326 = ~Bullet of Smiting +3~ //These bullets are especially dense and weigh twice as much as ordinary specimens. When launched, they seem to accumulate even more mass on their way to the target, finally smashing into the unlucky victim with the force of a swung mace.
+@1326 = ~Bullet of Smiting +3~
 @1327 = ~This bullet is especially dense and weighs twice as much as an ordinary specimen. When launched, it seems to accumulate even more mass on its way to the target, finally smashing into the unlucky victim with the force of a swung mace.
 
 STATISTICS:
@@ -3166,8 +3169,8 @@ Weight: 3
 Not Usable By:
  Wizard Slayer~
 @1376 = ~Cloak of Protection +2~
-@1377 = ~The Protector
-The royal guard of King Pyronan, ruler of Impiltur, were given cloaks such as this as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves regarding who should receive such cloak. After years of internal hostility, the mantles were lost and the guards were replaced by less greedy individuals.
+@1377 = ~The Spirit's Shield
+This cloak is said to focus the energies of one's spirit into a force that protects him or her. Rumors of a vampire enslaved in the magical item are ever-present, but they are impossible to prove without destroying the cloak.
 
 STATISTICS:
 
@@ -3178,7 +3181,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1378 = ~Cloak of Displacement~
+@1378 = ~Cloak of Displacement~ // BG1/BG2: The Cloak of Displacement is a magical item that causes subtle shifts in the image of its wearer. It has the power to actually shift an individual's image by as much as six inches in any direction from their actual location. Aside from being an effective defense in combat situations, it has also been the cause of serious eyestrain amongst fellow party members.
 @1379 = ~Interwoven with strands of sinew from a displacer beast's tentacles, the fabric of a Cloak of Displacement distorts and warps light waves, and once in combat it causes subtle shifts in the image of its wearer, by as much as six inches in any direction, making it much harder for enemies to score a proper hit on the wearer.
 
 Aside from being an effective defense in combat situations, it has also been the cause of serious eyestrain amongst fellow party members.
@@ -3195,7 +3198,7 @@ Not Usable By:
  Wizard Slayer~
 @1380 = ~Cloak of the Wolf~
 @1381 = ~Relair's Mistake
-A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently infected himself with lycanthropy. The wearer can change form whenever they wish - Relair was not so lucky.
+A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently inflicted lycanthropy upon himself. The wearer can change form whenever he wishes. Relair was not so lucky.
 
 STATISTICS:
 
@@ -3233,9 +3236,9 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1384 = ~Cloak of Non-Detection~
+@1384 = ~Cloak of Non-Detection~ // BG1/BG2: Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success. No record exists of previous owners. 
 @1385 = ~Whispers of Silence
-Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success allowing the wearer to became non-detectable by magical means such as Detect Invisibility and True Sight. No record exists of previous owners.
+Reportedly created for a lineage of the greatest burglars ever to walk the night, this cloak was apparently a success, allowing the wearer to became non-detectable by magical means such as Detect Invisibility and True Sight. No record exists of previous owners.
 
 STATISTICS:
 
@@ -3245,7 +3248,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1386 = ~Nymph Cloak~
+@1386 = ~Nymph Cloak~ // BG1/BG2: The fabled Nymph Cloak is renowned for its ability to increase the charisma of even the most surly dwarf. A Cormyrean noble hoping to make her politically convenient marriage more palatable apparently went to great expense to obtain one for herself and another for her husband.
 @1387 = ~Named for the creatures most closely associated with beauty, Nymph Cloaks are popular fodder for tavern tales among the common folk. The story usually involves some hapless noble couple spending a fortune on one or more such items so they can stand to look at one another. It always gets a big laugh among a copper-ale crowd, though most professional bards consider such pandering a tool of the unskilled.
 
 STATISTICS:
@@ -3277,7 +3280,7 @@ Not Usable By:
 @1390 = ~Mage Robe~
 @1391 = ~Robe of Cold Resistance~
 @1392 = ~Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.~
-@1393 = ~Robes of Cold Resistance are a common sight in the Sword Coast region, especially as one travels north towards Neverwinter and the Icewind Dales. Many young mages receive it as a gift from their instructors upon successfully completing their first five years of study.
+@1393 = ~Robes of Cold Resistance are a common sight in the Sword Coast region, especially as one travels north towards Neverwinter and the Icewind Dales. Many young mages receive it as a gift from their instructors upon successfully completing their first five years of study. As with other such robes, they can only be worn by those of the wizardly profession.
 
 STATISTICS:
 
@@ -3288,7 +3291,7 @@ Weight: 3
 Usable By:
  Mage~
 @1394 = ~Robe of Fire Resistance~
-@1395 = ~Due to the extremely volatile nature of most magics, Robes of Fire Resistance are not uncommon among young acolytes and their wizardly tutors, especially in Thay's circles and enclaves where worship of the Firelord Kossuth is widespread.
+@1395 = ~Due to the extremely volatile nature of most magics, Robes of Fire Resistance are not uncommon among young acolytes and their wizardly tutors, especially in Thay's circles and enclaves where worship of the Firelord Kossuth is widespread. As with other such robes, they cannot be worn except by mages.
 
 STATISTICS:
 
@@ -3299,7 +3302,7 @@ Weight: 3
 Usable By:
  Mage~
 @1396 = ~Robe of Electricity Resistance~
-@1397 = ~While seen with less frequency than some other mage robes, those of Electricity Resistance can hardly be considered a rarity. Some are worn by paranoiacs seeking protection from a ragged mountain storm but many more are worn by mages seeking to protect themselves from the intrigues of others of their kind.
+@1397 = ~While seen with less frequency than some other mage robes, those of Electricity Resistance can hardly be considered a rarity. Some are worn by paranoiacs seeking protection from a ragged mountain storm but many more are worn by mages seeking to protect themselves from the intrigues of others of their kind. As with all such robes, they can only be worn by those of the wizardly profession.
 
 STATISTICS:
 
@@ -3310,7 +3313,7 @@ Weight: 3
 Usable By:
  Mage~
 @1398 = ~Knave's Robe~
-@1399 = ~This robe has been specially enchanted to meet the eclectic needs of the multiclass mage. A favorite among thief-mages, the Knave's Robe has been enchanted to shield its wearer from the blades and poisons of any darkened alley. As with others of its type, however, its use is restricted to students of the arcane.
+@1399 = ~A favorite among thief-mages, the Knave's Robe has been enchanted to shield its wearer from the blades and poisons of any darkened alley. As with others of its type, however, its use is restricted to students of the arcane.
 
 STATISTICS:
 
@@ -3322,7 +3325,7 @@ Weight: 4
 Usable By:
  Mage~
 @1400 = ~Traveler's Robe~
-@1401 = ~This mage robe has been designed for use by rambling, itinerant mages that travel from town to town. Its enchantments not only provide protection from the bandit's arrows but also allow the wearer to move with extraordinary speed without effort. As with other robes of its kind, the Traveler's Robe can only be worn by mages.
+@1401 = ~This mage robe has been perfected for use by any rambling, itinerant mage that travels from town to town. Its enchantments provide protection from the bandit's arrow and from the jealous thief-mage that lies in ambush with his Stinking Cloud. As with other robes of its kind, the Traveller's Robe can only be worn by mages. 
 
 STATISTICS:
 
@@ -3334,7 +3337,7 @@ Equipped Abilities:
 Weight: 4
 Usable By:
  Mage~
-@1402 = ~Adventurer's Robe~
+@1402 = ~Adventurer's Robe~ // BG1/BG2: This robe has been specially enchanted to meet the eclectic needs of the adventuring mage. Aside from protecting the wearer from various forms of crushing damage, it also provides protection from the basilisk's petrifying gaze and polymorphing powers of rival mages. As with other such robes, the Adventurer's Robe can only be worn by those engaged in the wizardly profession.
 @1403 = ~Former Royal Magician Vangerdahast to King Azoun IV of Cormyr was once an accomplished adventurer of high fame. One reason he became popular in wizardly circles was his creation of the Adventurer's Robe. Mages have always struggled with the limitations placed on them by the ability to cast arcane magics. This robe gives the mage an edge in surviving encounters with melee fighters by being able to absorb some of the damage from those hits.
 
 STATISTICS:
@@ -3346,7 +3349,7 @@ Equipped Abilities:
 Weight: 4
 Usable By:
  Mage~
-@1404 = ~Robe of the Weave~
+@1404 = ~Robe of the Weave~ // BG1/BG2: Robe of the Good Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of good alignment.
 @1405 = ~Crafted by some of the finest mages and weavers of the Realms, this robe is made from the fibers of plants specially cultivated during the Time of Troubles, and the weave of the robe is woven counter to the magical Weave of Faerûn. The resulting robes grant the wearer significant resistance to all spells, and are a favored defensive tool of powerful spellcasters, but beyond just mere magical protection, a robe such as this is a symbol of prestige.
 
 STATISTICS:
@@ -3357,7 +3360,7 @@ Equipped Abilities:
 Weight: 6
 Usable By:
  Mage~
-@1406 = ~Robe of the Battlemage~
+@1406 = ~Robe of the Battlemage~ // BG1/BG2: Robe of the Neutral Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of neutral alignment.
 @1407 = ~Battlemages are wizards trained to fight in the heat of combat, and developing their abilities for the purpose of offensive use. Battlemages are dangerous to behold, deadly and capable of long-term combat survival. In order to make themselves all the more lethal in a battle field, battlemages wear robes which offer protection from all forms of physical attack, while at the same time increasing their fighting skills and resistance.
 
 STATISTICS:
@@ -3370,7 +3373,7 @@ Equipped Abilities:
 Weight: 6
 Usable By:
  Mage~
-@1408 = ~Robe of Arcane Might~
+@1408 = ~Robe of Arcane Might~ // BG1/BG2: Robe of the Evil Archmagi: This powerful mage robe offers protection from all forms of physical attack while at the same time increasing one's magical resistance and saving throws. Due to the nature of its enchantment, it can only be worn by mages of evil alignment.
 @1409 = ~While garments like this have been found in almost every culture with a strong contingent of spellcasters, this example and most others in the areas around Baldur's Gate and Amn are believed to have originated within Ulcaster's School of Wizardry. The school presented no bias in its teachings, and hosted casters from all across the Sword Coast until its destruction some 200 years ago.
 
 STATISTICS:
@@ -3383,8 +3386,8 @@ Equipped Abilities:
 Weight: 6
 Usable By:
  Mage~
-@1410 = ~Cloak of the Shield~
-@1411 = ~This cloak projects a large shield-sized invisible wall of force that stays with the wearer and protects him as if it were a normal shield. This special creation can be activated and deactivated at will, and so does not encumber nor interfere with arcane spellcasting.
+@1410 = ~Cloak of the Shield~ // BG1/BG2: This cloak projects a sphere of energy that protects the wearer from missile weapons. It also slows melee weapons somewhat.
+@1411 = ~This cloak projects a sphere of energy that protects the wearer from melee and missile weapons. This special creation can be activated and deactivated at will, and so does not encumber nor interfere with arcane spellcasting.
 
 STATISTICS:
 
@@ -3394,7 +3397,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1412 = ~Cloak of Elvenkind~
+@1412 = ~Cloak of Elvenkind~ // BG2: This green cloak resembles a normal cloak. Wearing it makes any person able to hide in shadows with astonishing ability. As per the thief ability though, the moment the wearer attacks or otherwise makes their presence known, the wearer must leave the shadows.
 @1413 = ~This green cloak resembles a normal cloak. Wearing it makes any person able to hide in shadows with astonishing skill. Elven rangers and scouts are given cloaks like this one to help hide them while patrolling the borders of their lands. These cloaks vary in effectiveness, depending on the status of the original owner.
 
 STATISTICS:
@@ -3407,7 +3410,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1414 = ~Stormlord's Cloak~
+@1414 = ~Stormlord's Cloak~ // BG2: Cloak of Reflection: Vorn Druidslayer crafted this cloak and used it with great success in his campaign to eliminate the druids from all the woods south of Baldur's Gate. His campaign ended abruptly when he encountered a flock of wyverns, who were attracted by the cloak's sheen. They killed Vorn and used the cloak to cover their nest, serving to protect their young during electrical storms.
 @1415 = ~Balhoderie the Wrathful was a pirate captain in Nelanther in the mid-1300s DR. Though he was known for his great temper and brutality, he was rather sensitive when it came to physical discomfort from the elements. He was constantly commanding his underlings to add wood to his fires or open windows in his cabin. He was so annoyed by the inability of his crew to constantly maintain a perfect temperature around him that he hunted down a Stormlord of Talos and slew him for his cloak.
 
 Though Balhoderie had some of his lady friends sew over the Talosian symbols on the cloak with bits of pirate flags, the brothers of the Stormlord never forgot Balhoderie's blasphemous plunder. By 1360, they had managed to install a youthful Stormlord on one of Balhoderie's three ships, the Sarketa. When the opportunity presented itself, the Stormlord roused the crew to mutiny. After Balhoderie had been overthrown, the Stormlord retrieves the cloak and installed himself as the new commander of the dead pirate's fleet.
@@ -3424,18 +3427,18 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1416 = ~Cloak of Nature's Vengeance~
+@1416 = ~Cloak of Nature's Vengeance~ // BG2: Cloak of the Stars: Thalanta the Fair created many types of cloaks, all known as Cloaks of the Stars. This particular version is simple, with three stars down each sleeve. Once per day each star can be removed and thrown as a dart. The star disappears, only to return the next day.
 @1417 = ~The Avengers are members of a special sect within a druidic order. They are devoted to fighting those who defile nature, and these cloaks were sometimes worn by members of their sect when embarking on their crusades against those who had inflicted grievous wounds upon the land.
 
 STATISTICS:
 
 Equipped Abilities:
- Nature's Vengeance: 25% chance creatures who strike the wearer are struck by lightning for 6D6 electrical damage (save vs. breath at -2 half)
+ Nature's Vengeance: 33% chance creatures who strike the wearer are struck by lightning for 6D6 electrical damage (save vs. breath at -2 half)
 
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1418 = ~Cloak of Mirroring~
+@1418 = ~Cloak of Mirroring~ // BG2: Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water". Its true enchantment becomes apparent when the wearer is attacked directly by magic, and all damage caused by spell effects is deflected harmlessly away.
 @1419 = ~Though it feels much like normal cloth, this shimmering cloak has on occasion been described as "woven water". Its true enchantment becomes apparent in battle when the mantle makes a reflected image of the wearer to appear alongside him. Unable to discern which one is real, an attacker has a 50% chance that he will attack the image and a 50% chance that he will attack the wearer, in either case risking to trigger again another image. Whenever an attacker successfully hits the wearer the cloak dazzles foes with sparkling lights for an instant and causes another image to appear.
 
 STATISTICS:
@@ -3475,8 +3478,8 @@ Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Disease, Level Drain, Normal Weapons, Petrification, Poison, and Stun
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
  Slowing: target is slowed for 1 turn (save vs. breath at -2 neg.)
+ Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
 
 Equipped Abilities:
  Armor Class: +1 bonus
@@ -3487,7 +3490,7 @@ Weight: 3
 Not Usable By:
  Wizard Slayer~
 @1422 = ~Cloak of Bravery~
-@1423 = ~This cloak is a powerful, evil thing. Made from the poorly stitched together skin of innocent nymphs, and blessed by unholy powers, it bestows on the bearer an almost reckless bravery in battle.
+@1423 = ~This cloak is an evil thing, albeit powerful. Made from the poorly stitched together skin of innocent nymphs, and blessed by unholy powers, it bestows on the bearer an almost reckless bravery in battle.
 
 STATISTICS:
 
@@ -3500,9 +3503,9 @@ Weight: 3
 Not Usable By:
  Paladin
  Wizard Slayer~
-@1424 = ~Cloak of Protection +3~
-@1425 = ~The Protector
-The royal guard of King Pyronan, ruler of Impiltur, were given cloaks such as this as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves regarding who should receive such cloak. After years of internal hostility, the mantles were lost and the guards were replaced by less greedy individuals.
+@1424 = ~Cloak of Protection +3~ // BG2: Improved Cloak of Protection +2: The abilities conferred by this powerfully enchanted cloak attest to the fact that protection can take many forms - including hiding from view and running away.
+@1425 = ~The Spirit's Shield
+This cloak is said to focus the energies of one's spirit into a force that protects him or her. Rumors of a vampire enslaved in the magical item are ever-present, but they are impossible to prove without destroying the cloak.
 
 Cespenar infused this cloak with even more powerful protective enchantments.
 
@@ -3515,7 +3518,7 @@ Equipped Abilities:
 Weight: 3
 Not Usable By:
  Wizard Slayer~
-@1426 = ~Montolio's Cloak~
+@1426 = ~Montolio's Cloak~ // BG2: This is the fabled cloak of Montolio DeBrouchee - the aged, blind mentor of the dark-elf ranger Drizzt Do'urden. Like his famous pupil, Montolio was a master at wielding two blades simultaneously.
 @1427 = ~Montolio Debrouchee, better known as "Mooshie", was a ranger of great renown, having dedicated himself to the defense of all living things not evil in nature, and total dedication to the goddess of the forest, Mielikki, at an early age. He served as a ranger for many years, often as a scout for large armies, or working with small groups of rangers or by himself. Montolio was a good friend and a mentor of the dark elf Drizzt Do'Urden. He became blinded five years before he met Drizzt while serving with a ranger group known as the Range Watchers, when they encountered and came into battle against a vicious red dragon, which killed three rangers and melted Montolio's face. His face was healed by clerics, but his eyes were beyond repair. Being pitied even by the Range Watchers and thinking his life meaningless, he fell into despair and came to the grove later known as Mooshie's Grove to die there. Instead, he learned to survive by using his other senses to their fullest extent. He befriended the animals and made it a personal goal to keep watch on, and protect the caravans going near the grove from Graul, an orc leader, and his raiding band. Mooshie eventually died of natural causes in his sleep.
 
 STATISTICS:
@@ -3582,7 +3585,7 @@ Requires: 6 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@1435 = ~Throwing Dagger~ //The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
+@1435 = ~Throwing Dagger~ // BG1/BG2: The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently.
 @1436 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Unlike a dagger, this one has a smaller handle and is balanced differently.
 
 STATISTICS:
@@ -3720,7 +3723,7 @@ Requires: 3 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@1452 = ~Poisoned Throwing Dagger~ //The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
+@1452 = ~Poisoned Throwing Dagger~ // BG2: The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
 @1453 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter. Unlike a dagger, this one has a smaller handle and is balanced perfectly. A thin coating of poison has been applied to each poisoned throwing dagger, making it a lethal tool in the hands of trained assassins.
 
 STATISTICS:
@@ -3784,7 +3787,7 @@ STATISTICS:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Stardust: 25% chance of blinding target and opponents within 5' for 2 rounds (save vs. breath neg.)
+ Stardust: target and opponents within 5' are blinded for 1 round (save vs. breath at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D4 + 4
@@ -3806,7 +3809,7 @@ STATISTICS:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Stardust: 33% chance of blinding target and opponents within 5' for 2 rounds (save vs. breath neg.)
+ Stardust: target and opponents within 5' are blinded for 1 round (save vs. breath at -2 neg.)
  Starbolt: 15% chance of dealing 5D6 magic damage
  Returning: returns to the wielder's hand instantly after an attack is made
 
@@ -3907,7 +3910,7 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@1473 = ~Dart of Wounding~ //This dart is coated in a deadly poison that will immediately seep into the bloodstream if striking an opponent, with very deadly results.
+@1473 = ~Dart of Wounding~ // BG2: This dart is coated in a deadly poison that will immediately seep into the bloodstream if striking an opponent, with very deadly results.
 @1474 = ~The barbed tip of this dart inflicts upon its target wounds so deep that they will continue to bleed for some time, with very deadly results.
 
 STATISTICS:
@@ -4088,7 +4091,7 @@ Not Usable By:
  Kensai
  Stalker~
 @1491 = ~Drow Piwafwi Cloak~
-@1492 = ~The magically enhanced drow piwafi cloak is one of the most important accoutrements of a drow's possession. Even the most common of these cloaks carries a most powerful enchantment to protect its wearer. All drow long to own a piwafi; though, only those who have proven themselves useful, or who come from rich, powerful families can afford to own one. Talented drow weavers have woven strands of adamantine into the cloak, thus rendering it useless if exposed to the light - the effect of which will turn the cloak to dust.
+@1492 = ~The magically enhanced drow piwafwi cloak is one of the most important accoutrements of a drow's possession. Even the most common of these cloaks carries a most powerful enchantment to protect its wearer. All drow long to own a piwafwi; though, only those who have proven themselves useful, or who come from rich, powerful families can afford to own one. Talented drow weavers have woven strands of adamantine into the cloak, thus rendering it useless if exposed to the light - the effect of which will turn the cloak to dust.
 
 STATISTICS:
 
@@ -4312,7 +4315,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1522 = ~Halberd +1~ //Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find bone, while its barbed tip will seek out gaps in their armor.
+@1522 = ~Halberd +1~ // BG2: Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find bone, while its barbed tip will seek out gaps in their armor.
 @1523 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe. This halberd is particularly good at its job, as it has been enchanted with a few magical properties.
 
 STATISTICS:
@@ -4339,7 +4342,7 @@ STATISTICS:
 
 Combat Abilities:
  Slashing: target suffers 1D4 slashing damage
- Staggering: 50% chance target suffers a -1 penalty to APR and a -2 penalty to movement and casting speed for 1 round (save vs. breath neg.)
+ Staggering: target suffers a -1/2 penalty to APR and a -2 penalty to movement and casting speed for 1 round (save vs. breath neg.)
 
 Damage: 1D10 + 2
 THAC0: +2 bonus
@@ -4411,14 +4414,12 @@ Not Usable By:
 
 STATISTICS:
 
-Special Abilities:
- Black Mist (3x per day): blinds everyone within 10' for 1 turn (save vs. spell at -2 neg.)
-
 Equipped Abilities:
  Blind Fighting: wielder fights without penalties even if unable to see and cannot be backstabbed
 
 Combat Abilities:
  Weakening: target suffers a cumulative -1 penalty to THAC0 and damage for 2 rounds
+ Blackmist: 15% chance of blinding opponents within 10' for 1 turn (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -4488,8 +4489,8 @@ Equipped Abilities:
  Spell Immunity: Horrid Wilting
 
 Combat Abilities:
- Smashing Wave: 15% chance target and opponents within 5' suffer 5D4 crushing damage and are knocked unconscious for 1 round (save vs. breath neg. unconsciousness)
- Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave are slayed (save vs. death neg.)
+ Smashing Wave: 15% chance target and opponents within 5' suffer 5D4 crushing damage and are knocked unconscious for 1 round (save vs. breath at -2 neg. unconsciousness)
+ Fire Eating: efreeti, fire elementals, fire giants, and fire salamanders struck by the Smashing Wave die (save vs. death at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -4511,11 +4512,10 @@ Not Usable By:
 
 STATISTICS:
 
-Special Abilities:
- Cloak of Fear (1x per day)
-
 Combat Abilities:
+ Poisonous: target suffers 1D6 poison damage
  Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
+ Terrifying Aura: opponents within 10' are frozen in terror (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -4536,15 +4536,14 @@ Not Usable By:
 @1540 = ~Ravager +5~
 @1541 = ~The guards upon the walls of the evil fortress, Darkhold, carry halberds of ancient, demonic creation. The halberds were purchased from the forges of hell in trade for the souls of captured heroes, so each halberd is a valued possession. Those who wield these weapons outside the walls of Darkhold do so at their own peril, for the master of the hold is said to be linked to each one. Only taking the blood-soaked shaft of this weapon in hand brings a sudden chill along the spine and the very sight of this cursed halberd has been known to strike terror into the heart of an opponent.
 
-Combined with the Serpent Shaft, this dark halberd has the ability to slay an opponent with a single blow - unless they can survive the lethal poison injected by this vicious weapon.
+Combined with the Serpent Shaft, this dark halberd has the ability to slay an opponent with a single blow - unless they can survive its lethal poison.
 
 STATISTICS:
 
-Special Abilities:
- Cloak of Fear (3x per day)
-
 Combat Abilities:
+ Poisonous: target suffers 1D8 poison damage
  Dooming: target suffers a -1 penalty to THAC0, damage, and saving throws for 5 rounds (save vs. spell neg.)
+ Terrifying Aura: opponents within 10' are frozen in terror (save vs. spell at -2 neg.)
  Viperous: 15% chance target suffers 5 poison damage every second for 2 rounds (save vs. poison at -4 neg.)
 
 THAC0: +5 bonus
@@ -4621,7 +4620,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1549 = ~Rift Hammer +2~ // Ashideena +2: Lady Ashideena was a remarkable strategist who honed her skills against the orc armies in the Year of the Black Horde. She met Dergat Wiltoon - the warrior that wielded this weapon - when he foiled an ambush led by the great orc Varstok, and soon after made him her Field Captain. After serving at each other's side for the entirety of the war they fell in love and eventually married. Historians report that Dergat named his war hammer after his bride to remind himself of the love he fought to protect. What Lady Ashideena thought of this is unknown.
+@1549 = ~Rift Hammer +2~ // BG1/BG2: Ashideena +2: Lady Ashideena was a remarkable strategist who honed her skills against the orc armies in the Year of the Black Horde. She met Dergat Wiltoon - the warrior that wielded this weapon - when he foiled an ambush led by the great orc Varstok, and soon after made him her Field Captain. After serving at each other's side for the entirety of the war they fell in love and eventually married. Historians report that Dergat named his war hammer after his bride to remind himself of the love he fought to protect. What Lady Ashideena thought of this is unknown.
 @1550 = ~During the Time of Troubles the walls between dimensions seemed particularly thin, and many creatures normally confined to other planes walked the face of Toril. Unfamiliar items appeared as well, including several of these weapons found after portals or rifts were sighted. The true origins of the Rift Hammers have never been explained, and superstitious folk refuse even to hold them for fear they retain the taint of the lower planes.
 
 STATISTICS:
@@ -4643,7 +4642,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1551 = ~Hammer of Corrosion +1~
+@1551 = ~Hammer of Corrosion +1~ // BG2: War Hammer +1, +4 vs. Giantkin: The Knee-Capper, or "The Capper" as it is affectionately known in dwarven circles, is rumored to have been forged by Clangeddin himself. He gave it to a small clan of homeless dwarves that they might carve a place for themselves amongst the giants and ogres in their area. The hammer has been passed from hero to hero, occasionally finding its way into non-dwarven hands.
 @1552 = ~The Hammer of Corrosion, or "The Defiler", as it has become known in dwarven circles, is a fearsome weapon capable of making useless even the most powerful armors in the Realms. Its deadly acid can corrode pratically everything it touches and consecutive blows can rend plate mails and natural armors apart leaving the victim defenceless. The hammer has been passed from heroes to villains alike, occasionally finding its way into non-dwarven hands.
 
 STATISTICS:
@@ -4666,7 +4665,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@1553 = ~Tersyus +2~ // Borok's Fist +2: Borok Thundercracker was a dwarven hero that led several campaigns against giants and other "tall vermin" that had plagued his people in a number of their communities. This hammer was his blessed weapon, which his elven allies called his "little iron fist", though not to his face.
+@1553 = ~Tersyus +2~ // BG2: Borok's Fist +2: Borok Thundercracker was a dwarven hero that led several campaigns against giants and other "tall vermin" that had plagued his people in a number of their communities. This hammer was his blessed weapon, which his elven allies called his "little iron fist", though not to his face.
 @1554 = ~Wrath of Tyr
 The sibling to the more powerful hammers called Ulhaeron, Mercy of Tyr, and Bythialarus, Wisdom of Tyr. All three hammers were forged together in commemoration of the ascension of the Valjevo dynasty in the kingdom of Phlan in the year 750 DR. Eventually, the three were recovered by the temple of Tyr in Waterdeep and given in turn to those warriors who ventured into the world to combat Tyr's enemies.
 
@@ -4795,7 +4794,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Banishing: summoned and gated creatures are dismissed (save vs. spell neg.)
+ Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D4 + 5
@@ -4828,7 +4827,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
- Banishing: summoned and gated creatures are dismissed (save vs. spell neg.)
+ Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
 
 THAC0: +5 bonus
 Damage: 1D4 + 6
@@ -4877,7 +4876,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1571 = ~Helm of Despair~
+@1571 = ~Helm of Despair~ // BG1/2: Helm of Opposite Alignment: The cursed Helm of Alignment Change is a truly fearsome item. As its name suggests, it has the power to alter the fundamental ethical framework, nay, the very identity of anyone unlucky enough to wear it. It can ruin homes, friendships, even entire cities or nations. Should the legions of evil ever force one onto the head of a benevolent Solar, the multiverse, as we know it, will surely meet an abrupt and painful end.
 @1572 = ~This class of open-faced helmet, made of reinforced leather or metal, covers most of the head, save the face and neck. These helmets commonly provide protection for the nose as well.~
 @1573 = ~The evil form of the paladin, the blackguard, is opposite in every way. As the image of the paladin often takes the form of a knight in shining armor, so the blackguard wears the dark plate that blends with the night. Blackguard's helmets are fashioned to increase the intimidating presence of their wearer, and are blessed by evil gods.
 
@@ -4900,8 +4899,8 @@ Not Usable By:
  Thief
  Kensai~
 @1574 = ~Helm of Glory~
-@1575 = ~Helm of the Valiant
-Named for its original owner, Sir Tain the Valiant, this helm saw many great battles in his possession. It was eventually passed on to Sir Tain's squire, who had served him faithfully for almost ten years. Alas, the young man had neither the strength nor the skill to uphold his master's legacy. It is rumored he lost his life in the pursuit of a worthy but ultimately futile cause, and the helm has had many owners since.
+@1575 = ~Helm of the Noble
+Named for its original owner, Sir Tain the Noble, this helm saw many great battles in his possession.  It was eventually passed on to Sir Tain's squire, who had served him faithfully for almost ten years.  Alas, the young man had neither the strength, nor the skill to uphold his master's legacy.  It is rumored he lost his life in the pursuit of a worthy, but ultimately futile cause, and the helm has had many owners since. 
 
 STATISTICS:
 
@@ -4923,7 +4922,7 @@ Not Usable By:
  Kensai~
 @1576 = ~Helm of Defense~
 @1577 = ~Gift of Peace
-Prized for its noble origin as much as for its benefits to the wearer, the first of these helms was originally intended to be a simple gift. There was no great crisis at hand, nor dangerous evil to be overthrown; just a wish for a friend to give a gift to another. It could just as easily have been a good book or a bottle of wine, but adventurers are eminently more practical in their gift giving. Subsequently, because of its effectiveness in any situation, countless variants of this helm were created. These helms have seen many great battles since theirs creation, but the simple virtue at theirs core is what has always been remembered.
+Prized for its noble origin as much as for its benefits to the wearer, this helm was originally intended to be a simple gift. There was no great crisis at hand, nor dangerous evil to be overthrown; just a wish for a friend to give a gift to another. It could just have easily been a good book or bottle of wine, but adventurers are eminently more practical in their gift giving. The helm has seen many great battles since its creation, but the simple virtue at its core is what has always been remembered.
 
 STATISTICS:
 
@@ -4939,7 +4938,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1578 = ~Helm of the Watcher~
+@1578 = ~Helm of the Watcher~ // BG1/2: Helm of Infravision: The Eyes of Truth: Being a scavenger of a sort, Babette Maelestrom had this helm created to aid her in her dungeon excursions. She would later attribute her gathered wealth solely to its power, though likely it was as much her keen eyes as anything.  
 @1579 = ~This class of decorative helmet, made of reinforced leather or metal, covers the face and head. Eye slits and breathing holes come highly recommended.~
 @1580 = ~It is unclear if these magic headpieces were created by clerics of Helm, god of guardians, or if they acquired their name by a more convenient circumstance. Whatever the case, they are highly prized by guards and sentries. Needless to say, bandits have also taken to wearing them, proving the old proverb that 'what's good for the goose is good for the gander'.
 
@@ -4975,7 +4974,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1584 = ~Helm of Balduran~
+@1584 = ~Helm of Balduran~ // BG1/2: The fabled helm of Balduran, legendary founder of Baldur's Gate, has long been rumored to wield powerful protective magic. The exact nature of this magic, however, has not yet been determined.
 @1585 = ~This sturdy, steel-banded helm is dented and scarred from heavy use. Dwarven runes are set into the metal above the brow.~
 @1586 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome, making the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail for Anchorome once more, not to been seen again to this day. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
@@ -5052,7 +5051,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1592 = ~Helm of Brilliance~
+@1592 = ~Helm of Brilliance~ // BG2: This helm is made of polished steel and set with diamonds, rubies and fire opals. The gems glow with an internal light, the source of which can only be magical. The helm makes the wearer resistant to fire as well as giving the wearer some spell abilities. These include Fireball, Prismatic Spray, and Sunray.
 @1593 = ~This helm appears ordinary until its true nature is perceived. Made of brilliant silver and polished steel, the Helm of Brilliance is set with diamonds, rubies, fire opals, and opals, each of large size and enchanted. When struck by bright light, the helm scintillates and sends forth reflective rays in all directions from its crown-like, gem-tipped spikes. The jewels allow the wearer to cast a variety of powerful spells and can absorb significant amounts of fire damage.
 
 The few such helms reported to still exist have been traced back to a great cleric of Lathander from Baldur's Gate named Ergelion. Ergelion equipped his companions with these helms to turn back a horde of undead swarming out of the Troll Hills to the north. Though the horde never reached Baldur's Gate, none of that band of adventurers was seen or heard from again.
@@ -5098,9 +5097,9 @@ Not Usable By:
  Thief
  Kensai~
 @1596 = ~Ioun Stone~
-@1597 = ~Pearly White Ioun Stone~
+@1597 = ~Pearly White Ioun Stone~ // BG2: Legend tells us that this particular type of ioun stone is crafted with the enslaved soul of a troll. This pearly white ioun stone will grant the wearer the ability to regenerate at a rate of 2 hit points per minute.
 @1598 = ~This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.~
-@1599 = ~Legends tell that this particular type of ioun stone is crafted with the enslaved soul of a troll. This pearly white ioun stone will grant the wearer regenerating features, as well as the ability to shapeshift into a giant troll.
+@1599 = ~Legends tell that this particular type of ioun stone is crafted with the enslaved soul of a troll. This pearly white ioun stone will grant the wearer regeneration as well as the ability to shapeshift into a giant troll.
 
 Although the dark rites bind the troll's regenerative properties into this stone, a dose of their weaknesses are included as well.
 
@@ -5128,7 +5127,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1600 = ~Ioun Stone of Good Luck~
+@1600 = ~Ioun Stone of Good Luck~ // BG2: Dusty Rose Ioun Stone: This ioun stone glows with a dusty rose hue, hinting at calming images and sensations. While pleasing, it does not appear to enhance the basic protection enchantment upon it.
 @1601 = ~Also knowed as Luckstones, these ioun stones are mostly appreciated by thieves and bards as they often find themselves at the mercy of the fortune. The floating stone grants the wearer a luck bonus to any of his actions increasing saving throws, hit chances, damage rolls, thieving skills, etc.
 
 STATISTICS:
@@ -5139,7 +5138,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1602 = ~Trueblood's Ioun Stone~
+@1602 = ~Pale Green Ioun Stone~
 @1603 = ~On his deathbed, aged hero Rigar Trueblood begged one last request of his mage companion Spectorial: that his skill and fortitude as a warrior live on. The reluctant friend consented and transferred these traits to an item, knowing the warrior's soul would then be lacking them. This pale green ioun stone now holds these essences, and grants the owner Trueblood's health and skill.
 
 STATISTICS:
@@ -5151,7 +5150,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1604 = ~Red Dragonscale Helm~
+@1604 = ~Red Dragonscale Helm~ // BG2: Dragon Helm: The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. Red, white and green scales overlap, protecting the wearer from normal blows as well as fire, cold and electricity. It is hard to determine whether the benefits originate within the scales or the spells of the mage.
 @1605 = ~The skillful hand of the warlock Wormsor carefully worked several dragon scales into this powerful helmet. The overlapping red scales protects the wearer from normal blows as well as fire damage, and donning the helmet also grants immunity to magical sleep and unconsciousness, though it is hard to determine whether these benefits originate within the scales or the spells of the mage.
 
 STATISTICS:
@@ -5169,8 +5168,8 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1606 = ~Golden Ioun Stone~
-@1607 = ~The magic of this ioun stone has the power to sharpen the wearer's intellect, and increase the effectiveness of his spells. Considered 'cheating' by some wizards, these bands are highly sought after by many wizards, especially the Red Wizards of Thay.
+@1606 = ~Golden Ioun Stone~ // BG2: Highly sought out by wizards and mages, this ioun stone raises the intelligence of those who possess it.
+@1607 = ~The magic of this ioun stone has the power to sharpen the wearer's intellect, and increase the effectiveness of their spells. Considered 'cheating' by some wizards, these bands are highly sought after by many wizards, especially the Red Wizards of Thay.
 
 STATISTICS:
 
@@ -5181,8 +5180,8 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1608 = ~Obsidian Ioun Stone~
-@1609 = ~The tough obsidian stone imbues its owner with a similar hardiness, though the process of magically altering one's constitution sometimes may be painful.
+@1608 = ~Obsidian Ioun Stone~ // BG2: The tough obsidian stone imbues its owner with a similar hardiness.
+@1609 = ~The tough obsidian stone imbues its owner with a similar hardiness, though the process of magically altering one's constitution may sometimes be painful.
 
 STATISTICS:
 
@@ -5193,7 +5192,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1610 = ~Silver Ioun Stone~
+@1610 = ~Silver Ioun Stone~ // BG2: Perhaps the silver and gray in this stone hints at the knowledge that only comes with age and experience.
 @1611 = ~Perhaps the silver and grey in this stone hint at the knowledge that only comes with age and experience. These items improve perception and insight, and are often used as meditative tools by high-ranking clergy of a faith.
 
 STATISTICS:
@@ -5217,7 +5216,7 @@ Equipped Abilities:
 Armor Class Bonus: None
 Usable By:
  All~
-@1614 = ~Bronze Ioun Stone~
+@1614 = ~Bronze Ioun Stone~ // BG2: The powerful enchantments on this ioun stone make it a treasure eagerly sought after by wizards and mages.
 @1615 = ~The powerful enchantments on this ioun stone make it a treasure eagerly sought after by adventures of any kind.
 
 STATISTICS:
@@ -5240,10 +5239,11 @@ Equipped Abilities:
  Spell Memorization: arcane spellcasters can memorize one extra spell of each level from 8th to 9th
 
 Armor Class Bonus: None
+Weight: 1
 Usable By:
  Mage~
 @1620 = ~Thieves' Hood~
-@1621 = ~This apparently common hood emanates a strong magical aura.~
+@1621 = ~Although this hood does not confer any noticeable advantages on its wearer, it does have an aura of latent magic.~
 @1622 = ~Bards and rogues alike are known to reminisce on "the glory days", and the stories of an ancient guild so magnificient it outfitted even its lowliest members with the most incredibly wondrous wares. Though there is little contained in historical documents to verify such a golden age, the occasional discovery of one of these Thieves' Hoods is enough to keep the tale in circulation.
 
 STATISTICS:
@@ -5257,7 +5257,7 @@ Weight: 1
 Usable By:
  Bard
  Thief~
-@1623 = ~Master Thief's Hood~
+@1623 = ~Master Thief's Hood~ // BG2: There is no honor among thieves. Perhaps that is why the Thieves' Hood has been imbued with magical properties to protect the wearer from their own ilk.
 @1624 = ~Bards and rogues alike are known to reminisce on "the glory days", and the stories of an ancient guild so magnificient it outfitted even its lowliest members with the most incredibly wondrous wares. Though there is little contained in historical documents to verify such a golden age, the occasional discovery of one of these Thieves' Hoods is enough to keep the tale in circulation.
 
 STATISTICS:
@@ -5389,7 +5389,7 @@ STATISTICS:
 *CURSED*
 
 Equipped Abilities:
- Missile Attraction: wearer suffers a -10 penalty to AC vs. missile weapons and creatures within 20' gain a +4 bonus to AC vs. missile weapons
+ Missile Attraction: wearer suffers a -10 penalty to AC vs. missile weapons and everyone within 20' gains a +4 bonus to AC vs. missile weapons
 
 Armor Class: 4
 Weight: 20
@@ -5428,7 +5428,7 @@ Armor Class: 4
 Weight: 0
 Usable By:
  Thief~
-@1648 = ~Karajah's Leather Armor +3~ // Karajah's Leather Armor +3: Karajah was Calimshan's undisputed champion of pit fighting for a decade. Wearing only a thin leather armor and spiked gauntlets, he would pummel his foes to the ground, seemingly impervious to their blows. Eventually, it was revealed that his armor was heavily enchanted at which point angry spectators threw him into the pit with a club-wielding ogre. The beast managed to break all of Karajah's bones while the armor remained as good as new...
+@1648 = ~Karajah's Leather Armor +3~ // BG1: Karajah was Calimshan's undisputed champion of pit fighting for a decade. Wearing only a thin leather armor and spiked gauntlets, he would pummel his foes to the ground, seemingly impervious to their blows. Eventually, it was revealed that his armor was heavily enchanted at which point angry spectators threw him into the pit with a club-wielding ogre. The beast managed to break all of Karajah's bones while the armor remained as good as new...
 @1649 = ~Edwin's Amulet~
 @1650 = ~Karajah's Life and Death
 Karajah was Calimshan's champion of pit fighting for a full decade, and seemingly unbeatable. His success, or so he claimed, was due to the mobility that his light armor afforded him. He may well have been unaware of the suit's magical qualities, but his peers ignored his claims of ignorance when enchantments were discovered. The armor survived the subsequent beating, whereas Karajah did not.
@@ -5493,7 +5493,7 @@ STATISTICS:
 
 Equipped Abilities:
  Saving Throws: +3 bonus vs. paralyzation
- Stench: living creatures within 10' suffer a -2 penalty to THAC0 and 25% spell failure (save vs. death neg.)
+ Stench: opponents within 10' suffer a -2 penalty to THAC0 and 25% spell failure (save vs. death neg.)
  Charisma: -1 penalty
 
 Armor Class: 4
@@ -5550,7 +5550,7 @@ Equipped Abilities:
  Protects Against: Backstabs
 
 Armor Class: 2
-Weight: 25
+Weight: 20
 Requires: 6 Strength
 Not Usable By:
  Mage
@@ -5572,7 +5572,7 @@ Equipped Abilities:
  Protects Against: Poison
 
 Armor Class: 3
-Weight: 25
+Weight: 20
 Requires: 6 Strength
 Not Usable By:
  Mage
@@ -5615,7 +5615,7 @@ Not Usable By:
  Monk
  Kensai
  Shapeshifter~
-@1673 = ~Human Flesh +4~
+@1673 = ~Human Flesh +5~
 @1674 = ~Made from human skin and treated with the blood of a noble dragon, this armor emits the stench of bitter death. The malevolent armor can only be used by a truly evil person.
 
 STATISTICS:
@@ -5625,7 +5625,7 @@ Equipped Abilities:
  Magic Resistance: +20% bonus
  Hideous: +2 bonus to AC and saving throws vs. humanoids
 
-Armor Class: 4
+Armor Class: 3
 Weight: 15
 Requires: 4 Strength
 Not Usable By:
@@ -5635,7 +5635,7 @@ Not Usable By:
  Kensai
  Shapeshifter~
 @1675 = ~Human Flesh~
-@1676 = ~This is a tunic made from the badly sewn together human flesh that you took from the Tanner's house in the Bridge District. If completed it may make serviceable armor, albeit only the most evil of humans could wear such a vile item.
+@1676 = ~This is a tunic made from the badly sewn together human flesh that you took from the Tanner's house in the Bridge District. If completed it may make serviceable armor, albeit only the most evil of people could wear such a vile item.
 
 STATISTICS:
 
@@ -5649,12 +5649,13 @@ Not Usable By:
  Kensai
  Shapeshifter~
 @1677 = ~Trollhide Armor +4~
-@1678 = ~Some might argue that trolls are the natural enemy of most rangers. Inherently violent and aggressive, trolls frequently attack with little or no provocation. They attack humans and small human settlements regularly, destroying everything in their path. Trolls are not only feared for their large, powerful limbs, but for their ability to rapidly regenerate most wounds inflicted on them. This magically enhanced suit of armor, made with the thick hide of trolls, grants the wearer the same regenerative properties.
+@1678 = ~Some might argue that trolls are the natural enemy of most rangers. Inherently violent and aggressive, trolls frequently attack with little or no provocation. They attack humans and small human settlements regularly, destroying everything in their path. Trolls are not only feared for their large, powerful limbs, but for their ability to rapidly regenerate most wounds inflicted on them. This magically enhanced suit of armor, made with the thick hide of trolls, grants the wearer the same regenerative properties. The armor is not held together by typical metal studs but instead by portruding heavy thorns.
 
 STATISTICS:
 
 Equipped Abilities:
  Regeneration: 1 hp/round
+ Thorns: creatures who strike the wearer in melee suffer 2 piercing damage every round for 5 rounds
 
 Armor Class: 2
 Weight: 25
@@ -5719,8 +5720,8 @@ Equipped Abilities:
  Mithral: +1 bonus to AC
 
 Armor Class: -1
-Weight: 40
-Requires: 13 Strength
+Weight: 30
+Requires: 12 Strength
 Not Usable By:
  Bard
  Druid
@@ -5733,12 +5734,12 @@ Not Usable By:
  Kensai
  Stalker~
 @1685 = ~Roranach's Horn~
-@1686 = ~Passed down from generation to generation of Rashemi warriors, this helm provides its user with enhanced vitality, and resistance to attacks of physical nature. However, the rushing charges encouraged by its user's raging have often led to this helm changing hands more frequently than perhaps it should.
+@1686 = ~This helm is carved from the horn of a great ram. Etchings on the horn suggest the beast was once worshipped by ancient barbarian tribes.
 
 STATISTICS:
 
 Equipped Abilities:
- Maximum Hit Points: +10 bonus
+ Elemental Resistance: 15% bonus
 
 Armor Class Bonus: 2
 Protects Against Critical Hits
@@ -5827,12 +5828,12 @@ Not Usable By:
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
-The spell on this page is Dispel Magic.
+The spell on this page is Confusion.
 
 STATISTICS:
 
 Special Abilities:
- Dispel Magic (1x per day)
+ Confusion (1x per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -5840,12 +5841,12 @@ Not Usable By:
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
-The spell on this page is Cone of Cold.
+The spell on this page is Spell Shield.
 
 STATISTICS:
 
 Special Abilities:
- Cone of Cold (1x per day)
+ Spell Shield (1x per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -5879,12 +5880,12 @@ Not Usable By:
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
-The spell on this page is Animate Dead.
+The spell on this page is Domination.
 
 STATISTICS:
 
 Special Abilities:
- Animate Dead (1x per day)
+ Domination (1x per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -5892,12 +5893,12 @@ Not Usable By:
 
 A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
 
-The spell on this page is Breach.
+The spell on this page is Skull Trap.
 
 STATISTICS:
 
 Special Abilities:
- Breach (1x per day)
+ Skull Trap (1x per day)
 
 Not Usable By:
  Wizard Slayer~
@@ -6340,7 +6341,7 @@ Damage Type: Missile
 Weight: 2
 Launcher: Sling~
 @1760 = ~Two-Handed Sword~
-@1761 = ~Unholy Reaver +5~ //This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
+@1761 = ~Unholy Reaver +5~ // BG2: This dark, two-handed sword radiates evil from a distance and is only usable by anti-paladins.
 @1762 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.~
 @1763 = ~Ir'revrykal
 This dark, two-handed sword radiates evil from a distance. The weapon is not just unholy, but unearthly as well. Long thought to be just a myth, the blade's infamy pervades the accounts of learned bards and ancient sages. According to these accounts, the githyanki wizard-smith Ir'mlar forged the blade many centuries ago in dark caverns deep beneath Tu'narath. This githyanki city floats in the Astral Plane upon the petrified corpse of a dead god know only as "the One in the Void." To craft the sword, Ir'mlar allegedly used the One's own bones, which consist of a metallic substance unknown on the Prime Material Plane. The smith then imbued the weapon with a fiendish entity whom some seers claim was a mighty prince of the lower plane of Carceri. Others claim the sword contains the One in the Void's own spirit, banished within the blade for crimes committed against other gods in past ages. In any case, Ir'revrykal possess such an enmity against good that only blackguards committed to evil may wield it. Circular runes etched on the blade proclaim its name in ancient tir'su, the githyanki language. The runes translate roughly as "Pain-Servant."
@@ -6641,7 +6642,7 @@ Not Usable By:
  Mage
  Beast Master~
 @1808 = ~Katana~
-@1809 = ~Yoshimo's Katana +2~ //This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
+@1809 = ~Yoshimo's Katana +2~ // BG2: This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only Yoshimo to wield it. Any other than he cannot use this flawless katana in battle.
 @1810 = ~This blade, although only lightly enchanted, has achieved a semblance of awareness, enough so that it allows only a consumate thief to wield it. Any other cannot use this flawless katana in battle.
 
 STATISTICS:
@@ -6884,7 +6885,7 @@ Not Usable By:
  Avenger
  Kensai
  Shapeshifter~
-@1835 = ~Radiant Plate +2~ // The Practical Defense +3: The travelling adventurer could ask for no better a suit of armor in all the land. Specially commissioned by Bolhur 'Thunderaxe' at GREAT expense, this suit was his most prized, even if not his most ornate. Eminently practical, Bolhur demanded armor that would offer superior protection while hampering him in the least. By "hampering" he did not just mean in movement or weight: his ideal suit should be able to withstand the rigors of his wanderings with little maintenance. This is not to say that Bolhur 'Thunderaxe' neglected his armors - to say as such would get your ears boxed - but the regime of spit and polish required for a "gentleman's" suit was beyond his caring. Save the tassels and gilding of full plate for kings and heads of state: a working dwarf cares more of utility than looks.
+@1835 = ~Radiant Plate +2~ // BG1: The Practical Defense +3: The travelling adventurer could ask for no better a suit of armor in all the land. Specially commissioned by Bolhur 'Thunderaxe' at GREAT expense, this suit was his most prized, even if not his most ornate. Eminently practical, Bolhur demanded armor that would offer superior protection while hampering him in the least. By "hampering" he did not just mean in movement or weight: his ideal suit should be able to withstand the rigors of his wanderings with little maintenance. This is not to say that Bolhur 'Thunderaxe' neglected his armors - to say as such would get your ears boxed - but the regime of spit and polish required for a "gentleman's" suit was beyond his caring. Save the tassels and gilding of full plate for kings and heads of state: a working dwarf cares more of utility than looks.
 @1836 = ~This brilliant golden armor has a short history. A priestess of Lathander named Iraeni of Suzail had it constructed for the champion of her church, a warrior-priest named Beldan Miller. Beldan employed the armor frequently, as Iraeni was often attacked by agents of Myrkul. After twenty years of serving Lathander, Iraeni decided to step down from her office, as did Beldan. They were married shortly after. Beldan gave the armor to an errant paladin of Lathander, who is believed to have died fighting a powerful undead creature in Amn.
 
 STATISTICS:
@@ -6916,7 +6917,7 @@ Equipped Abilities:
  Mithral: +1 bonus to AC
 
 Armor Class: -1
-Weight: 40
+Weight: 30
 Requires: 12 Strength
 Not Usable By:
  Bard
@@ -7104,7 +7105,7 @@ Not Usable By:
  Kensai 
  Shapeshifter
  Stalker~
-@1854 = ~Full Plate Mail +2~ // This +2 armor was created with the limited wish spell.
+@1854 = ~Full Plate Mail +2~ // BG2: This +2 armor was created with the limited wish spell.
 @1855 = ~Full plate armor is the best armor a warrior can buy, both in appearance and protection, and the enchantments on this suit are particularly powerful. The intricate engraving and spectacular embossing adorning the suit are of indeterminate origin, as is the armor itself.
 
 STATISTICS:
@@ -7240,7 +7241,7 @@ Though there are numerous examples of such rings, this one may have come from a 
 STATISTICS:
 
 Special Abilities:
- Invisibility (3x per day): 1 turn
+ Invisibility (3x per day): 5 turns
 
 Not Usable By:
  Wizard Slayer~
@@ -7370,7 +7371,7 @@ Not Usable By:
 STATISTICS:
 
 Special Abilities:
- Stoneskin (1x per day): 1 turn
+ Stoneskin (1x per day): 5 turns
  Conjure Lesser Earth Elemental (1x per day): 1 turn
 
 Equipped Abilities:
@@ -7421,7 +7422,7 @@ Not Usable By:
 STATISTICS:
 
 Special Abilities:
- Spell Turning (1x per day): 1 turn
+ Spell Turning (1x per day): 5 turns
 
 Equipped Abilities:
  Magic Resistance: +10% bonus
@@ -7446,7 +7447,7 @@ STATISTICS:
 
 Equipped Abilities:
  Saving Throws: +3 bonus vs. breath
- Find Traps: +20% bonus
+ Spell: Find Traps
  Protects Against: Backstabs
 
 Usable By:
@@ -7808,7 +7809,7 @@ Not Usable By:
  Kensai~
 @1949 = ~Large Shield +1~
 @1950 = ~The body shield, also known as the kite or tower shield, is a massive metal or wooden shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place and fighting results more difficult because of the shield's encumbrance.~
-@1951 = ~The body shield, also known as the kite or tower shield, is a massive metal or wooden shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place.
+@1951 = ~The body shield, also known as the kite or tower shield, is a massive metal or wooden shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place and fighting results more difficult because of the shield's encumbrance. This magical shield grants an extra bonus of +1 against attacks.
 
 STATISTICS:
 
@@ -7823,19 +7824,7 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1952 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
-
-A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
-
-The spell on this page is Hold Monster.
-
-STATISTICS:
-
-Special Abilities:
- Hold Monster (1x per day)
-
-Not Usable By:
- Wizard Slayer~
+@1952 = ~Unused~
 @1953 = ~Shield of the Falling Stars +2~
 @1954 = ~Ilmater himself enchanted this shield upon seeing a young squire's willingness to endure untold agony for the well-being of his mount. During a fierce battle between a human cavalry division and a hobgoblin horde, the young man was sent for reinforcements. He was beset by a cascade of arrows that nearly blocked out the sun, and he knew that even if he avoided the arrows himself, should his horse fall he would surely be doomed. With his shield and body he positioned himself to take the brunt of the onslaught, and was mortally wounded for it. His horse remained unscathed allowing for their escape, and his body was carried back to the nearest town, where he was resurrected from death.
 
@@ -7882,8 +7871,9 @@ Not Usable By:
  Mage
  Monk
  Kensai~
-@1960 = ~Dwarven Shield +2~ // Pellan's Shield +2
-@1961 = ~This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
+@1960 = ~Dwarven Shield +2~ // BG1: Pellan's Shield: This shield was commissioned from the finest dwarven smiths by Pellan of Tyr, a renowned paladin who was known for his unquestioning courage and total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. Pellan and his armor digested readily but the shield gave the dragon severe stomach cramps. He coughed it up and it lay in his treasure pile for several years until it was retrieved by Pellan's son, a paladin who knew when to sneak. The superior craftmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
+@1961 = ~Pellan's Shield
+This dwarven-made shield was commissioned by Pellan of Tyr, a brash paladin known for unquestioning courage and an almost total lack of common sense. Upon hearing that a red dragon was ravaging the countryside, Pellan mounted his horse and rode off to do battle. As it happened, Pellan and his armor digested readily enough, but the shield gave the dragon severe stomach cramps. Subsequently coughed up, it lay in a hoard for years until retrieved by Pellan's son, a warrior who knew when to sneak.
 
 Superior craftsmanship is supplemented by a permanent lightness spell, which makes the shield very easy to wield.
 
@@ -7891,8 +7881,8 @@ STATISTICS:
 
 Armor Class Bonus: 4
 Special: +1 vs. Missile Weapons
-Weight: 25
-Requires: 13 Strength
+Weight: 15
+Requires: 12 Strength
 Not Usable By:
  Bard
  Druid
@@ -7980,7 +7970,7 @@ Not Usable By:
 STATISTICS:
 
 Equipped Abilities:
- Missile Deflection: deflects missile weapons
+ Missile Deflection: missile weapons are harmlessly deflected
 
 NOTE: Magically created missiles like Melf's Acid Arrows, Flame Arrows, and Melf's Minute Meteors can be deflected, while magical projectiles like Lightning Bolts, Fireballs, and Magic Missiles cannot be.
 
@@ -8011,13 +8001,14 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1974 = ~Nature's Ward +2~
-@1975 = ~In the ancient days when the Ashenwood was young, and there were those who still called them 'green elves' - shields like these were worn by an order of wild elven druids and rangers dedicated to protecting the forest and its inhabitants. Now little is left of the order but their memory, and replicas of their gear... and the knowledge of how the Ashenwood has grown and flourished in the ages that have followed.
+@1974 = ~Shield of the Lost +2~
+@1975 = ~This odd shield was constructed by nomads that once inhabited the forest of Mir, a group long since absorbed into "civilized" society and forgotten. Examination reveals fine weaving of animal and human hair bound together by enchantment, though how this was done is lost to time.
 
 STATISTICS:
 
 Equipped Abilities:
- Nature's Blessing: +2 bonus to AC and saving throws vs. unnatural creatures
+ Wisdom: +1 bonus
+ Magic Damage Resistance: +50% bonus
 
 Armor Class Bonus: 3
 Weight: 15
@@ -8028,9 +8019,8 @@ Not Usable By:
  Monk
  Thief
  Kensai~
-@1976 = ~Saving Grace +3~
-@1977 = ~Shield of Dawn
-Shields like this are first mentioned in ancient liturgies of Amaunator, in which the god's champions bear radiant shields against an infestation of undead. The shields made their first appearance in modern times in dramatic fashion, appearing miraculously at the altars of several of the deity's temples in the Year of Smoldering Spells, 1020 DR. Since that time a number have been lost in battle, and not a few were stolen by foul creatures to prevent their use.
+@1976 = ~Saving Grace +3~ // BG2: Once a very powerful shield used by the clerics of Bane, most of the enchantments fled with their god's demise. The basic magical protection still remains, making it useful for any adventurer.
+@1977 = ~Shields like this are first mentioned in ancient liturgies of Amaunator, in which the god's champions bear radiant shields against an infestation of undead. The shields made their first appearance in modern times in dramatic fashion, appearing miraculously at the altars of several of the deity's temples in the Year of Smoldering Spells, 1020 DR. Since that time, a number have been lost in battle, and not a few were stolen by foul creatures to prevent their use.
 
 Once a holy artifact used by the elite sect of clerics and holy warriors called Sunmasters, part of the enchantments fled with their god's demise, but it still remain a powerful tool for any adventurer.
 
@@ -8389,7 +8379,7 @@ Equipped Abilities:
 
 Combat Abilities:
  Keen: +5% chance to score critical hits
- Pinning: target is held for 2 rounds, taking 1D6 + 5 damage every round (save vs. death neg.)
+ Pinning: target is held for 2 rounds, taking 1D6 + 5 damage every round (save vs. death at -2 neg.)
 
 THAC0: +5 bonus
 Damage: 1D6 + 5
@@ -8483,7 +8473,7 @@ Type: Two-Handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@2020 = ~Martial Staff +2~ // Aule's Staff +3: This finely crafted stave was among the spoils taken from the invaders of Durlag's Tower. It is very deadly in combat, and was apparently the property of a spellcaster that enjoyed standing on the frontlines. It appears to have a core of iron, yet it is comparable in weight to a normal weapon of its type. Part of the enchantment seems to come from the hide that strengthens the grip; leather no doubt made from a battle-ready creature of some sort. With the tastes and inclinations of the attackers of the Tower well documented, the hide could be almost anything...or anyone.
+@2020 = ~Martial Staff +2~ // BG1: Aule's Staff +3: This finely crafted stave was among the spoils taken from the invaders of Durlag's Tower. It is very deadly in combat, and was apparently the property of a spellcaster that enjoyed standing on the frontlines. It appears to have a core of iron, yet it is comparable in weight to a normal weapon of its type. Part of the enchantment seems to come from the hide that strengthens the grip; leather no doubt made from a battle-ready creature of some sort. With the tastes and inclinations of the attackers of the Tower well documented, the hide could be almost anything...or anyone.
 @2021 = ~This humble staff radiates powerful magic, and was likely the weapon of a traveling martial artist. It would certainly prove more than ample for dealing with most threats encountered on the road.
 
 STATISTICS:
@@ -8559,11 +8549,12 @@ Usable By:
 STATISTICS:
 
 Special Abilities:
- Reverse Magic (1x per day): removes all magical effects from the target (save vs. wand at -4 neg.)
+ Remove Magic (3x per day)
  Spell Trap (1x per day): 1 turn
 
 Equipped Abilities:
  Magic Resistance: +20% bonus
+ Spell: True Seeing
 
 Combat Abilities:
  Dispelling: removes all magical effects from the target (save vs. spell neg.)
@@ -8576,7 +8567,7 @@ Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-Handed
 Requires: 5 Strength
-Usable By
+Usable By:
  Mage~
 @2028 = ~Staff of Power +3~
 @2029 = ~Staffs of Power are immediately familiar to most spellcasters, and are almost icons of arcane study. The inherent utility of such staffs has resulted in many being crafted or commissioned, and specific histories are usually lost in the crowd.
@@ -8599,7 +8590,7 @@ Speed Factor: 1
 Proficiency Type: Quarterstaff
 Type: Two-Handed
 Requires: 5 Strength
-Usable By
+Usable By:
  Mage~
 @2030 = ~Staff of Thunder and Lightning +2~
 @2031 = ~There are stories that tell of such staves sprouting in the undergrowth around druid groves when the forest is threatened. Fanciful tales, but whether they are true or not, this staff is a powerful tool indeed. It draws energy from storms, and there is a chance that any blow may trigger a deafening thunderclap that knocks enemies down. It can also casts lightning bolts capable of paralyzing the target, and if circumstances warrant it, it can summon a lighting storm to blast enemies to dust.
@@ -8630,7 +8621,7 @@ Usable By:
 STATISTICS:
 
 Special Abilities:
- Barkskin (1x per day): 1 turn
+ Barkskin (1x per day): 5 turns
  Summon Lesser Shambling Mound (1x per day): 1 turn
 
 Lesser Shambling Mound (8 HD):
@@ -8643,7 +8634,9 @@ Lesser Shambling Mound (8 HD):
 
 Equipped Abilities:
  Regeneration: 1 hp/2 rounds
- Animal Empaty: animals within 30' are charmed for 1 turn (save vs. spell at -2 neg.)
+
+Combat Abilities:
+ Animal Empathy: animals within 30' are charmed (save vs. spell at -2 neg.)
 
 THAC0: +4 bonus
 Damage: 1D6 + 4
@@ -8653,7 +8646,7 @@ Speed Factor: 0
 Proficiency Type: Quarterstaff
 Type: Two-Handed
 Requires: 5 Strength
-Usable By
+Usable By:
  Druid~
 @2034 = ~Staff of Air +2~
 @2035 = ~Legend states that a planeswalker brought this staff from his home plane, although other tales claim it was forged by an ancient druidic sect, or was the weapon of a powerful elementalist. In truth, several such staves exist. They are tied to different elemental planes, and each has had many stories from any number of owners. Perhaps that is their true power: they compel people to craft heroes of their own.
@@ -8760,8 +8753,8 @@ Type: Two-Handed
 Requires: 5 Strength
 Usable By:
  Cleric~
-@2044 = ~Staff of Rynn +3~
-@2045 = ~There was a time when magic was distrusted even more so than now, and the burning of "heretics" was woefully common. Delmarey, a witch from the swamplands near Myth Rynn, faced just such a fate when she was blamed for an unseasonable drought. Taken by surprise and sentenced by a mob, she was put to the torch in the village square. With her dying breath she uttered a foul curse, fueling the fire to an unstoppable magnitude. By dawn, the entire village was reduced to black coal, save the burnt remains of the pole Delmarey had been bound to. This staff has been imbued with some remnants of Delmarey's power, making it a highly enchanted weapon.
+@2044 = ~Staff of Rhynn +3~
+@2045 = ~There was a time when magic was distrusted even more so than now, and the burning of "heretics" was woefully common. Delmarey, a witch from the swamplands near Myth Rhynn, faced just such a fate when she was blamed for an unseasonable drought. Taken by surprise and sentenced by a mob, she was put to the torch in the village square. With her dying breath she uttered a foul curse, fueling the fire to an unstoppable magnitude. By dawn, the entire village was reduced to black coal, save the burnt remains of the pole Delmarey had been bound to. This staff has been imbued with some remnants of Delmarey's power, making it a highly enchanted weapon.
 
 STATISTICS:
 
@@ -8899,7 +8892,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2059 = ~Lawgiver +2~ // Kondar +3: At a first glance, this sword appears much like any other. In the presence of any shapeshifting creature, however, the blade becomes warm as its power stirs. Its namesake was the original owner of the weapon, and his tale, though mostly long forgotten, was wrought with treachery and deceit. Rumors persist that he paid a fearsome price for this blade, but with it he revealed the true identities of those that sought to betray him. Their names and crimes however, are long since lost to history.
+@2059 = ~Lawgiver +2~ // BG2: Kondar +3: At a first glance, this sword appears much like any other. In the presence of any shapeshifting creature, however, the blade becomes warm as its power stirs. Its namesake was the original owner of the weapon, and his tale, though mostly long forgotten, was wrought with treachery and deceit. Rumors persist that he paid a fearsome price for this blade, but with it he revealed the true identities of those that sought to betray him. Their names and crimes however, are long since lost to history.
 @2060 = ~The bane of the chaotic or morally suspect, a Lawgiver blade has but one purpose: to enforce the rule of law wherever that authority is challenged or questioned. Whether or not the concept of "law" coincides with the concept of "justice" is largely irrelevant, as the owners of these weapons often view the world in a very polarized fashion. There is right and there is wrong, and other details only serve to confuse the matter.
 
 STATISTICS:
@@ -9214,7 +9207,7 @@ Ilbratha was created by unknown hands at the behest of Azoun the First, long dea
 STATISTICS:
 
 Special Abilities:
- Mirror Image (1x per day): 1 turn
+ Mirror Image (1x per day): 5 turns
 
 Equipped Abilities:
  Translucent: +2 bonus to AC
@@ -9765,7 +9758,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2134 = ~Ninja-To +1~ //Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
+@2134 = ~Ninja-To +1~ // BG2: Saito Kagizu, or 'Cat of the East' as the thieves of Athkatla called him, brought several of these ninja swords with him when he arrived in Faerûn. They were part of his personal collection, ninja-to that he either 'collected' from rivals or designed himself. When he died, his mistress gave away the swords to her other lovers, all of them powerful thieves in their own right.
 @2135 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used.~
 @2136 = ~The sword of the ninja, the ninja-to, is of lower quality than other Kara-Tur blades such as the katana. The ninja-to is short with a straight blade, making it ideal for the subterfuge of the ninja. The ninja-to is also more suited to fighting in closed places, sometimes giving the ninja an advantage over those using longer blades such as the samurai used. This particular ninja-to has been enhanced magically to complement the skill of the wielder.
 
@@ -9796,7 +9789,7 @@ Yet the dragon had its revenge. Hoshi was skilled in battle but weak of will. Ce
 STATISTICS:
 
 Special Abilities:
- Batto (3x per day): thunder and lightning explode from Celestial Fury, blinding and deafening opponents within 10' for 5 rounds (save vs. breath neg.)
+ Batto (3x per day): thunder and lightning explode from Celestial Fury, blinding and deafening opponents within 10' for 5 rounds (save vs. breath at -2 neg.)
  Lightning Bolt (1x per day)
 
 Combat Abilities:
@@ -10018,7 +10011,7 @@ Equipped Abilities:
 Combat Abilities:
  Fiery: target suffers 1D8 fire damage
  Incendiary: target suffers 1 fire damage every round for 5 rounds
- Flame Whip: target is entangled in flames for 2 rounds (save vs. breath neg.)
+ Flame Whip: target is entangled in flames for 2 rounds (save vs. breath at -2 neg.)
 
 THAC0: +5 bonus
 Damage: 1D8 + 5
@@ -10661,7 +10654,7 @@ Equipped Abilities:
 Combat Abilities:
  Starmetal: +5 bonus to damage against extraplanar creatures
  Demon Bane: +3 bonus to THAC0 and +5 bonus to damage against demons
- Banishing: summoned and gated creatures are dismissed (save vs. spell neg.)
+ Banishing: summoned and gated creatures are dismissed (save vs. spell at -2 neg.)
 
 THAC0: +1 bonus
 Damage: 1D10 + 1
@@ -10678,14 +10671,14 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2195 = ~Soul Reaver +4~ // Durlag's Pride +2
+@2195 = ~Soul Reaver +4~
 @2196 = ~Thirsting for fresh blood, usually only a warrior intent on death and destruction wields such an evil blade. Some warriors claiming to be doing good have attempted to master the Soul Reaver and use it for noble purposes, but more often than not, they are found surrounded by carnage and death too horrible to bear. One such warrior was found in a cathedral, surrounded by the corpses of priests and resting on the end of his own blade, where he had thrown himself in a fit of guilt.
 
 STATISTICS:
 
 Combat Abilities:
  Powerful Weapon: +2 bonus to damage
- Enervating: living creatures struck suffer 1D6 magic damage and lose 1 level (save vs. death neg. level loss)
+ Enervating: living creatures struck suffer 1D6 magic damage and are drained 1 level (save vs. death neg. level loss)
 
 THAC0: +4 bonus
 Damage: 1D10 + 4
@@ -10874,7 +10867,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2211 = ~Gram the Sword of Grief +4~
-@2212 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents.
+@2212 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents. The blade is particularly sharp and well-balanced, and in a certain light one can see the faint image of a serpent within the hilt. 
 
 STATISTICS:
 
@@ -10902,7 +10895,7 @@ Not Usable By:
  Thief
  Beast Master~
 @2213 = ~Gram the Sword of Grief +5~
-@2214 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents.
+@2214 = ~Some weapons are evil from their inception, imbued with corrupting magics by cruel mages. But there are also weapons that owe their natures not to any particular enchantment, but to dastardly acts performed in the hands of their wielders. Gram, once a legendary sword of the great hero Siegfried, is now forever stained with the blood of countless innocents. The blade is particularly sharp and well-balanced, and in a certain light one can see the faint image of a serpent within the hilt.
 
 Siegfried's fearsome blade is even more powerful with the Heart of the Damned set into its pommel.
 
@@ -11048,7 +11041,7 @@ Usable By:
  Fighter/Mage
  Fighter/Mage/Thief
  Mage/Thief~
-@2225 = ~Shadow Veil~
+@2225 = ~Shadow Veil~ // BG2: Vhailor's Helm: This helmet was worn by a mysterious warrior named Vhailor. The warrior was destroyed while helping a creature known as 'The Nameless One'.  
 @2226 = ~Made of blackened silver and dark blue steel, this helm is rumored to slowly corrupt its wearer to bend to Shar's whim, so that ultimately the Dark Goddess gains a powerful follower by greatly warding the victim in what her clerics often refer to as the subject's "infancy."
 
 The helm is capable of absorbing significant amounts of cold damage, and with a command word, it can create a shadow clone of the wearer to fight alongside him. Those who possess it inevitably become creatures of the night themselves, operating as easily in the dark as they would during the day - and under the watchful eye of Shar.
@@ -11144,7 +11137,7 @@ Combat Abilities:
 THAC0: +2 bonus
 Damage: 1D8 + 2
 Damage Type: Piercing
-Weight: 2
+Weight: 4
 Speed Factor: 3
 Proficiency Type: Long Sword
 Type: One-Handed
@@ -11154,7 +11147,7 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@2237 = ~Mirror Shield +3~
+@2237 = ~Mirror Shield +3~ // BG2: Sentinel +4: A century ago, astronomers noted an unexpected comet coming to earth offshore of the Sword Coast. An odd occurrence, it was made stranger by the lightweight fragments of metal found days later by blacksmith Huffum Fuiruim, who cared little about celestial events. He fashioned the bulk of it into this shield, though the forging took months and the aid of several enchanters. "From the heavens? Nay, from my hammer!"
 @2238 = ~Angwile the Artificer was widely known among the svirfneblin as the foremost authority on beholders. While he was often derided during his lifetime as foolhardy and reckless, his studies of captive beholders led to the creation of many artifacts that are to this day highly sought after by deep gnomes and other denizens of the Underdark.
 
 Among Angwile's most well-known creation there's the Mirror Shield. This shield looks and works like a normal shield, but instead of a coat-of-arms, the front is mirror-reflective, and the inside is crystal clear. The wearer can cover behind the shield and look through its clear surface, while beholder's rays are deflected away, and gaze attacks are nullified as opponents see their own reflected image.
@@ -11190,6 +11183,7 @@ Requires: 12 Intelligence
 Usable By:
  Bard
  Mage~
+@2243 = ~Wand of Magic Missiles~
 @2244 = ~When activated, this wand will eject three missiles of magical energy that dart forth and unerringly strike its target, which must be visible to be hit. Each missile will deal 1D4 + 1 magic damage.
 
 Like all wands, the Wand of Magic Missiles can only be used a limited number of times before it is expended. Once these have been used, it shatters.
@@ -11296,7 +11290,7 @@ Like all wands, the Wand of Monster Summoning can only be used a limited number 
 STATISTICS:
 
 Special Abilities (consumes charges):
- Monster Summoning: (1 turn)
+ Monster Summoning: 1 turn
 
 Requires: 14 Intelligence
 Usable By:
@@ -11592,7 +11586,7 @@ Equipped Abilities:
  Maximum Hit Points: -10 penalty
 
 Combat Abilities:
- Scourging: 15% chance target is sticken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. death at -2 neg.)
+ Scourging: 15% chance target is stricken with a disease, suffering 1 damage per second and slowness for 1 turn (save vs. death at -2 neg.)
 
 THAC0: +4 bonus
 Damage: +4 bonus
@@ -11954,7 +11948,7 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@2317 = ~Sword of Balduran +2~ // Sword of Balduran +2: This ornate but poorly balanced weapon was found beside Balduran's remains.
+@2317 = ~Sword of Balduran +2~ // BG2: This ornate but poorly balanced weapon was found beside Balduran's remains.
 @2318 = ~Balduran, a legendary seafaring explorer, was the first native of Faerûn to set foot on the lands known as Anchorome and made the trek up to Sossal. He returned full of tales and vast wealth, and put forth a large sum of money to protect his sparsely-settled home harbor town. Then he set sail of Anchorome again and has never been seen again. His money was well-spent on the wall though, and that small town soon grew into the city of Baldur's Gate.
 
 This ornate but poorly balanced weapon was found within the wreck of Balduran's ship. Gold weapons are not known to be useful in combat, but legends say that only weapons forged of gold can harm such dread creatures as the loup garou.
@@ -11994,7 +11988,7 @@ Equipped Abilities:
 
 Not Usable By:
  Wizard Slayer~
-@2323 = ~Arrow of Slaying +1~ //This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
+@2323 = ~Arrow of Slaying +1~ // BG1/BG2: This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill one type of creature and one type only. In this case the unlucky being is the ogre mage.
 @2324 = ~This arrow is twisted and black, almost radiating evil, as if possessed by something larger than itself. It was made specifically to kill creatures of the Prime Material Plane, and its power doesn't seem to work on outsiders, elementals, or undead creatures.
 
 STATISTICS:
@@ -12057,7 +12051,7 @@ Damage: 1D4 + 1
 Damage Type: Missile
 Weight: 0
 Launcher: Crossbow~
-@2331 = ~Blessed Bolt +3~ //This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
+@2331 = ~Blessed Bolt +3~ // BG2: This is a crossbow bolt that has been permanently enchanted with the spell Bless. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade. It has been fabled that if a rakshasa is struck with this bolt, it will die instantly.
 @2332 = ~This is a crossbow bolt that has been permanently enchanted with a powerful blessing. The enchantment will remain until it is fired out of a crossbow, at which time the magic will fade.
 
 STATISTICS:
@@ -12077,6 +12071,9 @@ STATISTICS:
 
 Special Abilities:
  Earthquake (1x per day)
+
+Equipped Abilities:
+ Spell Immunity: Earthquake
 
 Weight: 2
 Not Usable By:
@@ -12109,7 +12106,7 @@ Weight: 1
 Not Usable By:
  Kensai
  Wizard Slayer~
-@2339 = ~Bracers of Speed~
+@2339 = ~Bracers of Speed~ // BG1/BG2: Bracers of Binding: These bracers appear to be Bracers of Specialization but when donned, bind the wearers wrists together, making it quite difficult to wield a weapon or cast a spell. These bracers are sometimes offered as rewards for services rendered by the drow. The recipient, believing them to be very powerful, will often don them before examining them. At this point, the drow find it amusing to conjure a hook horror.
 @2340 = ~These bracers are said to originate from the Underdark. Such items are sometimes given by Drow nobility as compensation to those who offer their swords to their cause. Once worn, they grant an unnatural and unsustainable speed to attacks, and will remind the wearer of the long enduring gratitude of its creators.
 
 STATISTICS:
@@ -12546,7 +12543,7 @@ Equipped Abilities:
  Charisma: -1 penalty
 
 Combat Abilities:
- Horrifying: 33% chance target flees in terror for 2 rounds (save vs. spell neg.)
+ Horrifying: target flees in terror for 2 rounds (save vs. spell neg.)
 
 THAC0: +3 bonus
 Damage: 1D6 + 3
@@ -12606,7 +12603,7 @@ Not Usable By:
  Cleric
  Mage
  Beast Master~
-@2401 = ~Girdle of Masculinity/Femininity~
+@2401 = ~Girdle of Masculinity/Femininity~ // BG2: Girdle of Gender
 @2402 = ~The cursed girdle of gender, a rare yet oft-discussed magical item, is wrought with a most powerful magic. Anyone unfortunate enough to secure it around their waist instantly finds their gender to be transformed. It is said that, not fifty years past, a nameless court jester was beheaded for presenting the girdle as a gift to Duke Lobelahn's lover.
 
 STATISTICS:
@@ -12665,7 +12662,7 @@ Not Usable By:
 STATISTICS:
 
 Special Abilities:
- Globe of Power (1x per day): user loses 10% of their health, but gains a +2 bonus to AC and saving throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
+ Globe of Power (1x per day): user loses 15% of their hit points, but gains a +2 bonus to AC and saving throws and immunity to 1st, 2nd, and 3rd level spells for 5 rounds
 
 Weight: 1
 Not Usable By:
@@ -13020,7 +13017,7 @@ Not Usable By:
  Mage
  Beast Master~
 @2463 = ~Joril's Dagger +3~
-@2464 = ~Joril was a powerful Frost giant that lived with his clan in the Spine of the World. His magic dagger was lost when he was killed by a band of adventurers. Eventually the dagger wound up in the town of Kuldahar where it was reforged so that it could be used as a two-handed sword.
+@2464 = ~Joril was a powerful frost giant that lived with his clan in the Spine of the World. His magic dagger was lost when he was killed by a band of adventurers. Eventually the dagger wound up in the town of Kuldahar where it was reforged so that it could be used as a two-handed sword.
 
 STATISTICS:
 
@@ -13292,8 +13289,8 @@ Special Abilities:
  Drain Life (1x per day): target is drained 30 hit points and transfers them to the wielder (save vs. rod at -2 half)
 
 Combat Abilities:
- Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. spell neg.)
  Confusing: 33% chance target is confused for 2 rounds (save vs. spell neg.)
+ Sleeping: 33% chance target will fall asleep for 2 rounds (save vs. spell neg.)
  Stunning: 33% chance target is stunned for 1 round (save vs. spell neg.)
 
 THAC0: +3 bonus
@@ -13456,9 +13453,19 @@ Not Usable By:
  Cleric
  Beast Master~
 @2504 = ~Melee/Thrown Switch~
-@2505 = ~Unused~
-@2506 = ~Unused~
-@2507 = ~Poisoned Arrow~ //He is the only person who can safely handle them.
+@2505 = ~Amulet of Protection +2~
+@2506 = ~The Protector
+The royal guard of King Pyronan, ruler of Impiltur, were given 'The Protector' as an honorary show of status. Unfortunately, members of the guard had trouble coming to a consensus amongst themselves as to whom the amulet should go to. After years of internal hostility, the item was lost and the guards replaced by less greedy individuals.
+
+STATISTICS:
+
+Equipped Abilities:
+ Armor Class: +2 bonus
+ Saving Throws: +2 bonus
+
+Not Usable By:
+ Wizard Slayer~
+@2507 = ~Poisoned Arrow~ // BG1: These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows. He is the only person who can safely handle them.
 @2508 = ~These are Eldoth's personal poisoned arrows. He learned how to use poison at a young age, and can create enough venom for about 5 arrows.
 
 STATISTICS:
@@ -13620,7 +13627,7 @@ Usable By:
 @2538 = ~Brine Potion~
 @2539 = ~A potion obtained from a briny pool in which young illithids, tadpole like creatures, live and grow. When used, the potion will temporarily make the user immune to psionics.
 
-Usable By
+Usable By:
  All~
 @2540 = ~Patrol Leader's Helm~
 @2541 = ~This is the helmet of the Svirfneblin Patrol Leader that you were sent to kill. It will act as proof that you have succeeded in your mission.
@@ -13851,27 +13858,8 @@ Not Usable By:
  Beast Master
  Kensai
  Stalker~
-@2579 = ~The Whistling Sword +2~
-@2580 = ~Amidst the plains of the Eastern Shaar there lived a small human blacksmith, whose nearly dwarven height did not do his soul justice. Though a skilled weaponsmith, his true gift was his ability to whistle a heartfelt song that could cause a grown man to cry like a newborn. Only a reclusive mage shared and enjoyed time with the diminutive man, however, as others could only see his small size as a source of amusement. Deaf to the smith's song because of their own prejudices, their ridicule slowly grew into cruel torment which eventually persuaded the light-hearted man to leave his home forever. Before he left, he forged this weapon as a gift for his one friend, who also enchanted it during the making. Thus the blade sweetly whistles to its wielder when unsheathed. It was not long after that the mage also deserted the small town in disgust, taking the sword with him on his journeys.
-
-Combat Abilities:
- Whistling Sword: wielder and allies within 20' are immune to fear
-
-THAC0: +2 bonus
-Damage: 1D6 + 2
-Damage Type: Piercing
-Weight: 3
-Speed Factor: 1
-Proficiency Type: Short Sword
-Type: One-Handed
-Requires: 5 Strength
-Not Usable By:
- Cleric
- Druid
- Mage
- Beast Master~
-@2581 = ~Ankheg Plate Mail +1~
-@2582 = ~This plate mail has been expertly crafted by Taerom Fuiruim of Beregost, then masterfully enspelled for strength and durability (perhaps by Beregost's local archmage, the conjurer Thalantyr). Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the most appreciated aspect of ankheg mail is its light weight and low encumbrance, being only half the weight of normal plate mail. Monsters come and go, but fatigue is a constant enemy.
+@2579 = ~Ankheg Plate Mail +1~
+@2580 = ~This plate mail has been expertly crafted by Taerom Fuiruim of Beregost, then masterfully enspelled for strength and durability (perhaps by Beregost's local archmage, the conjurer Thalantyr). Sheathed in the chitinous scales of the ankheg, it provides a greater degree of protection than traditional plate mail and is not susceptible to rust. As any world-weary adventurer will tell you, however, the most appreciated aspect of ankheg mail is its light weight and low encumbrance, being only half the weight of normal plate mail. Monsters come and go, but fatigue is a constant enemy.
 
 STATISTICS:
 
@@ -13891,6 +13879,25 @@ Not Usable By:
  Avenger
  Kensai
  Shapeshifter~
+@2581 = ~The Whistling Sword +2~
+@2582 = ~Amidst the plains of the Eastern Shaar there lived a small human blacksmith, whose nearly dwarven height did not do his soul justice. Though a skilled weaponsmith, his true gift was his ability to whistle a heartfelt song that could cause a grown man to cry like a newborn. Only a reclusive mage shared and enjoyed time with the diminutive man, however, as others could only see his small size as a source of amusement. Deaf to the smith's song because of their own prejudices, their ridicule slowly grew into cruel torment which eventually persuaded the light-hearted man to leave his home forever. Before he left, he forged this weapon as a gift for his one friend, who also enchanted it during the making. Thus the blade sweetly whistles to its wielder when unsheathed. It was not long after that the mage also deserted the small town in disgust, taking the sword with him on his journeys.
+
+Combat Abilities:
+ Whistling Sword: wielder and allies within 20' are immune to fear
+
+THAC0: +2 bonus
+Damage: 1D6 + 2
+Damage Type: Piercing
+Weight: 3
+Speed Factor: 1
+Proficiency Type: Short Sword
+Type: One-Handed
+Requires: 5 Strength
+Not Usable By:
+ Cleric
+ Druid
+ Mage
+ Beast Master~
 @2583 = ~Holy Symbol of Lathander~
 @2584 = ~Only the most worthy and devoted servants of the Dawnbringer are granted these powerful holy symbols.
 
@@ -13951,6 +13958,155 @@ Equipped Abilities:
 
 Usable By:
  Evil-aligned clerics~
+@2593 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Vocalize.
+
+STATISTICS:
+
+Special Abilities:
+ Vocalize (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2594 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Cone of Cold.
+
+STATISTICS:
+
+Special Abilities:
+ Cone of Cold (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2595 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Animate Dead.
+
+STATISTICS:
+
+Special Abilities:
+ Animate Dead (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2596 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Lower Resistance.
+
+STATISTICS:
+
+Special Abilities:
+ Lower Resistance (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2597 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Greater Malison.
+
+STATISTICS:
+
+Special Abilities:
+ Greater Malison (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2598 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Mirror Image.
+
+STATISTICS:
+
+Special Abilities:
+ Mirror Image (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2599 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Breach.
+
+STATISTICS:
+
+Special Abilities:
+ Breach (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2600 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Haste.
+
+STATISTICS:
+
+Special Abilities:
+ Haste (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2601 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Hold Monster.
+
+STATISTICS:
+
+Special Abilities:
+ Hold Monster (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2602 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Pierce Magic.
+
+STATISTICS:
+
+Special Abilities:
+ Pierce Magic (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@2603 = ~Nature's Ward +2~
+@2604 = ~In the ancient days when the Ashenwood was young, and there were those who still called them 'green elves' - shields like these were worn by an order of wild elven druids and rangers dedicated to protecting the forest and its inhabitants. Now little is left of the order but their memory, and replicas of their gear... and the knowledge of how the Ashenwood has grown and flourished in the ages that have followed.
+
+STATISTICS:
+
+Equipped Abilities:
+ Nature's Blessing: +2 bonus to AC and saving throws vs. unnatural creatures
+
+Armor Class Bonus: 3
+Special: No Missile Weapon Protection
+Weight: 6
+Requires: 4 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Monk
+ Thief
+ Kensai~
 
 @4000 = ~Mind Shield~
 @4001 = ~Magic Resistance~
@@ -13960,7 +14116,7 @@ Usable By:
 @4005 = ~Protection from Magical Weapons~
 @4006 = ~Earthquake~
 @4007 = ~Etherealness~
-@4008 = ~Stoneskin~
+@4008 = ~Unused~
 @4009 = ~Darkfire Shield~
 @4010 = ~Whirlwind Attack~
 @4011 = ~Heal~
@@ -13972,8 +14128,8 @@ Usable By:
 @4017 = ~Charm Person~
 @4018 = ~Shapeshifts Rat~
 @4019 = ~Shapeshifts Mustard Jelly~
-@4020 = ~Black Mist~
-@4021 = ~Cloak of Fear~
+@4020 = ~Unused~
+@4021 = ~Unused~
 @4022 = ~Mass Cure~
 @4023 = ~Champion's Strength~
 @4024 = ~Fireball~
@@ -14007,7 +14163,7 @@ Usable By:
 @4052 = ~Thrown~
 @4053 = ~Domination~
 @4054 = ~Mass Cure~
-@4055 = ~Dispel Magic~
+@4055 = ~Remove Magic~
 @4056 = ~Spell Trap~
 @4057 = ~Globe of Invulnerability~
 @4058 = ~Hold Monster~
@@ -14067,13 +14223,22 @@ Usable By:
 @4112 = ~Improved Invisibility~
 @4113 = ~Stoneskin~
 @4114 = ~True Seeing~
-@4115 = ~Dispel Magic~
-@4116 = ~Cone of Cold~
+@4115 = ~Confusion~
+@4116 = ~Spell Shield~
 @4117 = ~Invisible Stalker~
 @4118 = ~Cloudkill~
-@4119 = ~Animate Dead~
-@4120 = ~Breach~
-@4121 = ~Hold Monster~
+@4119 = ~Domination~
+@4120 = ~Skull Trap~
+@4121 = ~Vocalize~
+@4122 = ~Cone of Cold~
+@4123 = ~Animate Dead~
+@4124 = ~Lower Resistance~
+@4125 = ~Greater Malison~
+@4126 = ~Mirror Image~
+@4127 = ~Breach~
+@4128 = ~Haste~
+@4129 = ~Hold Monster~
+@4130 = ~Pierce Magic~
 
 @4500 = ~Shapeshifts Wolfwere~
 @4501 = ~Claws & Bite +1~

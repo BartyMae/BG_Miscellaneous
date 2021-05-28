@@ -1,6 +1,78 @@
 Air Elemental Transformation
 Polymorph Self 7th and final form (undead of some kind, wraith?)
-Druid Shapechanging cleanup
 Unsummon innate ability for summonables
 Review MS9 (Wolfweres) and MS7 (Otyughs)
 More IWD spells?
+
+Arcane:
+1. Snilloc's Snowball Swarm
+2. Decastave
+3. Cat's Grace
+4. Lance of Disruption
+5. Beltyn's Burning Blood
+6. Convert Emotion Despair to multi-choice spell: Despair, Hopelessness (rename?), Courage, Hope, Fear
+7. Mordenkainen's Force Missiles
+8. Shadow Monsters/Demi-Shadow Monsters?
+9. Shroud of Flame
+10. Antimagic Shell
+11. Darts of Bone
+12. Lich Touch
+13. Shades
+14. Soul Eater
+15. Malavon's Rage
+16. Seven Eyes?
+17. Suffocate
+18. Shout
+19. Greater Shout
+20. Iron Body
+21. Trollish Fortitude
+22. Mordenkainen's Force Blade
+23. Acid Storm
+24. Freezing Sphere
+25. Conjure Water Elemental
+
+Check out Monster Summonings
+
+Divine:
+1. Curse
+2. Alicorn Lance
+3. Beast Claw
+4. Cause Disease
+5. Cloudburst
+6. Circle of Bones
+7. Exaltation
+8. Mold Touch
+9. Moonblade
+10. Prayer
+11. Storm Shell
+12. Prayer
+13. Moonblade
+14. Mold Touch
+15. Blood Rage
+16. Cloud of Pestilence
+17. Giant Insect
+18. Produce Fire
+19. Recitation
+20. Smashing Wave
+21. Star Metal Cudgel
+22. Static Charge
+23. Thorn Spray
+24. Unfailing Endurance?
+25. Wall of Moonlight
+26. Righteous Wrath of the Faithful
+27. Spike Stones
+28. Shield of Lathander
+29. Undead Ward
+30. Animal Rage
+31. Mass Cause Wounds
+32. Entropy Shield
+33. Whirlwind
+34. Spiritual Wrath
+35. Symbol Hopelessness
+36. Impervious Sanctity of Mind
+37. Destruction
+38. Greater Shield of Lathander
+39. Mist of Eldath
+40. Favor of Ilmater
+
+Two symbols of pain for priests?
