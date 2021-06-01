@@ -3,6 +3,10 @@ Polymorph Self 7th and final form (undead of some kind, wraith?)
 Unsummon innate ability for summonables
 Review MS9 (Wolfweres) and MS7 (Otyughs)
 More IWD spells?
+lambda changes https://github.com/lambda-dom/spell_rev_rev
+Separate Heart of the Golem?
+True Strike / Enchanted Weapon should be white
+fix regeneration items to use the right icon
 
 Arcane:
 1. Snilloc's Snowball Swarm
