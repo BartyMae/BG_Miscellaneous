@@ -5,7 +5,7 @@ AMULET_OF_HEALTH                           AMULET   amul01   1        1        1
 AMULET_OF_PROTECTION_1                     AMULET   amul14   1        1        1        1        1        1        @1000    @1001    @1002    @1003    *        *        *        *
 SHIELD_AMULET                              AMULET   amul15   1        1        1        1        1        1        @1000    @1004    @1002    @1005    *        *        *        *
 AMULET_OF_METASPELL_INFLUENCE              AMULET   amul16   1        1        1        1        1        1        @1000    @1006    @1002    @1007    *        *        *        *
-GREENSTONE_AMULET                          AMULET   amul17   1        1        1        1        1        1        @1000    @1008    @1002    @1009    @4000    *        *        *
+GREENSTONE_AMULET                          AMULET   amul17   1        1        1        1        1        1        @1000    @1008    @1002    @1009    *        *        *        *
 SILVER_CHARM                               AMULET   amul18   1        1        1        1        1        1        @1000    @1010    @1002    @1011    *        *        *        *
 AMULET_OF_ENERGY_SHIELDING                 AMULET   amul19   1        1        0        0        1        1        @1000    @1012    @1002    @1013    *        *        *        *
 KALIGUNS_AMULET_OF_MAGIC_RESISTANCE        AMULET   amul20   1        1        0        0        1        1        @1000    @1014    @1002    @1015    @4001    *        *        *
@@ -194,16 +194,17 @@ BRACERS_OF_DEFENSE_AC_5                    BRACER   brac13   1        1        0
 BRACERS_OF_DEFENSE_AC_4                    BRACER   brac14   1        1        0        0        1        1        @1267    @1289    @1269    @1290    *        *        *        *
 BRACERS_OF_DEFENSE_AC_3                    BRACER   brac15   1        1        0        1        1        1        @1267    @1291    @1269    @1292    *        *        *        *
 BRACERS_OF_THE_BLINDING_STRIKE             BRACER   brac16   1        1        0        0        1        1        @1267    @1293    @1269    @1294    @4010    *        *        *
-GLOVES_OF_THE_BURGLAR                      GAUNTLET brac17   1        1        0        0        1        1        @1267    @1295    @1269    @1296    *        *        *        *
-GLOVES_OF_MISSILE_SNARING                  GAUNTLET brac18   1        1        0        1        1        1        @1267    @1297    @1269    @1298    *        *        *        *
+GLOVES_OF_THE_ROGUE                        GAUNTLET brac17   1        1        0        0        1        1        @1715    @1295    @1952    @1296    *        *        *        *
+GLOVES_OF_MISSILE_SNARING                  GAUNTLET brac18   1        1        0        1        1        1        @1715    @1297    @1952    @1298    *        *        *        *
 GAUNTLETS_OF_CRUSHING                      GAUNTLET brac19   1        1        0        1        1        1        @1277    @1299    @1279    @1300    *        *        *        *
 GAUNTLETS_OF_HEALING                       GAUNTLET brac20   1        1        0        1        1        1        @1277    @1301    @1279    @1302    @4011    *        *        *
 GAUNTLETS_OF_EXTRAORDINARY_SPECIALIZATION  GAUNTLET brac21   1        1        0        0        1        1        @1277    @1303    @1279    @1304    *        *        *        *
 PALADINS_BRACERS                           BRACER   brac22   1        1        0        0        1        1        @1267    @1305    @1269    @1306    *        *        *        *
 BLESSED_BRACERS                            BRACER   brac23   1        1        0        0        1        1        @1267    @1307    @1269    @1308    @4012    @4013    *        *
-BARDS_GLOVES                               GAUNTLET brac24   1        1        0        0        1        1        @1277    @1309    @1279    @1310    *        *        *        *
-WONDROUS_GLOVES                            GAUNTLET brac25   1        1        0        0        1        1        @1277    @1311    @1279    @1312    *        *        *        *
+BARDS_GLOVES                               GAUNTLET brac24   1        1        0        0        1        1        @1715    @1309    @1952    @1310    *        *        *        *
+WONDROUS_GLOVES                            GAUNTLET brac25   1        1        0        0        1        1        @1715    @1311    @1952    @1312    *        *        *        *
 BANDS_OF_FOCUS                             BRACER   brac26   1        1        0        1        1        1        @1267    @1313    @1269    @1314    *        *        *        *
+GLOVES_OF_PICKPOCKETING                    GAUNTLET ubglove1 1        1        1        1        1        1        @1715    @2605    @1952    @2606    *        *        *        *
 
 BULLET                                     BULLET   bull01   1        1        1        1        1        1        @1315    @1315    @1316    @1316    *        *        *        *
 BULLET_1                                   BULLET   bull02   1        1        1        1        1        1        @1315    @1317    @1318    @1319    *        *        *        *
@@ -253,7 +254,6 @@ ADVENTURERS_ROBE                           ROBE     clck14   1        1        1
 ROBE_OF_THE_WEAVE                          ROBE     clck15   1        1        1        1        1        1        @1390    @1404    @1392    @1405    *        *        *        *
 ROBE_OF_THE_BATTLEMAGE                     ROBE     clck16   1        1        1        1        1        1        @1390    @1406    @1392    @1407    *        *        *        *
 ROBE_OF_ARCANE_MIGHT                       ROBE     clck17   1        1        1        1        1        1        @1390    @1408    @1392    @1409    *        *        *        *
-ROBE_OF_ACID_RESISTANCE                    ROBE     clck18   1        1        1        1        1        1        @1390    @2345    @1392    @2346    *        *        *        *
 CLOAK_OF_THE_SHIELD                        CLOAK    clck20   1        1        1        1        1        1        @1372    @1410    @1374    @1411    *        *        *        *
 CLOAK_OF_ELVENKIND                         CLOAK    clck23   1        1        0        0        1        1        @1372    @1412    @1374    @1413    *        *        *        *
 STORMLORDS_CLOAK                           CLOAK    clck24   1        1        0        1        1        1        @1372    @1414    @1374    @1415    *        *        *        *
@@ -265,6 +265,7 @@ ROBE_OF_THE_APPRENTI                       ROBE     clck29   1        1        0
 CLOAK_OF_BRAVERY                           CLOAK    clck30   1        1        0        1        1        1        @1372    @1422    @1374    @1423    *        *        *        *
 CLOAK_OF_PROTECTION_3                      CLOAK    clck31   1        1        0        1        1        1        @1372    @1424    @1374    @1425    *        *        *        *
 MONTOLIOS_CLOAK                            CLOAK    clck32   1        1        0        0        1        1        @1372    @1426    @1374    @1427    *        *        *        *
+ROBE_OF_ACID_RESISTANCE                    ROBE     dvclck01 1        1        1        1        1        1        @1390    @2345    @1392    @2346    *        *        *        *
 
 DAGGER                                     DAGGER   dagg01   1        1        1        1        1        1        @1428    @1428    @1429    @1429    *        *        *        *
 DAGGER_1                                   DAGGER   dagg02   1        1        1        1        1        1        @1428    @1430    @1431    @1432    *        *        *        *
@@ -336,7 +337,7 @@ HALBERD_3                                  HALBERD  halb12   1        1        0
 
 WAR_HAMMER                                 HAMMER   hamm01   1        1        1        1        1        1        @1544    @1544    @1545    @1545    *        *        *        *
 WAR_HAMMER_1                               HAMMER   hamm02   1        1        1        1        1        1        @1544    @1546    @1545    @1548    *        *        *        *
-RIFT_HAMMER_2                              HAMMER   hamm03   1        1        1        1        1        1        @1544    @1549    @1545    @1550    *        *        *        *
+ASHIDEENA_2                                HAMMER   hamm03   1        1        1        1        1        1        @1544    @1549    @1545    @1550    *        *        *        *
 HAMMER_OF_CORROSION_1                      HAMMER   hamm04   1        1        1        1        1        1        @1544    @1551    @1545    @1552    *        *        *        *
 TERSYUS_2                                  HAMMER   hamm05   1        1        0        0        1        1        @1544    @1553    @1545    @1554    *        *        *        *
 DWARVEN_THROWER_2                          HAMMER   hamm06   1        1        0        0        1        1        @1544    @1555    @1545    @1556    @4052    @4051    @2504    *
@@ -349,6 +350,7 @@ CROM_FAEYR_4#A                             HAMMER   hamm09a  1        1        0
 RUNEHAMMER_4                               HAMMER   hamm10   1        1        0        0        1        1        @1544    @1563    @1545    @1564    *        *        *        *
 RUNEHAMMER_5                               HAMMER   hamm11   1        1        0        0        1        1        @1544    @1565    @1545    @1566    @1565    @4022    @4023    *
 WAR_HAMMER_3                               HAMMER   hamm12   1        1        0        0        1        1        @1544    @1567    @1545    @1568    *        *        *        *
+RIFT_HAMMER_3                              HAMMER   dvhamm01 1        1        0        0        1        1        @1544    @2619    @1545    @2620    *        *        *        *
 
 HELMET                                     HELMET   helm01   1        1        1        1        1        1        @1569    @1569    @1570    @1570    *        *        *        *
 HELM_OF_DESPAIR                            HELMET   helm02   1        1        1        1        1        1        @1569    @1571    @1572    @1573    *        *        *        cursed
@@ -368,8 +370,8 @@ HELMET#8                                   HELMET   helm15   1        1        1
 HELM_OF_BRILLIANCE                         HELMET   helm16   1        1        0        0        1        1        @1569    @1592    @1579    @1593    @4024    @4025    @4026    *
 SKULL_OF_DEATH                             HELMET   helm17   1        1        0        0        1        1        @1569    @1594    @1579    @1595    @4027    *        *        *
 PEARLY_WHITE_IOUN_STONE                    IOUN     helm18   1        1        0        1        1        1        @1596    @1597    @1598    @1599    @4028    *        *        *
-STONE_OF_GOOD_LUCK                         IOUN     helm19   1        1        0        1        1        1        @1596    @1600    @1598    @1601    *        *        *        *
-PALE_GREEN_IOUN_STONE                      IOUN     helm20   1        1        0        1        1        1        @1596    @1602    @1598    @1603    *        *        *        *
+DUSTY_ROSE_IOUN_STONE                      IOUN     helm19   1        1        0        1        1        1        @1596    @1600    @1598    @1601    *        *        *        *
+TRUEBLOODS_IOUN_STONE                      IOUN     helm20   1        1        0        1        1        1        @1596    @1602    @1598    @1603    *        *        *        *
 RED_DRAGONSCALE_HELM                       HELMET   helm21   1        1        0        0        1        1        @1569    @1604    @1579    @1605    *        *        *        *
 HELMET#9                                   HELMET   helm22   1        1        0        0        1        1        @1569    @1569    @1587    @1587    *        *        *        *
 GOLDEN_IOUN_STONE                          IOUN     helm23   1        1        0        0        1        1        @1596    @1606    @1598    @1607    *        *        *        *
@@ -386,6 +388,11 @@ GOLD_HORNED_HELM                           HELMET   helm33   1        1        0
 WONG_FEIS_IOUN_STONE                       IOUN     helm34   1        1        0        0        1        1        @1596    @2309    @1598    @2310    *        *        *        *
 MALLAS_SOUL_STONE                          IOUN     amsoul01 1        1        0        0        1        1        @1596    @2357    @1598    @2358    *        *        *        *
 RORANACHS_HORN                             HELMET   compon05 1        1        0        0        1        1        @1569    @1685    @1579    @1686    *        *        *        *
+IOUN_STONE_OF_GOOD_LUCK                    IOUN     dvhelm01 1        1        0        1        1        1        @1596    @2607    @1598    @2608    *        *        *        *
+CIRCLET                                    CIRCLET  xoband01 1        1        0        0        1        1        @2609    @2609    @2610    @2610    *        *        *        *
+SILVER_CIRCLET                             CIRCLET  xoband02 1        1        0        0        1        1        @2609    @2611    @2234    @2612    *        *        *        *
+EILISTRAEES_BOON                           CIRCLET  xoband03 1        1        0        0        1        1        @2609    @2613    @2234    @2614    @4047    *        *        *
+CIRCLET_OF_THE_ARCHMAGI                    CIRCLET  xoband04 1        1        0        0        1        1        @2609    @2615    @2234    @2616    *        *        *        *
 
 LEATHER_ARMOR                              LEATHER  leat01   1        1        1        1        1        1        @1629    @1629    @1630    @1630    *        *        *        *
 LEATHER_ARMOR_1                            LEATHER  leat02   1        1        1        1        1        1        @1629    @1631    @1632    @1633    *        *        *        *
@@ -422,7 +429,7 @@ RUBY_PENDANT_OF_BEGUILING                  AMULET   regisamu 1        1        0
 
 GREAGANS_HARP                              *        misc2p   1        1        1        1        1        1        @1724    @2443    @1726    @2444    *        *        *        *
 BOOK_OF_INFINITE_SPELLS                    *        misc3a   1        1        0        0        1        1        @1689    @1689    @1690    @1691    *        *        *        *
-BOOK_OF_INFINITE_SPELLS#0                  *        misc3a0  1        1        0        0        1        1        @1689    @1689    @1690    @1691    @4111    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#0                  *        misc3aa  1        1        0        0        1        1        @1689    @1689    @1690    @1691    @4111    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#1                  *        misc3a1  1        1        0        0        1        1        @1689    @1689    @1690    @1692    @4112    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#2                  *        misc3a2  1        1        0        0        1        1        @1689    @1689    @1690    @1693    @4113    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#3                  *        misc3a3  1        1        0        0        1        1        @1689    @1689    @1690    @1694    @4114    @4110    *        *
@@ -433,15 +440,15 @@ BOOK_OF_INFINITE_SPELLS#7                  *        misc3a7  1        1        0
 BOOK_OF_INFINITE_SPELLS#8                  *        misc3a8  1        1        0        0        1        1        @1689    @1689    @1690    @1699    @4119    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#9                  *        misc3a9  1        1        0        0        1        1        @1689    @1689    @1690    @1700    @4120    @4110    *        *
 BOOK_OF_INFINITE_SPELLS#10                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2593    @4121    @4110    *        *
-BOOK_OF_INFINITE_SPELLS#11                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2594    @4122    @4110    *        *
-BOOK_OF_INFINITE_SPELLS#12                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2595    @4123    @4110    *        *
-BOOK_OF_INFINITE_SPELLS#13                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2596    @4124    @4110    *        *
-BOOK_OF_INFINITE_SPELLS#14                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2597    @4125    @4110    *        *
-BOOK_OF_INFINITE_SPELLS#15                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2598    @4126    @4110    *        *
-BOOK_OF_INFINITE_SPELLS#16                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2599    @4127    @4110    *        *
-BOOK_OF_INFINITE_SPELLS#17                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2600    @4128    @4110    *        *
-BOOK_OF_INFINITE_SPELLS#18                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2601    @4129    @4110    *        *
-BOOK_OF_INFINITE_SPELLS#19                 *        misc3a10 1        1        0        0        1        1        @1689    @1689    @1690    @2602    @4130    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#11                 *        misc3a11 1        1        0        0        1        1        @1689    @1689    @1690    @2594    @4122    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#12                 *        misc3a12 1        1        0        0        1        1        @1689    @1689    @1690    @2595    @4123    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#13                 *        misc3a13 1        1        0        0        1        1        @1689    @1689    @1690    @2596    @4124    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#14                 *        misc3a14 1        1        0        0        1        1        @1689    @1689    @1690    @2597    @4125    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#15                 *        misc3a15 1        1        0        0        1        1        @1689    @1689    @1690    @2598    @4126    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#16                 *        misc3a16 1        1        0        0        1        1        @1689    @1689    @1690    @2599    @4127    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#17                 *        misc3a17 1        1        0        0        1        1        @1689    @1689    @1690    @2600    @4128    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#18                 *        misc3a18 1        1        0        0        1        1        @1689    @1689    @1690    @2601    @4129    @4110    *        *
+BOOK_OF_INFINITE_SPELLS#19                 *        misc3a19 1        1        0        0        1        1        @1689    @1689    @1690    @2602    @4130    @4110    *        *
 EFREETI_BOTTLE                             MISC     misc3c   1        1        0        0        1        1        @1701    @1702    @1703    @1704    *        *        *        *
 GOLDEN_LION_FIGURINE                       MISC     misc3d   1        1        0        0        1        1        @1705    @1706    @1707    @1708    *        *        *        *
 BLACK_SPIDER_FIGURINE                      MISC     misc3e   1        1        0        0        1        1        @1705    @1709    @1707    @1710    *        *        *        *
@@ -459,7 +466,7 @@ EMBARLS_DAGGER                             DAGGER   misc4u   1        1        0
 NECKLACE_OF_TALOS                          AMULET   misc4y   1        1        0        0        1        1        @2513    @2513    @2514    @2514    *        *        *        *
 HARPER_AMULET                              AMULET   misc5e   1        1        0        0        1        1        @2567    @2567    @2568    @2568    *        *        *        *
 LOVERS_RING                                RING     misc5r   1        1        0        0        1        1        @2515    @2515    @2516    @2516    *        *        *        *
-SHAMANS_STAFF                              STAFF    misc5t   1        1        0        0        1        1        @2445    @2445    #-1      @2446    @2445    @4032    *        *
+SHAMANS_STAFF                              STAFF    misc5t   1        1        0        0        1        1        @2445    @2445    @2446    @2446    @2445    @4032    *        *
 KEEPSAKE_LOCKET                            AMULET   misc5w   1        1        0        0        1        1        @2517    @2517    @2518    @2518    *        *        *        *
 AMULET_OF_A_HARPER_PIN                     AMULET   misc5x   1        1        0        0        1        1        @1734    @1735    @1736    @1736    *        *        *        *
 WOODEN_STAKE                               *        misc6w   1        1        0        0        1        1        @1737    @1737    @1738    @1738    *        *        *        *
@@ -487,6 +494,7 @@ GOLDEN_CIRCLET                             *        miscaa   1        1        0
 SUN_MEDALLION                              AMULET   miscad   1        1        0        0        1        1        @2546    @2546    @2547    @2547    *        *        *        *
 SWORD_MEDALLION                            AMULET   miscae   1        1        0        0        1        1        @2548    @2548    @2549    @2549    *        *        *        *
 WORN_OUT_BOOTS#QUEST                       BOOTS    miscai   1        1        0        0        1        1        @2494    @2494    @2495    @2495    *        *        *        *
+TALISMAN_OF_RILLIFANE#QUEST                AMULET   miscb1   1        1        0        0        1        1        @2621    @2621    @2622    @2622    *        *        *        *
 BLACKRAZOR_4                               SWORDL   miscbc   1        1        0        0        1        1        @1513    @1741    @1515    @1742    *        *        *        *
 TREE_OF_LIFE_FRUIT                         *        miscbq   1        1        0        0        1        1        @2550    @2550    @2551    @2551    *        *        *        *
 MANUAL_OF_BODILY_HEALTH                    *        book03   1        1        1        1        1        1        @2428    @2430    @2429    @2431    *        *        *        *
@@ -497,7 +505,7 @@ TOME_OF_LEADERSHIP_AND_INFLUENCE           *        book07   1        1        1
 TOME_OF_UNDERSTANDING                      *        book08   1        1        1        1        1        1        @2436    @2441    @2429    @2442    *        *        *        *
 SHAKTI_WARRIOR_FIGURINE                    MISC     figure01 1        1        0        0        1        1        @1705    @2498    @2497    @2499    *        *        *        *
 IMOENS_BELT                                BELT     imoenhp1 1        1        0        0        1        1        @1786    @1786    @1787    @1787    *        *        *        *
-MASK_OF_KING_STROHM_III                    *        KEY20    1        1        0        0        1        1        @2519    @2519    @2520    @2520    *        *        *        *
+MASK_OF_KING_STROHM_III                    *        key20    1        1        0        0        1        1        @2519    @2519    @2520    @2520    *        *        *        *
 GOLEM_MANUAL_FLESH                         MISC     tome01   1        1        0        0        1        1        @2428    @2473    @2429    @2474    *        *        *        *
 GOLEM_MANUAL_CLAY                          MISC     tome02   1        1        0        0        1        1        @2475    @2475    @2476    @2476    *        *        *        *
 GOLEM_MANUAL_STONE                         MISC     tome03   1        1        0        0        1        1        @2477    @2477    @2478    @2478    *        *        *        *
@@ -544,12 +552,12 @@ RADIANT_PLATE_2                            PLATE    plat08   1        1        1
 MITHRAL_FULL_PLATE_MAIL_2                  PLATEF   plat09   1        1        0        0        1        1        @1825    @1683    @1828    @1837    *        *        *        *
 PLATE_MAIL_2                               PLATE    plat10   1        1        0        0        1        1        @1825    @1838    @1828    @1839    *        *        *        *
 DELVERS_PLATE_2                            PLATE    plat11   1        1        0        0        1        1        @1825    @1840    @1828    @1841    *        *        *        *
-DOOMPLATE_3                                PLATE    plat12   1        1        0        0        1        1        @1825    @1842    @1828    @1843    *        *        *        *
+DOOM_PLATE_3                               PLATE    plat12   1        1        0        0        1        1        @1825    @1842    @1828    @1843    *        *        *        *
 DEEP_GUARDIANS_PLATE_4                     PLATE    plat13   1        1        0        0        1        1        @1825    @1844    @1828    @1845    *        *        *        *
 FULL_PLATE_MAIL_1                          PLATEF   plat14   1        1        1        1        1        1        @1497    @1831    @1499    @1832    *        *        *        *
 PRIDE_OF_THE_ORDER_2                       PLATEF   plat15   1        1        0        0        1        1        @1497    @1846    @1499    @1847    *        *        *        *
-CASIELS_SOUL_3                             PLATEF   plat16   1        1        0        0        1        1        @1497    @1848    @1499    @1849    *        *        *        *
-ARMOR_OF_THE_HART_4                        PLATEF   plat17   1        1        0        0        1        1        @1497    @1850    @1499    @1851    *        *        *        cursed
+ARMOR_OF_THE_HART_3                        PLATEF   plat16   1        1        0        0        1        1        @1497    @1848    @1499    @1849    *        *        *        *
+CASIELS_SOUL_3                             PLATEF   plat17   1        1        0        0        1        1        @1497    @1850    @1499    @1851    *        *        *        cursed
 RED_DRAGONPLATE_ARMOR_5                    PLATE    plat18   1        1        0        0        1        1        @1825    @1852    @1828    @1853    *        *        *        *
 FULL_PLATE_MAIL_2                          PLATEF   plat19   1        1        0        0        1        1        @1497    @1854    @1499    @1855    *        *        *        *
 BLUE_DRAGONPLATE_ARMOR_5                   PLATEF   plat20   1        1        0        0        1        1        @1497    @1856    @1499    @1857    *        *        *        *
@@ -559,6 +567,7 @@ FULL_PLATE_MAIL_3                          PLATEF   plat23   1        1        0
 
 BATTLE_AXE_OF_MAULETAR_2                   AXE      ax1h03_  1        1        0        0        1        1        @1055    @2569    @1058    @2570    *        *        *        *
 KROTANS_SKULLCRUSHER_2                     MACE     blun11_  1        1        0        0        1        1        @1112    @2571    @1115    @2572    *        *        *        *
+HELM_OF_OPPOSITE_ALIGNMENT                 HELM     helm02_  1        1        0        0        1        1        @1569    @2623    @1572    @2624    *        *        *        cursed
 TELBARS_ARMOR_2                            LEATHERS leat07_  1        1        0        0        1        1        @1636    @2573    @1640    @2574    *        *        *        *
 FALLORAINS_PLATE_1                         PLATE    plat02_  1        1        0        0        1        1        @1825    @2575    @1828    @2576    *        *        *        *
 PLATE_OF_THE_DARK_1                        PLATEF   plat05_  1        1        0        0        1        1        @1497    @2577    @1499    @2578    *        *        *        *
@@ -571,7 +580,7 @@ RING_OF_CLUMSINESS                         RING     ring04   1        1        1
 RING_OF_INVISIBILITY                       RING     ring05   1        1        1        1        1        1        @1800    @1867    @1802    @1868    @4035    *        *        *
 RING_OF_PROTECTION_1                       RING     ring06   1        1        1        1        1        1        @1800    @1869    @1802    @1870    *        *        *        *
 RING_OF_PROTECTION_2                       RING     ring07   1        1        1        1        1        1        @1800    @1871    @1802    @1872    *        *        *        *
-RING_OF_WIZARDRY                           RING     ring08   1        1        0        0        1        1        @1800    @1873    @1802    @1874    *        *        *        *
+RING_OF_WIZARDRY                           RING     ring08   1        1        1        1        1        1        @1800    @1873    @1802    @1874    *        *        *        *
 RING_OF_FREE_ACTION                        RING     ring09   1        1        1        1        1        1        @1800    @1875    @1802    @1876    *        *        *        *
 RING_OF_ENERGY                             RING     ring20   1        1        1        1        1        1        @1800    @1877    @1802    @1878    *        *        *        *
 RING_OF_NIGHTS_EMBRACE                     RING     ring21   1        1        1        1        1        1        @1800    @1879    @1802    @1880    *        *        *        *
@@ -590,7 +599,7 @@ RING_OF_THE_BURGLAR                        RING     ring35   1        1        0
 RING_OF_DANGER_SENSE                       RING     ring36   1        1        0        0        1        1        @1800    @1901    @1802    @1902    *        *        *        *
 STORM_RING                                 RING     ring37   1        1        0        0        1        1        @2487    @2487    @2488    @2488    *        *        *        *
 DAWN_RING                                  RING     ring38   1        1        0        0        1        1        @2489    @2489    @2490    @2490    *        *        *        *
-RING_OF_KANGAXX                            RING     ring39   1        1        0        0        1        1        @1800    @1903    @1802    @1904    @4046    *        *        *
+RING_OF_GAXX                               RING     ring39   1        1        0        0        1        1        @1800    @1903    @1802    @1904    @4046    *        *        *
 RING_OF_ACUITY                             RING     ring40   1        1        0        1        1        1        @1800    @1905    @1802    @1906    *        *        *        *
 RING_OF_PROTECTION_3                       RING     ring41   1        1        0        0        1        1        @1800    @1907    @1802    @1908    *        *        *        *
 RING_OF_THE_WRAITH                         RING     ring42   1        1        0        0        1        1        @1800    @1909    @1802    @1910    @4085    *        *        *
@@ -671,6 +680,7 @@ SLING_3                                    SLING    slng10   1        1        0
 SPEAR                                      SPEAR    sper01   1        1        1        1        1        1        @1505    @1505    @1988    @1988    *        *        *        *
 SPEAR_1                                    SPEAR    sper02   1        1        1        1        1        1        @1505    @1989    @1507    @1990    *        *        *        *
 BACKBITER_3                                SPEAR    sper03   1        1        1        1        1        1        @1505    @1991    @1507    @1992    *        *        *        cursed
+JAVELIN                                    SPEAR    sper04   1        1        1        1        1        1        @2617    @2617    @2618    @2618    @4052    @4051    *        *
 SPEAR_2                                    SPEAR    sper05   1        1        0        1        1        1        @1505    @1993    @1507    @1994    *        *        *        *
 SPEAR_3                                    SPEAR    sper06   1        1        0        0        1        1        @1505    @1995    @1507    @1996    *        *        *        *
 SPEAR_OF_THE_UNICORN_2                     SPEAR    sper07   1        1        0        0        1        1        @1505    @1997    @1507    @1998    *        *        *        *
@@ -712,7 +722,7 @@ LONG_SWORD_1                               SWORDL   sw1h05   1        1        1
 VARSCONA_2                                 SWORDL   sw1h06   1        1        1        1        1        1        @1513    @2064    @1515    @2065    *        *        *        *
 SHORT_SWORD                                SWORDS   sw1h07   1        1        1        1        1        1        @2066    @2066    @2067    @2067    *        *        *        *
 SHORT_SWORD_1                              SWORDS   sw1h08   1        1        1        1        1        1        @2066    @2068    @2069    @2070    *        *        *        *
-SHORT_SWORD_2#BG1_DUPLICATE                SWORDS   sw1h29   1        1        0        0        1        1        @2066    @2071    @2069    @2094    *        *        *        *
+SHORT_SWORD_2#BG1_DUPLICATE                SWORDS   sw1h09   1        1        0        0        1        1        @2066    @2071    @2069    @2094    *        *        *        *
 SHORT_SWORD_OF_BACKSTABBING_3              SWORDS   sw1h10   1        1        1        1        1        1        @2066    @2073    @2069    @2074    *        *        *        *
 HULLS_LONG_SWORD                           SWORDL   sw1h12   1        1        1        1        1        1        @2422    @2422    @2061    @2061    *        *        *        *
 MOONBLADE_3                                SWORDL   sw1h13   1        1        1        1        1        1        @2403    @2403    @2404    @2404    *        *        *        *
@@ -767,7 +777,7 @@ FOEBANE_5                                  SWORDB   sw1h63   1        1        0
 PURIFIER_4                                 SWORDB   sw1h64   1        1        0        0        1        1        @2054    @2159    @2057    @2160    *        *        *        *
 PURIFIER_5                                 SWORDB   sw1h65   1        1        0        0        1        1        @2054    @2161    @2057    @2162    @2161    @4073    @4074    *
 YAMATO_3                                   WAKI     sw1h66   1        1        0        0        1        1        @2127    @2163    @2130    @2164    *        *        *        *
-USUNOS_BLADE_3                             NINJATO  sw1h67   1        1        0        0        1        1        @2132    @21651   @2135    @2165    *        *        *        *
+USUNOS_BLADE_3                             NINJATO  sw1h67   1        1        0        0        1        1        @2132    @1811    @2135    @2165    *        *        *        *
 SPECTRAL_BRAND_4                           SCIMITAR sw1h68   1        1        0        0        1        1        @1509    @2166    @1511    @2167    @2166    @4075    *        *
 SPECTRAL_BRAND_5                           SCIMITAR sw1h69   1        1        0        0        1        1        @1509    @2168    @1511    @2169    @2168    @4075    @4089    *
 HINDOS_DOOM_4                              KATANA   sw1h70   1        1        0        0        1        1        @1808    @2170    @2123    @2171    @2170    @4076    *        *
@@ -911,44 +921,44 @@ RING_OF_SORCERY#BGT                        RING     bgring08 1        1        1
 THE_WORLDS_EDGE_3#BGT                      SWORD2H  bgsw2h07 1        1        0        0        1        1        @1760    @2426    @1762    @2427    *        *        *        *
 WAND_OF_MAGIC_MISSILES#BGT                 WAND     bgwand12 1        1        1        1        1        1        @2239    @2243    @2241    @2244    *        *        *        *
 
-RHYTES_LAST_ARROW_2                        AXEH     ax1h06   0        0        0        0        0        0        @1062    @60000   @1067    @60001   @4052    @4051    @2504    *
-BERUELS_RETORT_1                           AXEH     ax1h18   0        0        0        1        1        1        @1062    @60002   @1067    @60003   @4052    @4051    *        *
-GOLDEN_AXE_1                               AXE      ax1h19   0        0        0        1        1        1        @1055    @60004   @1058    @60005   *        *        *        *
-BIG_FISTED_BELT                            BELT     belt15   0        0        0        1        1        1        @1085    @60006   @1087    @60007   *        *        *        *
-BELT_OF_ANTIPODE                           BELT     belt16   0        0        0        1        1        1        @1085    @60008   @1087    @60009   *        *        *        *
-CLUB_1                                     CLUB     blun36   0        0        0        1        1        1        @1105    @60010   @1125    @60011   *        *        *        *
-MIGHTY_OAK_2                               CLUB     blun37   0        0        0        1        1        1        @1105    @60012   @1125    @60013   *        *        *        *
-NIGHT_CLUB_1                               CLUB     blun38   0        0        0        1        1        1        @1105    @60014   @1125    @60015   *        *        *        *
-THE_THRESHER_2                             FLAIL    blun39   0        0        0        1        1        1        @1107    @60016   @1110    @60017   *        *        *        *
-CHANSERVS_FISH_2                           CLUB     blun40   0        0        0        1        1        1        @1105    @60018   @1125    @60019   *        *        *        *
-THE_STUPEFIER_1                            MACE     blun41   0        0        0        1        1        1        @1112    @60020   @1115    @60021   *        *        *        *
-THE_CHESLEY_CRUSHER_2                      HALBERD  halb13   0        0        0        1        1        1        @1493    @60022   @1495    @60023   *        *        *        *
-HAMMER_OF_DAWN_1                           HAMMER   hamm13   0        0        0        1        1        1        @1544    @60024   @1545    @60025   *        *        *        *
-RUGGED_LEATHERS_2                          LEATHER  leat25   0        0        0        1        1        1        @1629    @60026   @1632    @60027   *        *        *        *
-ADOYS_BELT                                 BELT     nebelt01 0        0        0        1        1        1        @1085    @60028   @1087    @60029   *        *        *        *
-THE_MAGMA_BULWARK_2                        PLATE    plat24   0        0        0        1        1        1        @1497    @60030   @1499    @60031   *        *        *        *
-IRON_THORN_RING                            RING     ring47   0        0        0        1        1        1        @1800    @60032   @1802    @60033   *        *        *        *
-MOONLIGHT_WALKERS                          BOOTS    rsboot   0        0        0        1        1        1        @1192    @60034   @1194    @60035   *        *        *        *
-GLIMMERING_BANDS                           BRACER   rsbrac   0        0        0        1        1        1        @1267    @60036   @1269    @60037   *        *        *        *
-BUCKLEYS_BUCKLER                           BUCKLER  shld33   0        0        0        1        1        1        @1955    @60038   @1958    @60039   *        *        *        *
-SLING_OF_UNERRING_ACCURACY_1               SLING    slng11   0        0        0        1        1        1        @1920    @60040   @1923    @60041   *        *        *        *
-THE_OSSIFIER_1                             STAFF    staf25   0        0        0        1        1        1        @2009    @60042   @2012    @60043   *        *        *        *
-NEERAS_STAFF_1                             STAFF    stafn1   0        0        0        1        1        1        @2009    @60044   @2012    @60045   *        *        *        *
-THE_HARROWER_1                             SWORDL   sw1h79   0        0        0        1        1        1        @1513    @60046   @1515    @60047   *        *        *        *
-THE_GOLD_DIGGER_1                          SWORD2H  sw2h22   0        0        0        1        1        1        @1760    @60048   @1762    @60049   *        *        *        *
-RANCOR_1                                   SWORD2H  sw2hd1   0        0        0        1        1        1        @1760    @60050   @1762    @60051   *        *        *        *
+RHYTES_LAST_ARROW_2                        AXEH     ax1h06   0        0        0        0        0        0        @1062    @6000    @1067    @6001    @4052    @4051    @2504    *
+BERUELS_RETORT_1                           AXEH     ax1h18   0        0        0        1        1        1        @1062    @6002    @1067    @6003    @4052    @4051    *        *
+GOLDEN_AXE_1                               AXE      ax1h19   0        0        0        1        1        1        @1055    @6004    @1058    @6005    *        *        *        *
+BIG_FISTED_BELT                            BELT     belt15   0        0        0        1        1        1        @1085    @6006    @1087    @6007    *        *        *        *
+BELT_OF_ANTIPODE                           BELT     belt16   0        0        0        1        1        1        @1085    @6008    @1087    @6009    *        *        *        *
+CLUB_1                                     CLUB     blun36   0        0        0        1        1        1        @1105    @6010    @1125    @6011    *        *        *        *
+MIGHTY_OAK_2                               CLUB     blun37   0        0        0        1        1        1        @1105    @6012    @1125    @6013    *        *        *        *
+NIGHT_CLUB_1                               CLUB     blun38   0        0        0        1        1        1        @1105    @6014    @1125    @6015    *        *        *        *
+THE_THRESHER_2                             FLAIL    blun39   0        0        0        1        1        1        @1107    @6016    @1110    @6017    *        *        *        *
+CHANSERVS_FISH_2                           CLUB     blun40   0        0        0        1        1        1        @1105    @6018    @1125    @6019    *        *        *        *
+THE_STUPEFIER_1                            MACE     blun41   0        0        0        1        1        1        @1112    @6020    @1115    @6021    *        *        *        *
+THE_CHESLEY_CRUSHER_2                      HALBERD  halb13   0        0        0        1        1        1        @1493    @6022    @1495    @6023    *        *        *        *
+HAMMER_OF_DAWN_1                           HAMMER   hamm13   0        0        0        1        1        1        @1544    @6024    @1545    @6025    *        *        *        *
+RUGGED_LEATHERS_2                          LEATHER  leat25   0        0        0        1        1        1        @1629    @6026    @1632    @6027    *        *        *        *
+ADOYS_BELT                                 BELT     nebelt01 0        0        0        1        1        1        @1085    @6028    @1087    @6029    *        *        *        *
+THE_MAGMA_BULWARK_2                        PLATE    plat24   0        0        0        1        1        1        @1497    @6030    @1499    @6031    *        *        *        *
+IRON_THORN_RING                            RING     ring47   0        0        0        1        1        1        @1800    @6032    @1802    @6033    *        *        *        *
+MOONLIGHT_WALKERS                          BOOTS    rsboot   0        0        0        1        1        1        @1192    @6034    @1194    @6035    *        *        *        *
+GLIMMERING_BANDS                           BRACER   rsbrac   0        0        0        1        1        1        @1267    @6036    @1269    @6037    *        *        *        *
+BUCKLEYS_BUCKLER                           BUCKLER  shld33   0        0        0        1        1        1        @1955    @6038    @1958    @6039    *        *        *        *
+SLING_OF_UNERRING_ACCURACY_1               SLING    slng11   0        0        0        1        1        1        @1920    @6040    @1923    @6041    *        *        *        *
+THE_OSSIFIER_1                             STAFF    staf25   0        0        0        1        1        1        @2009    @6042    @2012    @6043    *        *        *        *
+NEERAS_STAFF_1                             STAFF    stafn1   0        0        0        1        1        1        @2009    @6044    @2012    @6045    *        *        *        *
+THE_HARROWER_1                             SWORDL   sw1h79   0        0        0        1        1        1        @1513    @6046    @1515    @6047    *        *        *        *
+THE_GOLD_DIGGER_1                          SWORD2H  sw2h22   0        0        0        1        1        1        @1760    @6048    @1762    @6049    *        *        *        *
+RANCOR_1                                   SWORD2H  sw2hd1   0        0        0        1        1        1        @1760    @6050    @1762    @6051    *        *        *        *
 
-SPLINT_MAIL_2                              SPLINT   ohchan50 1        1        0        1        1        1        @1335    @70000   @1338    @70001   *        *        *        *
-DART_2                                     DART     ohdart50 1        1        0        1        1        1        @1466    @70002   @1469    @70003   *        *        *        *
-DART_3                                     DART     ohdart51 1        1        0        1        1        1        @1466    @70004   @1469    @70005   *        *        *        *
-HIDE_ARMOR_1                               HIDE     ohleat50 1        1        0        1        1        1        @1651    @70006   @1671    @70007   *        *        *        *
-HIDE_ARMOR_2                               HIDE     ohleat51 1        1        0        1        1        1        @1651    @70008   @1671    @70009   *        *        *        *
-HIDE_ARMOR_3                               HIDE     ohleat52 1        1        0        1        1        1        @1651    @70010   @1671    @70011   *        *        *        *
-BUCKLER_2                                  SHIELDB  ohshld50 1        1        0        1        1        1        @1955    @70012   @1958    @70013   *        *        *        *
-BUCKLER_3                                  SHIELDB  ohshld51 1        1        0        1        1        1        @1955    @70014   @1958    @70015   *        *        *        *
-WAKIZASHI_2                                WAKI     ohsw1h51 1        1        0        1        1        1        @2127    @70016   @2130    @70017   *        *        *        *
-WAKIZASHI_3                                WAKI     ohsw1h52 1        1        0        1        1        1        @2127    @70018   @2130    @70019   *        *        *        *
-NINJA-TO_2                                 NINJATO  ohsw1h53 1        1        0        1        1        1        @2132    @70020   @2135    @70021   *        *        *        *
-NINJA-TO_3                                 NINJATO  ohsw1h54 1        1        0        1        1        1        @2132    @70022   @2135    @70023   *        *        *        *
-SCIMITAR_2                                 SCIMITAR ohsw1h55 1        1        0        1        1        1        @1509    @70024   @1511    @70025   *        *        *        *
+SPLINT_MAIL_2                              SPLINT   ohchan50 1        1        0        1        1        1        @1335    @7000    @1338    @7001    *        *        *        *
+DART_2                                     DART     ohdart50 1        1        0        1        1        1        @1466    @7002    @1469    @7003    *        *        *        *
+DART_3                                     DART     ohdart51 1        1        0        1        1        1        @1466    @7004    @1469    @7005    *        *        *        *
+HIDE_ARMOR_1                               HIDE     ohleat50 1        1        0        1        1        1        @1651    @7006    @1671    @7007    *        *        *        *
+HIDE_ARMOR_2                               HIDE     ohleat51 1        1        0        1        1        1        @1651    @7008    @1671    @7009    *        *        *        *
+HIDE_ARMOR_3                               HIDE     ohleat52 1        1        0        1        1        1        @1651    @7010    @1671    @7011    *        *        *        *
+BUCKLER_2                                  SHIELDB  ohshld50 1        1        0        1        1        1        @1955    @7012    @1958    @7013    *        *        *        *
+BUCKLER_3                                  SHIELDB  ohshld51 1        1        0        1        1        1        @1955    @7014    @1958    @7015    *        *        *        *
+WAKIZASHI_2                                WAKI     ohsw1h51 1        1        0        1        1        1        @2127    @7016    @2130    @7017    *        *        *        *
+WAKIZASHI_3                                WAKI     ohsw1h52 1        1        0        1        1        1        @2127    @7018    @2130    @7019    *        *        *        *
+NINJA-TO_2                                 NINJATO  ohsw1h53 1        1        0        1        1        1        @2132    @7020    @2135    @7021    *        *        *        *
+NINJA-TO_3                                 NINJATO  ohsw1h54 1        1        0        1        1        1        @2132    @7022    @2135    @7023    *        *        *        *
+SCIMITAR_2                                 SCIMITAR ohsw1h55 1        1        0        1        1        1        @1509    @7024    @1511    @7025    *        *        *        *
 UNHOLY_REAVER_5                            SWORD2H  ohreaver 1        1        0        1        1        1        @1760    @1761    @1762    @1763    *        *        *        *

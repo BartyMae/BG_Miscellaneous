@@ -3,10 +3,11 @@ Polymorph Self 7th and final form (undead of some kind, wraith?)
 Unsummon innate ability for summonables
 Review MS9 (Wolfweres) and MS7 (Otyughs)
 More IWD spells?
-lambda changes https://github.com/lambda-dom/spell_rev_rev
-Separate Heart of the Golem?
 True Strike / Enchanted Weapon should be white
-fix regeneration items to use the right icon
+Place Heart of the Golem, Amulet of Protection +2, Shield of the Lost, Dusty Rose Ioun Stone in BG2
+Get Krotan's Skullcrusher placed in BG1 again
+Blacken Shield of Balduran more (look at its paperdoll colors / look at armor of balduran!)
+sharpen up dak'kon's zert blade?
 
 Arcane:
 1. Snilloc's Snowball Swarm
