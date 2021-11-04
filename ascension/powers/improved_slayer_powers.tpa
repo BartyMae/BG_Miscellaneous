@@ -149,7 +149,7 @@ DEFINE_ACTION_FUNCTION slayer_weapon_enhancements BEGIN
    ///
    /// - Additional +4 to hit (THAC0 -4)
    ///- damage increases to 2d6 + 4 cold damage
-   ///- 15% resistance to physical damage
+   ///- 20% resistance to physical damage
    ///- 25% resistance to energy damage
    ///- MR increases to 40%
    ///- 150 hp
@@ -159,7 +159,12 @@ DEFINE_ACTION_FUNCTION slayer_weapon_enhancements BEGIN
 
 
     COPY_EXISTING slayerw3.itm "override/finslay2.itm"
-       LPF item_power_patch INT_VAR thac0="-4" resist_elemental=25 resist_physical=15 resist_magic=40 END // general patch
+	   PATCH_IF !enhanced_edition BEGIN 
+	     LPF item_power_patch INT_VAR thac0="0" resist_elemental=25 resist_physical=20 resist_magic=40 END // general patch
+	     LPF CLONE_EFFECT INT_VAR match_opcode = 54 opcode=278 parameter1 = 4 parameter2 = 0 END
+	   END ELSE BEGIN
+	     LPF item_power_patch INT_VAR thac0="-4" resist_elemental=25 resist_physical=20 resist_magic=40 END // general patch
+       END
        LPF ALTER_EFFECT INT_VAR parameter1=150 parameter2=hp_param2 match_opcode=17 END // hit points
        LPF ALTER_EFFECT INT_VAR parameter1=150 parameter2=hp_param2 match_opcode=18 END // hit points
        LPF ALTER_EFFECT INT_VAR match_opcode=12 parameter1=4 END // cold damage
@@ -176,8 +181,8 @@ DEFINE_ACTION_FUNCTION slayer_weapon_enhancements BEGIN
    /// - Additional +4 to hit (THAC0 -8)
    ///- damage increases to 2d8 + 8 cold damage, plus antimagic effect: 10% of hits apply Dispel Magic and a -10% MR effect
    /// (controllable by INI, vAsc is 5%)
-   ///- 25% resistance to physical damage
-   ///- 50% resistance to energy damage
+   ///- 30% resistance to physical damage
+   ///- 40% resistance to energy damage
    ///- MR increases to 50%
    ///- 200 hp
    ///- immunity to disease, poison
@@ -193,7 +198,12 @@ DEFINE_ACTION_FUNCTION slayer_weapon_enhancements BEGIN
 
 
    COPY_EXISTING slayerw3.itm "override/finslay3.itm"
-       LPF item_power_patch INT_VAR thac0="-8" resist_elemental=50 resist_physical=25 resist_magic=50 END // general patch
+	   PATCH_IF !enhanced_edition BEGIN 
+	     LPF item_power_patch INT_VAR thac0="0" resist_elemental=40 resist_physical=30 resist_magic=50 END // general patch
+	     LPF CLONE_EFFECT INT_VAR match_opcode = 54 opcode=278 parameter1 = 8 parameter2 = 0 END	
+	   END ELSE BEGIN
+	     LPF item_power_patch INT_VAR thac0="-8" resist_elemental=40 resist_physical=30 resist_magic=50 END // general patch
+       END 
        LPF ALTER_EFFECT INT_VAR parameter1=200 parameter2=hp_param2 match_opcode=17  END // hit points
        LPF ALTER_EFFECT INT_VAR parameter1=200 parameter2=hp_param2 match_opcode=18  END // hit points
        LPF ALTER_EFFECT INT_VAR match_opcode=12 parameter1=8 END // cold damage
@@ -224,8 +234,8 @@ DEFINE_ACTION_FUNCTION slayer_weapon_enhancements BEGIN
    ///  In vAsc, the slayer also gets a knockback ability. Given how many bugs
    /// that has tended to generate in SCS, I think this is a bad idea; instead
    /// I'll increase the chance of an antimagic hit to 25%. (ini override)
-   ///- 50% resistance to physical damage
-   ///- 75% resistance to energy damage
+   ///- 40% resistance to physical damage
+   ///- 50% resistance to energy damage
    ///- MR increases to 75%
    ///- 50% resistance to magic damage
    ///- immunity as per level 3
@@ -244,7 +254,12 @@ DEFINE_ACTION_FUNCTION slayer_weapon_enhancements BEGIN
    // here we use finslay3 as a baseline
 
    COPY_EXISTING finslay3.itm "override/finslay4.itm"
-        LPF item_power_patch INT_VAR thac0="-12" resist_elemental=75 resist_magic_damage=50 resist_magic=75 resist_physical=50 attacks=5 END
+	   PATCH_IF !enhanced_edition BEGIN 
+	     LPF item_power_patch INT_VAR thac0="0" resist_magic_damage=50 resist_magic=75 resist_physical=40 attacks=5 END // general patch
+	     LPF ALTER_EFFECT INT_VAR match_opcode = 278 parameter1 = 12 END	
+	   END ELSE BEGIN
+	     LPF item_power_patch INT_VAR thac0="-12" resist_magic_damage=50 resist_magic=75 resist_physical=40 attacks=5 END // general patch
+       END  
        LPF ALTER_EFFECT INT_VAR parameter1=250 parameter2=hp_param2 match_opcode=17  END // hit points
        LPF ALTER_EFFECT INT_VAR parameter1=250 parameter2=hp_param2 match_opcode=18  END // hit points
         LPF ALTER_ITEM_HEADER INT_VAR dicenumber=3 END // hit damage
@@ -411,7 +426,7 @@ END
 
    COPY_EXISTING "finslgr.spl" "override/finslgd.spl" 
      LPF ALTER_EFFECT INT_VAR timing=4 duration=180 END
-     LPF ADD_SPELL_EFFECT INT_VAR target=2 timing=0 duration=179 opcode=318 STR_VAR resource=finslg2 END // Unleash's grant ability
+     LPF ADD_SPELL_EFFECT INT_VAR target=2 timing=0 duration=179 opcode=206 STR_VAR resource=finslg2 END // Unleash's grant ability
 
 
    COPY_EXISTING "%SLAYER_CHANGE_TWO%.spl" override
@@ -461,7 +476,7 @@ COPY_EXISTING "slayerw3.itm" override
      // remove the random Finger of Death effect
      LPF DELETE_EFFECT STR_VAR match_resource=spwi713 END
      LPF DELETE_EFFECT STR_VAR match_resource=sppr708 END
-     LPF item_power_patch INT_VAR resist_magic=30 END
+     LPF item_power_patch INT_VAR resist_magic=40 END
      // sort out hitpoints
      LPF check_ini STR_VAR ini=additive_slayer_hitpoints RET value END
      PATCH_IF value BEGIN
@@ -516,7 +531,7 @@ END
 
 DEFINE_ACTION_FUNCTION slayer_upgrade_documentation BEGIN
 
-   LOAD_TRA "%ascension_tra_loc%/english/description.tra" "%ascension_tra_loc%/%language%/description.tra"
+   LOAD_TRA "%ascension_tra_loc%/english/description.tra" "%ascension_tra_loc%/%LANGUAGE%/description.tra"
 
    // make the copies
    COPY_EXISTING "%SLAYER_START%.spl" "override"
