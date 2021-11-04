@@ -11,7 +11,7 @@ Casting Time: 5
 Area of Effect: 30' radius
 Saving Throw: None
 
-Upon uttering the Bless spell, the priest grants a +1 bonus to THAC0, damage, and morale to friendly creatures. The caster determines at what range they will cast the spell, and the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster. Multiple castings of this spell are not cumulative.~
+Upon uttering the Bless spell, the priest grants a +1 bonus to THAC0, damage, and morale to friendly creatures. The caster determines at what range they will cast the spell, and the instant the spell is completed, it affects all eligible creatures in a 30 foot radius centered on the point selected by the caster. Multiple castings of this spell are not cumulative.~
 
 @3=~Command~
 @4=~Command
@@ -24,7 +24,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-This spell enables the priest to command another creature to lie down and take no action (sleep) for a single round. The target has a saving throw penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, dragons, elementals, and illusions are completely immune to magically-induced sleep.
+This spell enables the priest to command another creature to lie down and take no action (sleep) for a single round. The target has a saving throw penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level.~ // Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, dragons, elementals, and illusions are completely immune to magically-induced sleep.
 
 @5=~Cure Light Wounds~
 @6=~Cure Light Wounds
@@ -37,7 +37,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
 
-When casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 10 + 1/two levels hit points, up to a maximum of 20 at 20th level.~ //This healing cannot affect creatures of incorporeal or extraplanar origin.~
+When casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 10 + 1/two levels hit points, up to a maximum of 20 at 20th level.~ // This healing cannot affect creatures of incorporeal or extraplanar origin.~
 
 @7=~Detect Alignment~
 @8=~Detect Alignment
@@ -102,7 +102,7 @@ Casting Time: 1
 Area of Effect: 30' radius
 Saving Throw: None
 
-The priest instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster.~
+The priest instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 30 foot radius centered on the point selected by the caster.~
 
 @17=~Sanctuary~
 @18=~Sanctuary
@@ -180,7 +180,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone, setting their strength to 18 and adding an additional +50 exceptional strength on top of this, and they receive any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram.~
+Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone, setting their strength to 18 and adding an additional +50 exceptional strength on top of this, and they receive any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram. Multiple castings of this spell are not cumulative.~
 
 @29=~Sunscorch~
 @30=~Sunscorch
@@ -218,7 +218,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Casting a Goodberry spell creates 5 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 1 hit point and an additional hit point for every three extra experience levels of the caster, up to a maximum of 5 at 13th level. The berries last for 24 hours or until eaten.~
+Casting a Goodberry spell creates 3 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 5 hit points and one additional hit point for every three experience levels of the caster, up to a maximum of 10 at 15th level. The berries last for 24 hours or until eaten.~
 
 @315=~Cause Light Wounds~
 @316=~Cause Light Wounds
@@ -318,20 +318,33 @@ Saving Throw: None
 
 By means of the Chant spell, the priest brings special favor upon themselves and their party while causing harm to their enemies. When the chant is completed, the THAC0, damage, and saving throws of those in the area of effect who are friendly to the priest gain a +1 bonus, while those hostile to the priest suffer a -1 penalty. Multiple castings of this spell are not cumulative.~
 
+@35000=~Chant~
+@36000=~Chant
+Level: 2
+School: Conjuration
+Sphere: Combat
+Range: Long
+Duration: 1 turn
+Casting Time: 1 round
+Area of Effect: 30' radius
+Saving Throw: None
+
+By means of the Chant spell, the priest brings special favor upon themselves and their party while causing harm to their enemies. When the chant is completed, the THAC0, damage, and saving throws of those in the area of effect who are friendly to the priest gain a +1 bonus, while those hostile to the priest suffer a -1 penalty. Multiple castings of this spell are not cumulative.~
+
 @37=~Charm Person or Animal~
 @38=~Charm Person or Animal
 Level: 2
 School: Enchantment
 Sphere: Animal
 Range: Long
-Duration: 5 rounds
+Duration: 1 turn
 Casting Time: 2
 Area of Effect: 1 person or animal
 Saving Throw: Spell negates
 
-This spell affects any single person or animal that it is cast upon. The term "person" includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, kobolds, and others. Only normal and giant sized animals are affected by this spell. Monsters such as wyverns, ankhegs, and carrion crawlers do not count as animals. If the target fails their save vs. spell, they regard the caster as a trusted friend and ally to be heeded and protected for the duration of the spell. The caster may give them orders, and the charmed creature will carry them out as quickly as possible.
+This spell affects any single person or animal that it is cast upon. The term "person" includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, kobolds, and others. If the target fails their save vs. spell, they regard the caster as a trusted friend and ally to be heeded and protected for the duration of the spell. The caster may give them orders, and the charmed creature will carry them out as quickly as possible.
 
-If the caster attempts to harm the charmed creature, or if a dispel magic is successfully cast upon them, the spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. After the duration of the spell, the affected creature resumes their previous behavior prior to being charmed.~
+Creatures that are currently neutral to the caster are more amenable to helping them and make their saving throw with no bonus, while those that are hostile are significantly more difficult to influence and instead gain a +4 bonus to making their saving throw. If the caster attempts to harm the charmed creature, the spell is broken and the affected creature will immediately become hostile to the caster. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. After the duration of the spell or if a dispel magic is successfully cast upon them, the affected creature resumes their previous behavior prior to being charmed.~
 
 @39=~Find Traps~
 @40=~Find Traps
@@ -370,7 +383,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Casting a Goodberry spell creates 5 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 1 hit point for every three experience levels of the caster, up to a maximum of 10 at 30th level. The berries last for 24 hours or until eaten.~
+Casting a Goodberry spell creates 3 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 5 hit points and one additional hit point for every three experience levels of the caster, up to a maximum of 10 at 15th level. The berries last for 24 hours or until eaten.~
 
 @45=~Hold Person~
 @46=~Hold Person
@@ -476,7 +489,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-When casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 20 + 2/two levels hit points, up to a maximum of 40 at 20th level.~ //This healing cannot affect creatures of incorporeal or extraplanar origin.~
+When casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 20 + 2/two levels hit points, up to a maximum of 40 at 20th level.~ // This healing cannot affect creatures of incorporeal or extraplanar origin.~
 
 @61=~Fire Trap~
 @62=~Fire Trap
@@ -517,7 +530,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: Special
 
-This spell creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 6 feet must make a save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) as well as any insect swarms in the caster's current area.~
+This spell creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 10 feet must make a save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) as well as any insect swarms in the caster's current area.~
 
 @317=~Cause Medium Wounds~
 @318=~Cause Medium Wounds
@@ -632,6 +645,34 @@ Saving Throw: Special
 Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
 
 The chance of the dispel succeeding is determined by the experience level of the caster and the experience level of the caster whose magic is being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of Dispel Magic is above the level of the caster whose magic they are trying to dispel, their chance of success increases by 5%. For every level that the caster of Dispel Magic is below the level of the caster whose magic they are attempting to dispel, their chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if a caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Similarly, if the caster is 4 levels lower than the magic they are trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the caster.~
+
+@76000=~Dispel Magic
+Level: 3
+School: Abjuration
+Sphere: All
+Range: Long
+Duration: Instant
+Casting Time: 3
+Area of Effect: 30' radius
+Saving Throw: Special
+
+Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. The affected creatures have a saving throw penalty of -1 for every five experience levels of the caster, up to a maximum of -4 at 20th level. Magic resistance does not affect this spell.~
+
+@76000000=~Dispel Magic
+Level: 3
+School: Abjuration
+Sphere: All
+Range: Long
+Duration: Instant
+Casting Time: 3
+Area of Effect: 30' radius
+Saving Throw: Special
+
+Dispel Magic dispels one specific and one combat protection on each creature within the area of effect. Additional protections are dispelled at 10th level and again at 15th level, up to a maximum of 3 each. Magic resistance, if any, does not affect this spell.
+
+The specific protection spells dispelled by Remove Magic are: Resist Fear, Resist Elements, Death Ward, Free Action, Protection from Acid, Protection from Cold, Protection from Electricity, Protection from Fire, Chaotic Commands, Protection from Magic Energy, Protection from the Elements, Mind Blank, and Protection from Energy.
+
+The combat protection spells dispelled by Remove Magic are: Mage Armor, Shield, Armor of Faith, Barkskin, Protection from Missiles, Spirit Armor, Stoneskin, Protection from Normal Weapons, Protection from Magical Weapons, Physical Mirror, Prismatic Mantle, and Absolute Immunity.~
 
 @77=~Glyph of Warding~
 @78=~Glyph of Warding
@@ -860,7 +901,7 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: None
 
-When casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 30 + 3/two levels hit points, up to a maximum of 60 at 20th level.~ //This healing cannot affect creatures of incorporeal or extraplanar origin.~
+When casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 30 + 3/two levels hit points, up to a maximum of 60 at 20th level.~ // This healing cannot affect creatures of incorporeal or extraplanar origin.~
 
 @1109=~Storm Shield~
 @1110=~Storm Shield
@@ -954,7 +995,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: None
 
-When casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 40 + 4/two levels hit points, up to a maximum of 80 at 20th level.~ //This healing cannot affect creatures of incorporeal or extraplanar origin.~
+When casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 40 + 4/two levels hit points, up to a maximum of 80 at 20th level.~ // This healing cannot affect creatures of incorporeal or extraplanar origin.~
 
 @113=~Animal Summoning IV~
 @114=~Animal Summoning IV
@@ -1023,7 +1064,7 @@ Saving Throw: Spell negates
 
 When cast, the target must successfully save vs. spell at a -2 penalty to avoid being mentally dominated. While mentally dominated, the priest is simply able to command the target to perform certain tasks or functions for the duration of the spell, though the priest must be within visual range to be able to give them commands. The effects of this spell are similar to the 5th level arcane spell Domination, but this spell does not give the priest access to the subject's thoughts, memory, or sensory apparatus.
 
-If the caster attempts to harm the dominated creature, or if a dispel magic is successfully cast upon them, the spell is broken. If two or more domination effects simultaneously affect a creature, the most recent domination takes precedence.~
+If the caster attempts to harm the dominated creature, or if a dispel magic is successfully cast upon them, the spell is broken. Dominated creatures are unaffected by charm, and if two or more domination effects simultaneously affect a creature, the most recent domination takes precedence.~
 
 @121=~Defensive Harmony~
 @122=~Defensive Harmony
@@ -1292,7 +1333,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-Upon casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 50 + 5/two levels hit points, up to a maximum of 100 at 20th level.~ //This healing cannot affect creatures of incorporeal or extraplanar origin.~
+Upon casting this spell and laying their hand upon a creature, the priest heals the wounds and injuries of the target. The priest can restore 50 + 5/two levels hit points, up to a maximum of 100 at 20th level.~ // This healing cannot affect creatures of incorporeal or extraplanar origin.~
 
 @155=~Flame Strike~
 @156=~Flame Strike
@@ -1344,9 +1385,9 @@ Casting Time: 5
 Area of Effect: Sight
 Saving Throw: None
 
-When a True Seeing spell is cast, the priest gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell. Magic resistance does not affect this spell.
+When a True Seeing spell is cast, the priest gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell.
 
-NOTE: True Seeing does not dispel illusionary clones such as those conjured by Mislead or Simulacrum, but instead clearly highlights them, revealing them as deceptions.~
+Creatures affected by improved invisibility will be revealed to the party, but can only be directly targeted with spellcasting by the caster of this spell. True Seeing does not dispel illusionary clones such as those conjured by Mislead or Simulacrum, but instead clearly highlights them, revealing them as deceptions. Magic resistance does not affect this spell.~
 
 @161=~Stoneskin~
 @162=~Stoneskin
@@ -1439,7 +1480,7 @@ Casting Time: 1
 Area of Effect: Target, and enemies within 20'
 Saving Throw: Special
 
-As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 20 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After 1 turn, any creatures still sleeping will awaken.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, elementals, illusions, and dragons are completely immune to magically-induced sleep.
+As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 20 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After 1 turn, any creatures still sleeping will awaken.~ // Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, elementals, illusions, and dragons are completely immune to magically-induced sleep.
 
 @175=~Righteous Fury~
 @176=~Righteous Fury
@@ -1478,7 +1519,7 @@ Casting Time: 5
 Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-An invisible, mobile field surrounds the caster and prevents creatures from approaching them. Any creature within or entering the field must make a save vs. spell at a -4 penalty or be pushed away 10 feet. Repelled creatures are not otherwise restricted, and may still attack with ranged weapons or cast spells.~
+An invisible, mobile field surrounds the caster and prevents creatures from approaching them. Any creature within or entering the field must make a save vs. spell at a -4 penalty or be pushed away 10 feet. Repelled creatures are not otherwise restricted, and may still attack with ranged weapons or cast spells. Multiple castings of this spell are not cumulative.~
 
 @179=~Pixie Dust~
 @180=~Pixie Dust
@@ -1662,9 +1703,9 @@ Casting Time: 6
 Area of Effect: 10' radius
 Saving Throw: None
 
-The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 10' radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell are not cumulative.
+The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 10' radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell and Globe of Blades are not cumulative.
 
-Note that invisibility or invisibility-like spells and effects such as Sanctuary, Improved Invisibility, and Mislead will not function on the caster when protected by Blade Barrier. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
+Note that invisibility or invisibility-like spells and effects such as Sanctuary and Invisibility will not function on the caster when protected by Blade Barrier. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
 @199=~Conjure Fire Elemental~
 @200=~Conjure Fire Elemental
@@ -1728,7 +1769,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: None
 
-The very potent Heal spell enables the priest to wipe away the wounds and injuries of the target. It completely cures the recipient of all diseases, poisons, and negative conditions such as blindness, deafness, and feeblemindedness. Naturally, the effects can be negated by subsequent injuries, diseases, and magic.~ //This healing cannot affect creatures of incorporeal or extraplanar origin.~
+The very potent Heal spell enables the priest to wipe away the wounds and injuries of the target. It completely cures the recipient of all diseases, poisons, and negative conditions such as blindness, deafness, and feeblemindedness. Naturally, the effects can be negated by subsequent injuries, diseases, and magic.~ // This healing cannot affect creatures of incorporeal or extraplanar origin.~
 
 @205=~Harm~
 @206=~Harm
@@ -2112,8 +2153,8 @@ Saving Throw: Death partial
 
 The Finger of Death spell snuffs out the chosen target's life force. The caster points their finger at the victim once the incantation is complete and death occurs unless a save vs. death at a -4 penalty is made. A creature who successfully makes their saving throw still suffers 1D6 magic damage for every two experience levels of the caster, up to a maximum of 10D6 at 20th level.~
 
-@297=~Chaos~
-@298=~Chaos
+@297=~Sphere of Chaos~
+@298=~Sphere of Chaos
 Level: 7
 School: Enchantment
 Sphere: Chaos
@@ -2426,9 +2467,9 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: None
 
-The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 10' radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell.
+The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 10' radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell and Blade Barrier are not cumulative.
 
-Note that invisibility or invisibility-like spells and effects such as Sanctuary, Improved Invisibility, and Mislead will not function on the caster when protected by Globe of Blades. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
+Note that invisibility or invisibility-like spells and effects such as Sanctuary and Invisibility will not function on the caster when protected by Globe of Blades. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
 @281=~Summon Deva~
 @282=~Summon Deva
@@ -2541,7 +2582,7 @@ Casting Time: 5
 Area of Effect: 10' radius
 Saving Throw: None
 
-This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 5 foot radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Insect swarms cannot pass through the aura. Magic resistance does not affect this spell.~
+This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 10 foot radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Insect swarms cannot pass through the aura. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
 
 @291=~Fire Elemental Transformation~
 @292=~Fire Elemental Transformation

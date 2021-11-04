@@ -5,9 +5,9 @@
 
 // Resource names and IDS entries for all spells added via ADD_SPELL.
 ACTION_DEFINE_ASSOCIATIVE_ARRAY new_spells BEGIN
-  sppr114 => CLERIC_SUNSCORCH
+  sppr114 => CLERIC_FAERIE_FIRE
   sppr115 => CLERIC_STRENGTH_OF_STONE
-  sppr116 => CLERIC_FAERIE_FIRE
+  sppr116 => CLERIC_SUNSCORCH
   sppr117 => CLERIC_REGENERATE_LIGHT_WOUNDS
   sppr118 => CLERIC_GOOD_BERRIES
   sppr119 => CLERIC_CAUSE_LIGHT_WOUNDS
@@ -22,13 +22,13 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY new_spells BEGIN
   sppr320 => CLERIC_ANIMAL_SUMMONING_LEVEL_3
   sppr321 => CLERIC_CAUSE_MEDIUM_WOUNDS
   sppr322 => CLERIC_STORM_SHIELD
-  sppr323 => CLERIC_REGENERATE_SERIOUS_WOUNDS
+  sppr323 => CLERIC_REGENERATE_MEDIUM_WOUNDS
   sppr324 => CLERIC_MAGIC_FANG
   sppr325 => CLERIC_SPIKE_GROWTH
   sppr326 => CLERIC_ICELANCE
   sppr327 => CLERIC_CONTAGION
   sppr418 => CLERIC_ICE_STORM
-  sppr419 => CLERIC_REGENERATE_CRITICAL_WOUNDS
+  sppr419 => CLERIC_REGENERATE_SERIOUS_WOUNDS
   sppr420 => CLERIC_POLYMORPH_OTHER
   sppr520 => CLERIC_PROTECTION_FROM_ACID
   sppr521 => CLERIC_PROTECTION_FROM_COLD
@@ -36,6 +36,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY new_spells BEGIN
   sppr523 => CLERIC_PROTECTION_FROM_FIRE
   sppr524 => CLERIC_MASS_REGENERATE
   sppr525 => CLERIC_ANIMAL_GROWTH
+  sppr526 => CLERIC_REGENERATE_CRITICAL_WOUNDS
   sppr619 => CLERIC_REGENERATION_DRUID_VERSION
   sppr620 => CLERIC_BANISHMENT
   sppr621 => CLERIC_CONJURE_AIR_ELEMENTAL
@@ -203,7 +204,7 @@ BEGIN
       FOR (j = 0; j < num_features; j += 1) BEGIN
         READ_SHORT (effects_off + 0x30*(features_ind + j) + 0x00) opcode
         READ_ASCII (effects_off + 0x30*(features_ind + j) + 0x14) resource
-        PATCH_IF (STRING_LENGTH ~%resource%~ > 0) BEGIN
+        PATCH_IF (VARIABLE_IS_SET $spl_resource_opcodes(~%opcode%~)) BEGIN
           LPF ~%resource_replacement_func%~ STR_VAR input_resref = EVAL ~%resource%~ RET new_resource = output_resref END
           PATCH_IF (NOT ~%new_resource%~ STRING_EQUAL ~%resource%~) BEGIN
             WRITE_ASCIIE (effects_off + 0x30*(features_ind + j) + 0x14) ~%new_resource%~ #8
