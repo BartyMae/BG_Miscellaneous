@@ -64,7 +64,7 @@ The Slayer form has increased in power with your own, and now grants the followi
 - Resistance to physical damage set to 15%
 - Resistance to elemental damage set to 25%
 - THAC0 set to -4
-- Attacks per round set to 4 (2D6 crushing, 4 cold)
+- Attacks per round set to 4 (2D6 crushing + 4 cold)
 - PLUS_SIGN_PLACEHOLDER 150 Hit Points
 - Regenerate 2 Hit Points per second
 - Immunity to imprisonment, level drain, stun, fear, charm, confusion, sleep, and missile attacks
@@ -80,9 +80,9 @@ The Slayer form has increased in power with your own, and now grants the followi
 - Saving Throws set to 2
 - Magic Resistance set to 50%
 - Resistance to physical damage set to 30%
-- Resistance to elemental damage set to 50%
+- Resistance to elemental damage set to 40%
 - THAC0 set to -8
-- Attacks per round set to 4 (2D8 crushing, 8 cold)
+- Attacks per round set to 4 (2D8 crushing + 8 cold)
 - Attacks have a 10% chance of casting Dispel Magic and of lowering Magic Resistance
 - PLUS_SIGN_PLACEHOLDER 200 Hit Points
 - Regenerate 3 Hit Points per second
@@ -100,9 +100,9 @@ As the Slayer, you have the following benefits:
 - Saving Throws set to 2
 - Magic Resistance set to 50%
 - Resistance to physical damage set to 30%
-- Resistance to elemental damage set to 50%
+- Resistance to elemental damage set to 40%
 - THAC0 set to -8
-- Attacks per round set to 4 (2d8 crushing, 8 cold)
+- Attacks per round set to 4 (2D8 crushing + 8 cold)
 - Attacks have a 10% chance of casting Dispel Magic and of lowering Magic Resistance
 - PLUS_SIGN_PLACEHOLDER 200 Hit Points
 - Regenerate 3 Hit Points per second
@@ -116,11 +116,11 @@ As the Ravager, you get the following additional benefits:
 - Effective AC set to -9
 - Saving Throws set to 2
 - Magic Resistance set to 75%
-- Resistance to physical damage set to 50%
-- Resistance to elemental damage set to 75%
+- Resistance to physical damage set to 40%
+- Resistance to elemental damage set to 50%
 - Resistance to magic damage set to 50%
 - THAC0 set to -12
-- Attacks per round set to 5 (3D8 crushing, 8 cold)
+- Attacks per round set to 5 (3D8 crushing + 8 cold)
 - Chance of dispelling on hit increases to 25%
 - PLUS_SIGN_PLACEHOLDER 250 hit points
 - Regenerate 5 Hit Points per second
@@ -140,7 +140,7 @@ The Slayer form grants the following benefits:
 - Saving Throws set to 2
 - Magic Resistance set to 30%
 - THAC0 set to 0
-- Attacks per round set to 4 (1D8 crushing, 2 cold)
+- Attacks per round set to 4 (1D8 crushing + 2 cold)
 - PLUS_SIGN_PLACEHOLDER 100 Hit Points
 - Immunity to imprisonment, level drain, stun, fear, charm, confusion, sleep, and missile attacks
 

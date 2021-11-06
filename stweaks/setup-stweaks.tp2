@@ -934,7 +934,7 @@ END
 // ----------------------------------------------------------------------------
 //Make containers trapped but with no items trapless
 // ----------------------------------------------------------------------------
-ACTION_FOR_EACH file IN ~ar7230~ ~ar0161~ ~ar7262~ ~ar7266~ ~ar7405~ ~ar7406~ ~ar1105~ ~ar8210~ ~ar6716~ ~ar3710~ BEGIN
+/* ACTION_FOR_EACH file IN ~ar7230~ ~ar0161~ ~ar7262~ ~ar7266~ ~ar7405~ ~ar7406~ ~ar1105~ ~ar8210~ ~ar6716~ ~ar3710~ BEGIN
 ACTION_IF (FILE_EXISTS_IN_GAME ~%file%.are~) THEN BEGIN
 COPY_EXISTING_REGEXP ~%file%.are~ ~override~
   READ_LONG  0x70 "cont_off"
@@ -950,7 +950,7 @@ COPY_EXISTING_REGEXP ~%file%.are~ ~override~
   END
 BUT_ONLY
 END
-END
+END */
 
 PRINT ~Processing AREA-MinorCorrections.tph~
 // ----------------------------------------------------------------------------

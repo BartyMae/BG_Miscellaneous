@@ -1,0 +1,10 @@
+DEFINE_ACTION_FUNCTION setup_minor_quests_bg1
+BEGIN
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
+    file	= "gerde_fenten ulcaster"
+    tra		= "minor_quests_bg1"
+  END
+END	// setup_minor_quests_bg1
+
+
