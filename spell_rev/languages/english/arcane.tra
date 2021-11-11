@@ -827,7 +827,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Spell negates
 
-This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for 1 turn. The effect is centered on the target selected by the caster, and every enemy within 5 feet of the target is also affected. Creatures who make a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
+This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for 1 turn. The effect is centered on the target selected by the caster, and every enemy within 10 feet of the target is also affected. Creatures who make a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
 
 Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.~
 
@@ -1077,7 +1077,7 @@ Casting Time: 3
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Spell negates
 
-This spell stops undead creatures in their place for the duration of the spell. The effect is centered on the victim selected by the caster. Any undead creatures within 5 feet of the target are also affected. Those who succeed at a save vs. spell at a -2 penalty are totally unaffected by the spell. Magic resistance does not affect this spell.
+This spell stops undead creatures in their place for the duration of the spell. The effect is centered on the victim selected by the caster. Any undead creatures within 10 feet of the target are also affected. Those who succeed at a save vs. spell at a -2 penalty are totally unaffected by the spell. Magic resistance does not affect this spell.
 
 Those affected become unable move or groan, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence the effect does not stop any worsening of their condition due to injury or rot.~
 
@@ -1720,7 +1720,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Spell negates
 
-This spell holds creatures of any type rigidly immobile and in place for 1 turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at making a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
+This spell holds creatures of any type rigidly immobile and in place for 1 turn. The effect is centered on the victim selected by the caster. Every enemy within 10 feet of the target is also affected. Those who succeed at making a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
 
 Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.~
 

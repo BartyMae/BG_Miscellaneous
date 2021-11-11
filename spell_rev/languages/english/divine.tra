@@ -396,7 +396,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Spell negates
 
-This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for 1 turn. The effect is centered on the target selected by the caster, and every enemy within 5 feet of the target is also affected. Creatures who make a save vs. spell are totally unaffected by the spell. The undead cannot be held with this spell.
+This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for 1 turn. The effect is centered on the target selected by the caster, and every enemy within 10 feet of the target is also affected. Creatures who make a save vs. spell are totally unaffected by the spell. The undead cannot be held with this spell.
 
 Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.~
 
@@ -700,7 +700,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Spell negates
 
-This spell holds persons and animals rigidly immobile and in place. The term person includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, and others. Only normal and giant sized animals are affected by this spell. Monsters such as wyverns, ankhegs, and carrion crawlers do not count as animals. The effect is centered on the target selected by the caster, and every enemy within 5 feet of the target is also affected. Creatures who make a save vs. spell at a -2 penalty are totally unaffected by the spell. Undead creatures cannot be held with this spell.
+This spell holds persons and animals rigidly immobile and in place. The term person includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, and others. Only normal and giant sized animals are affected by this spell. Monsters such as wyverns, ankhegs, and carrion crawlers do not count as animals. The effect is centered on the target selected by the caster, and every enemy within 10 feet of the target is also affected. Creatures who make a save vs. spell at a -2 penalty are totally unaffected by the spell. Undead creatures cannot be held with this spell.
 
 Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.~
 
@@ -1346,7 +1346,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Breath half
 
-Upon casting a Flame Strike spell, a vertical column of fire roars downward, striking the target selected by the caster along with every creature within 5 feet. The affected creatures suffer 1D6 fire damage per experience level of the caster, up to a maximum of 15D6 at 15th level. Those who make a save vs. breath at a -4 penalty will receive only half damage. This spell will not harm party members.~
+Upon casting a Flame Strike spell, a vertical column of fire roars downward, striking the target selected by the caster along with every creature within 10 feet. The affected creatures suffer 1D6 fire damage per experience level of the caster, up to a maximum of 15D6 at 15th level. Those who make a save vs. breath at a -4 penalty will receive only half damage. This spell will not harm party members.~
 
 @157=~Raise Dead~
 @158=~Raise Dead
