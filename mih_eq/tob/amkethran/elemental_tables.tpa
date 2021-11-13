@@ -33,12 +33,12 @@ BEGIN
        ~elfirg01~ ~mh#fir20~
     END
 
-/*  LAUNCH_ACTION_FUNCTION extend_area_script
+  LAUNCH_ACTION_FUNCTION extend_area_script
     STR_VAR
     area	= "ar5509"
     bottom	= "spawn_nature_elementals"
     location	= "scripts"
-  END */
+  END
 END	// elemental_tables
 
 
