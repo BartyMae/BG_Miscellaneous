@@ -8738,8 +8738,8 @@ COPY_EXISTING ~weapprof.2da~  ~override~
   FOR (row = 9; row < 33; ++row) BEGIN
     READ_2DA_ENTRY row  5 22 prof_fgt
     READ_2DA_ENTRY row 11 22 prof_rgr
-    PATCH_IF prof_fgt > 3 BEGIN SET prof_fgt = 3 END
-    PATCH_IF prof_rgr > 3 BEGIN SET prof_rgr = 3 END
+    PATCH_IF prof_fgt > 2 BEGIN SET prof_fgt = 2 END
+    PATCH_IF prof_rgr > 2 BEGIN SET prof_rgr = 2 END
     INNER_ACTION BEGIN
       COPY ~weidu_external/cdtweaks/lib/pnp_dual_core.tpa~ ~weidu_external/cdtweaks/lib/pnp_dual_core.tpa~
         REPLACE_TEXTUALLY ~prof_fgt_%row%~ ~%prof_fgt%~
@@ -8842,7 +8842,7 @@ COPY_EXISTING ~kitlist.2da~ ~override~
                 PATCH_IF ("%col_name%" STRING_COMPARE_CASE ~%name%~ = 0) BEGIN
                   FOR (row = 9; row < 33; ++row) BEGIN
                     READ_2DA_ENTRY row index_col weapprof_cols prof_fgt
-                    PATCH_IF prof_fgt > 3 BEGIN SET prof_fgt = 3 SET sanity_check = 2 END
+                    PATCH_IF prof_fgt > 2 BEGIN SET prof_fgt = 2 SET sanity_check = 2 END
                     INNER_ACTION BEGIN
 
                       COPY ~weidu_external/cdtweaks/lib/pnp_dual_working.tpa~ ~weidu_external/cdtweaks/lib/pnp_dual_working.tpa~
@@ -13400,6 +13400,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.cre$~ ~override~
   READ_LONG 0x1cc bio ELSE "-1"
   PATCH_IF (("%SOURCE_RES%" STRING_COMPARE_CASE "BDIMOEN") AND  // exclude special imoen files
             ("%SOURCE_RES%" STRING_COMPARE_CASE "BDSHIMOE") AND // exclude special imoen files
+            ("%SOURCE_RES%" STRING_COMPARE_CASE "FINIMOEN") AND // exclude special imoen files
             (bio >= 0)) BEGIN // don't bother if no bio
     READ_ASCII 0x280 "dvcre" (32) NULL
     PHP_EACH cd_dv_array AS file => dv BEGIN
