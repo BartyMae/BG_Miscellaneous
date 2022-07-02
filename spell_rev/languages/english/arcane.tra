@@ -362,13 +362,21 @@ Saving Throw: None
 By means of this spell, the caster summons a number of monsters, which serve the wizard under any and all conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell. The summoned creatures will remain under the caster's control until they are slain or the spell duration expires.
 
 1st: 2 gibberlings
-3rd: 3 gibberlings
-5th: 4 gibberlings
-7th: 5 gibberlings
+3rd: 2 gibberlings, 1 mutated gibberling
+5th: 1 gibberlings, 2 mutated gibberling
+7th: 3 mutated gibberlings
 
 Gibberling (1 HD):
  ST10, DE10, CO10, IN6, WI7, CH4
  HP 8, AC 10, THAC0 19, APR 1
+ 1D6 Piercing (Short Sword)
+ Saving Throws 13/17/15/13/17, AL CN
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Mutated Gibberling (2 HD):
+ ST11, DE11, CO11, IN6, WI7, CH4
+ HP 16, AC 7, THAC0 17, APR 2
  1D6 Piercing (Short Sword)
  Saving Throws 13/17/15/13/17, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
@@ -2575,7 +2583,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 10' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -2 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
+When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 10 foot radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -2 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
 
 Red - 6D6 fire damage (save vs. breath half)
 Orange - Stun for 5 rounds (save vs. polymorph neg.)
@@ -2831,11 +2839,11 @@ Saving Throw: None
 
 By means of this spell, the caster summons a number of monsters, which serve the wizard under any and all conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell. The summoned creatures will remain under the caster's control until they are slain or the spell duration expires.
 
-14th: 2 otyughs
-16th: 3 otyughs
+14th: 3 otyughs
+16th: 2 otyughs, 1 neo-otyugh
 
 Otyugh (7 HD):
- ST14, DE10, CO13, IN5, WI12, CH5
+ ST14, DE10, CO13, IN10, WI12, CH5
  HP 76, AC 3, THAC0 10, APR 3
  1D8 Piercing/Crushing (Bite & Tentacles +3)
  Saving Throws 9/11/10/10/12, AL TN
@@ -2844,7 +2852,19 @@ Otyugh (7 HD):
 
 Special Characteristics:
  Protected Against: Disease
- Diseasing: target suffers 1 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)~
+ Diseasing: target suffers 1 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)
+
+Neo-Otyugh (12 HD):
+ ST18, DE12, CO16, IN12, WI12, CH5
+ HP 96, AC 0, THAC0 8, APR 3
+ 2D6 Piercing/Crushing (Bite & Tentacles +3)
+ Saving Throws 7/9/8/8/10, AL TN
+ SR 10%, CR 10%, PR 10%, MR 100%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Special Characteristics:
+ Protected Against: Disease
+ Diseasing: target suffers 2 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)~
 
 
 /*------------------Level 8------------------*/
@@ -4489,7 +4509,7 @@ Launcher: Sling~
 @8186=~Scimitar +2~
 @8187=~Hakeashar~
 @8188=~Contact +3~
-@8189=~Otyugh~
+@8189=~Neo-Otyugh~
 @8190=~Bite & Tentacles +3~
 @8191=~Glabrezu~
 @8192=~Pincers & Claws +3~
@@ -4518,12 +4538,13 @@ Launcher: Sling~
 @8215=~Two-Handed Sword +3~
 @8216=~Fallen Planetar~
 @8217=~Two-Handed Sword +3~
+@8218=~Mutated Gibberling~
+@8219=~Reserved~
+@8220=~Neo-Otyugh~
+@8221=~Claws & Tentacles +3~
 
 /*------------------Miscellaneous------------------*/
 
-@8218=~Familiar~
-@3527=~A Vampiric Touch spell is already active~
-@3583=~Saving Throws Lowered~
 @21000=~Illusionary Protections Removed~
 @22000=~Dispelling Screen Dispelled~
 @22001=~Insects Dispersed~
@@ -4533,6 +4554,31 @@ Launcher: Sling~
 @22005=~Freed from Petrification~
 @22006=~Freed from Imprisonment~
 @22007=~Statistics Restored~
-@100400 = ~Usable[ %tab%]+[Bb]y[ %tab%]*:~
-@100401 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
-@100402 = ~Scroll of Restoration~
+@23000=~Charmed~
+@23001=~Disease Cured~
+@23002=~Dominated~
+@23003=~Decaying~
+@23004=~Protected by Shield of the Archons~
+@23005=~Saving Throws Lowered~
+@23006=~Stunned~
+@23007=~Energy Blades Created~
+@23008=~Spell Ineffective~
+@23009=~Enfeebled~
+@23010=~A Vampiric Touch spell is already active~
+@23011=~Protected by Minor Spell Deflection~
+@23012=~Confused~
+@23013=~Protected from Normal Weapons~
+@23014=~Protected by Spell Deflection~
+@23015=~Protection from Magical Energy~
+@23016=~Protection from Magical Weapons~
+@23017=~Protected by Spell Deflection~
+@23018=~Protected by Greater Spell Deflection~
+@23019=~Protection from the Elements~
+@23020=~Protection from Energy~
+@23021=~Four Levels Drained~
+@23022=~Shapechange abilities have been added to your Special Abilities menu~
+
+@100400=~Usable[ %tab%]+[Bb]y[ %tab%]*:~
+@100401=~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@100402=~Familiar~
+@100403=~Scroll of Restoration~
