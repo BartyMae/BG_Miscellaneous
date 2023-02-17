@@ -1,10 +1,10 @@
 BACKUP ~stweaks/backup~
 AUTHOR ~Salk~
-VERSION ~1.6~
-//README ~stweaks/stweaks-readme.txt~
+VERSION ~2.0~
+README ~stweaks/stweaks-readme.txt~
 //MODDER setup_tra none area_variables fail missing_extern fail missing_resref fail missing_eval fail
 
-//! BG1UB files//////////////////////////////////////////////////////////////
+//! BG1UB files ///
 ALLOW_MISSING 
 	~UBFARM5.DLG~
 	~UBFELDAN.DLG~
@@ -14,7 +14,7 @@ ALLOW_MISSING
 	~UBEDIE.DLG~
 	~UBWILTON.DLG~
 
-//! Platform variables //////////////////////////////////////////////////////
+//! Platform variables ///
 ALWAYS
   ACTION_IF FILE_EXISTS_IN_GAME ~fw0125.are~ BEGIN //Tutu
     OUTER_SPRINT tsu ~_~
@@ -37,12 +37,12 @@ ALWAYS
   END
 END
 
-//! Languages ///////////////////////////////////////////////////////////////
+//! Languages ///
 AUTO_TRA ~stweaks/%s~
 //Uncomment this if the mod gets traified
 LANGUAGE ~English~ ~english~ ~stweaks/english/setup.tra~
 
-//! Revised Weapon Proficiencies ////////////////////////////////////////////
+//!!Revised Weapon Proficiencies ///
 BEGIN ~Revised Weapon Proficiencies~
 REQUIRE_PREDICATE (GAME_IS ~bg2 tob tutu tutu_totsc~) ~This component only applies to the BG2 engine.~
 DESIGNATED 10
@@ -70,17 +70,30 @@ STRING_SET 32119 ~High Mastery: At this level the character gains +1 to hit, +1 
 
 STRING_SET 32120 ~Grand Mastery: At this level the character gains +1 to hit, +1 to damage, -2 to speed factor and an extra 1/2 attack per round with the selected weapon.~
 
-//! Alternate Worldmap //////////////////////////////////////////////////////
+//!!Alternate Worldmap ///
 BEGIN ~BGT Alternate Worldmap by Dex~
 REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
 DESIGNATED 20
 
 COPY ~stweaks/mos/bpbgtmap.mos~ override
 
-//! Consistent BGT NPC Portraits //////////////////////////////////////////////
+//!!Replace initdlg.bcs/initdlgc.bcs to force dialogue with Protagonist rather than any party member ///
+BEGIN ~Make NPCs attempt to initiate dialogue with Protagonist rather than any party member~
+REQUIRE_PREDICATE (GAME_IS ~bg1 totsc bg2 tob tutu tutu_totsc bgt~) ~This component only applies to the Baldur's Gate classic series.~
+DESIGNATED 30
+
+COPY_EXISTING ~INITDLG.BCS~ ~override~
+ REPLACE_BCS_BLOCK ~stweaks/baf/initdlg_old.baf~ ~stweaks/baf/initdlg_new.baf~
+ BUT_ONLY
+
+COPY_EXISTING ~INITDLGC.BCS~ ~override~
+ REPLACE_BCS_BLOCK ~stweaks/baf/initdlgc_old.baf~ ~stweaks/baf/initdlgc_new.baf~
+ BUT_ONLY
+
+//!!Consistent BGT NPC Portraits ///
 BEGIN ~Consistent BGT NPC Portraits~
 REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
-DESIGNATED 30
+DESIGNATED 40
 
 COPY ~stweaks/bmp/branwel.bmp~ override
 COPY ~stweaks/bmp/branwem.bmp~ override
@@ -118,8 +131,7 @@ COPY ~stweaks/bmp/njaheirl.bmp~ override
 COPY ~stweaks/bmp/njaheirm.bmp~ override
 COPY ~stweaks/bmp/njaheirs.bmp~ override
 
-
-//! Modified Resources for Salk's customized BG1 to BGT dialog.tlk //////////
+//!!Modified Resources for Salk's customized BG1 to BGT dialog.tlk ///
 // 1) Remove +2 bonus to THAC0 and Damage to AROW08.ITM, AROWKC.ITM and ARROPHE2.ITM
 // 2) HALBRD01?
 // 3) MISC1B.ITM: Restore Cmisc1b.bam and Gdagg01.bam
@@ -151,10 +163,10 @@ COPY ~stweaks/bmp/njaheirs.bmp~ override
 // 28) MISC72.ITM: Assign Gring01.bam
 // More new additions
 // 29) Change Identify description as to not break so the fourth wall
+// 30) Small alteration to Gorion's fight cutscenes
 BEGIN ~Modified Resources for Salk's customized BG1 to BGT dialog.tlk~
 REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
-
-DESIGNATED 40
+DESIGNATED 50
 
 // 1
 
@@ -201,6 +213,27 @@ COPY_EXISTING ~Misc1i.itm~ ~override~ //totsc file
  END
 BUT_ONLY
 
+COPY_EXISTING ~Misc1i.itm~ ~override~ //totsc file
+ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+  SAY UNIDENTIFIED_DESC @22719
+  SAY DESC @22719
+ END
+BUT_ONLY
+
+COPY_EXISTING ~Misc2o.itm~ ~override~ //totsc file
+ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+  SAY UNIDENTIFIED_DESC @23218
+  SAY DESC @23218
+ END
+BUT_ONLY
+
+COPY_EXISTING ~Misc51.itm~ ~override~ //totsc file
+ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+  SAY UNIDENTIFIED_DESC @17260
+  SAY DESC @17260
+ END
+BUT_ONLY
+
 // 6
 
 COPY_EXISTING ~Misc13.itm~ ~override~ //totsc file
@@ -211,9 +244,15 @@ BUT_ONLY
 
 // 7
 
+STRING_SET 17258 ~Chickens are flightless, domesticated birds valued not only for their tender meat but also for their eggs, a daily morning delicacy in many farms and cities throughout the Sword Coast region.
+
+STATISTICS:
+
+Weight: 6~
+
 COPY_EXISTING ~Misc49.itm~ ~override~
  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-  WRITE_LONG 0x4c 5 // weight
+  WRITE_LONG 0x4c 6 // weight
  END
 BUT_ONLY
 
@@ -222,6 +261,8 @@ BUT_ONLY
 COPY_EXISTING ~Misc50.itm~ ~override~
  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   WRITE_LONG 0x4c 3 // weight
+  SAY UNIDENTIFIED_DESC @10242
+  SAY DESC @10242
  END
 BUT_ONLY
 
@@ -230,6 +271,8 @@ BUT_ONLY
 COPY_EXISTING ~Misc55.itm~ ~override~
  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   WRITE_LONG 0x4c 150 // weight
+  SAY UNIDENTIFIED_DESC @10244
+  SAY DESC @10244
  END
 BUT_ONLY
 
@@ -238,6 +281,8 @@ BUT_ONLY
 COPY_EXISTING ~Misc60.itm~ ~override~
  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   WRITE_LONG 0x4c 50 // weight
+  SAY UNIDENTIFIED_DESC @17267
+  SAY DESC @17267
  END
 BUT_ONLY
 
@@ -312,8 +357,9 @@ BUT_ONLY
 
 COPY_EXISTING ~Misc77.itm~ ~override~ //totsc file
  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+  WRITE_LONG 0x4c 3 // weight
   SAY NAME2 @17301
-  SAY DESC @17302
+  SAY DESC @10242
  END
 BUT_ONLY
 
@@ -321,7 +367,8 @@ BUT_ONLY
 
 COPY_EXISTING ~Misc80.itm~ ~override~ //totsc file
  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-  WRITE_LONG 0x4c 130
+  WRITE_LONG 0x4c 130 // weight
+  SAY UNIDENTIFIED_DESC @19344
  END
 BUT_ONLY
 
@@ -330,6 +377,7 @@ BUT_ONLY
 COPY_EXISTING ~Misc81.itm~ ~override~ //totsc file
  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   WRITE_LONG 0x4c 3 // weight
+  SAY UNIDENTIFIED_DESC @17302
  END
 BUT_ONLY
 
@@ -416,10 +464,46 @@ Saving Throw: None
 
 When this spell is cast, name and enchantments (including curses) of one item subsequently touched by the wizard are revealed without fail. Many unidentified items can still be used, but at great risk.~
 
-//! Additional Portraits for non-joinable BG1 NPCs //////////////////////
+// 30
+
+STRING_SET 4448 ~Awake, my child. Awake, and face the terrible tests ahead of thee.~ [GORIN13]
+
+COPY 		~stweaks/bcs/ch1cutx4.bcs~ 	~override~
+
+COPY_EXISTING ~ch1cut02.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+   REPLACE_TEXTUALLY	EXACT_MATCH ~Face(10)~	 ~Face(10)
+Wait(3)~
+   REPLACE_TEXTUALLY	EXACT_MATCH ~None~	 ~~
+  END
+BUT_ONLY
+
+COPY_EXISTING ~ch1cut03.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+   REPLACE_TEXTUALLY	EXACT_MATCH ~CutSceneId("Sarevok")~	 ~CutSceneId("Sarevok")
+Wait(1)~
+   REPLACE_TEXTUALLY	EXACT_MATCH ~MoveToPoint([3241.1272])~	 ~MoveToPoint([3241.1272])
+Face(3)~
+   REPLACE_TEXTUALLY	EXACT_MATCH ~MoveToPoint([3173.1281])~	 ~MoveToPoint([3173.1228])~
+  END
+BUT_ONLY
+
+COPY_EXISTING ~ch1cut04.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+   REPLACE_TEXTUALLY	EXACT_MATCH ~Wait(4)~	 ~Wait(3)
+FadeToColor([15.0],0)
+Wait(1)~
+   REPLACE_TEXTUALLY	EXACT_MATCH ~WIZARD_MELF_ACID_ARROW~	 ~WIZARD_LIGHTNING_BOLT~
+   REPLACE_TEXTUALLY	EXACT_MATCH ~ForceSpell("Ogre02",WIZARD_LIGHTNING_BOLT)~	 ~ForceSpell("Ogre02",WIZARD_MELF_ACID_ARROW)~
+   REPLACE_TEXTUALLY	EXACT_MATCH ~EndCutSceneMode()~	 ~StartCutScene("Ch1cutx4")~
+   REPLACE_TEXTUALLY	EXACT_MATCH ~Wait(10)~	 ~Wait(12)~
+  END
+BUT_ONLY
+
+//!!Additional Portraits for non-joinable BG1 NPCs ///
 BEGIN ~Additional Portraits for non-joinable BG1 NPCs~
 REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
-DESIGNATED 50
+DESIGNATED 60
 
   COPY ~stweaks/portraits~ ~override~
   /* Standard Non-Joinable Actors */
@@ -672,11 +756,11 @@ DESIGNATED 50
     WRITE_ASCII 0x34 ~unsheys~ #8 // Small portrait
   BUT_ONLY
 
-//! SixofSpades Extended Sarevok's Diary  ///////////////////////////////////
+//!!SixofSpades Extended Sarevok's Diary ///
 BEGIN ~SixofSpades Extended Sarevok's Diary~
 DEPRECATED @2
 REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
-DESIGNATED 60
+DESIGNATED 70
 
   COPY_EXISTING ~SCRL3F.itm~ ~override~
     SAY UNIDENTIFIED_DESC ~The Personal Diary of Sarevok
@@ -845,17 +929,12 @@ I am actually a bit disappointed in Rieltar:  His skill in manipulating this who
     WRITE_BYTE 0x4c 0x08 //  Sets weight to 8 lbs
     BUT_ONLY
 
-/////////////////////////////////////////////////////////////////////////////////
-//! Minor BG1/BGT Adjustments ///////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////
-
-BEGIN ~Minor BG1/BGT Adjustments~
+//!!BGT Adjustments ///
+BEGIN ~BGT Adjustments~
 REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
-DESIGNATED 70
+DESIGNATED 80
 
-/////////////////////
-/// Include ToBEX ///
-/////////////////////
+//! Include ToBEX ///
 
 OUTER_SPRINT ~TOBEX_MOD_DIRECTORY~ ~stweaks~
 LOAD_TRA ~stweaks/tobex_redist/tobex.tra~
@@ -867,9 +946,7 @@ COPY ~tobex_ini/tobextweak.ini~ ~tobex_ini/tobextweak.ini~
   REPLACE_TEXTUALLY ~Engine:Disable Silence On Charm=0~ ~Engine:Disable Silence On Charm=1~
 BUT_ONLY
 
-/////////////////////////////////
-/// Material from BG1 Fixpack ///
-/////////////////////////////////
+//! Material from BG1 Fixpack ///
 
 PRINT ~Processing AREA-FixDetectedAndTraplessTraps.tph~
 // ----------------------------------------------------------------------------
@@ -2102,29 +2179,20 @@ COPY_EXISTING ar7407.bcs override
  COMPILE_BAF_TO_BCS
 BUT_ONLY_IF_IT_CHANGES
 
-
-/////////////////////////////////////
-/// Eliminate reference to Helmet ///
-/////////////////////////////////////
+//! Eliminate reference to Helmet ///
 
 STRING_SET 20696 ~Critical Hit Averted~
 
-///////////////////////////////////////
-/// Eliminate reference to monsters ///
-///////////////////////////////////////
+//! Eliminate reference to monsters ///
 
 STRING_SET 16501 ~You cannot save at this time... Enemies are about.~
 
-/////////////////////////////
-/// Correct BGT name typo ///
-/////////////////////////////
+//! Correct BGT name typo ///
 
 STRING_SET 12238 ~Galken~
 STRING_SET 12283 ~Galken~
 
-//////////////////////////////////////
-/// Restored unused NPC BG1 sounds ///
-//////////////////////////////////////
+//! Restored unused NPC BG1 sounds ///
 
 COPY_EXISTING ~DELSVIR.CRE~ ~override~
  SAY INITIAL_MEETING ~Blast it thrice over!  I am through with it I am so!  'Tis no livin' left here none!~ [DELSV01]
@@ -2161,9 +2229,7 @@ COPY_EXISTING ~SILKE.CRE~ ~override~
  SAY SELECT_COMMON1 ~I am a musician, not a chatter box.~ [SILKE02]
 BUT_ONLY
 
-///////////////////////////////
-/// Thieves' Guild revision ///
-///////////////////////////////
+//! Thieves' Guild revision ///
 
 COPY 		~stweaks/bcs/initnik.bcs~ 	~override~
 COPY 		~stweaks/cre/thiefg2.cre~	~override~
@@ -2309,7 +2375,7 @@ BUT_ONLY
 EXTEND_BOTTOM 	~THIEF.BCS~	~stweaks/baf/thiefn3.baf~
 
 COPY_EXISTING 	~thiefg.cre~ 	~override~
-	WRITE_ASCII SCRIPT_OVERRIDE	~THIEFG~	#8
+	WRITE_ASCII SCRIPT_OVERRIDE	~#GTHIEFG~	#8
 	WRITE_ASCII SCRIPT_CLASS 	~None~		#8
 	WRITE_ASCII SCRIPT_RACE		~None~		#8
 	WRITE_ASCII SCRIPT_GENERAL 	~None~		#8
@@ -2317,11 +2383,11 @@ COPY_EXISTING 	~thiefg.cre~ 	~override~
 	WRITE_ASCII DEATHVAR		~THIEFG~	#8
 BUT_ONLY
 
-COPY_EXISTING 	~THIEFG.BCS~ 	~override~
+COPY_EXISTING 	~THIEFG.BCS~ 	~override/#GTHIEFG.BCS~
 	REPLACE_BCS_BLOCK	~stweaks/baf/thiefgo1.baf~	~stweaks/baf/thiefgn1.baf~
 BUT_ONLY
 
-EXTEND_BOTTOM 	~THIEFG.BCS~	~stweaks/baf/thiefgn2.baf~
+EXTEND_BOTTOM 	~#GTHIEFG.BCS~	~stweaks/baf/thiefgn2.baf~
 
 EXTEND_TOP 	~AR7248.BCS~ 	~stweaks/baf/ar7248a.baf~
 EXTEND_TOP	~AR7250.BCS~ 	~stweaks/baf/ar7250a.baf~
@@ -2668,14 +2734,14 @@ DestroySelf()~ EXIT
 END
 END
 APPEND ~NIKLOS~
-IF WEIGHT #-1 ~Global("BG_AttackedThieves","GLOBAL",0)
+IF WEIGHT #1 ~Global("BG_AttackedThieves","GLOBAL",0)
 GlobalTimerNotExpired("MeetAlatos","GLOBAL")
 Global("ShowWay","LOCALS",1)~ THEN BEGIN niklos1
   SAY @102 /* You'd better not keep my boss waiting... */
   IF ~~ THEN EXIT
 END
 END
-SET_WEIGHT ~niklos~ 9 	#1
+SET_WEIGHT ~niklos~ 9 	#0
 SET_WEIGHT ~niklos~ 4 	#2 
 SET_WEIGHT ~niklos~ 10	#3	 
 SET_WEIGHT ~niklos~ 11 	#4
@@ -2757,10 +2823,8 @@ END
 >>>>>>>>
 COMPILE ~stweaks-inlined/#gthieff.d~
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// Sensible rooms quality for BG Inns																																															    ///
-/// Red Sheaf (INN3357), Feldepost's Inn (INN3351), Friendly Arm inn (FRIEND.STO), Candlekeep Inn (INN2616), Tavern (TAV0721), Splurging Sturgeon (INN0103), Blade&Star (INN0105), Helm&Cloak (INN0116), Three Old Kegs (INN0119), Elfsong Tavern (INN0705), Ulgoth's Beard Store and Inn (ULGOTH), Tavern (TAV1215), Blushing Mermaid (TAV0114), Nashkel Inn (INN4801), Burning Wizard (INN3307), Jovial Juggler (INN3304) ///
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//! Sensible rooms quality for BG Inns ///
+//! Red Sheaf (INN3357), Feldepost's Inn (INN3351), Friendly Arm inn (FRIEND.STO), Candlekeep Inn (INN2616), Tavern (TAV0721), Splurging Sturgeon (INN0103), Blade&Star (INN0105), Helm&Cloak (INN0116), Three Old Kegs (INN0119), Elfsong Tavern (INN0705), Ulgoth's Beard Store and Inn (ULGOTH), Tavern (TAV1215), Blushing Mermaid (TAV0114), Nashkel Inn (INN4801), Burning Wizard (INN3307), Jovial Juggler (INN3304) ///
 
 COPY_EXISTING 	~inn3357.sto~ 	~override~			
  WRITE_BYTE 0x5c (THIS BOR 0b00000001)	// Peasant
@@ -2802,9 +2866,7 @@ COPY_EXISTING	 ~friend.sto~ 	~override~
  WRITE_BYTE 0x5c (THIS BAND 0b11110111)
 BUT_ONLY
 
-////////////////////////////////////////
-/// Fix wrong vertices AR6527-AR6532 ///
-////////////////////////////////////////
+//! Fix wrong vertices AR6527-AR6532 ///
 
 COPY_EXISTING ~AR6527.ARE~  ~override~
 PATCH_IF (SOURCE_SIZE > 0x11b) BEGIN  // checking for valid ARE resource
@@ -3068,9 +3130,7 @@ PATCH_IF (SOURCE_SIZE > 0x11b) BEGIN  // checking for valid ARE resource
 END
 BUT_ONLY
 
-////////////////////////////////////////
-/// Korax has some duplicate actions ///
-////////////////////////////////////////
+//! Korax has some duplicate actions ///
 
 <<<<<<<< stweaks-inlined/#gkorax.d
 REPLACE_TRANS_ACTION ~KORAX~ BEGIN 0 END BEGIN 0 END ~Enemy()~ ~~
@@ -3078,9 +3138,7 @@ REPLACE_TRANS_ACTION ~KORAX~ BEGIN 0 END BEGIN 1 END ~EscapeAreaDestroy(90)~ ~~
 >>>>>>>>
 COMPILE ~stweaks-inlined/#gkorax.d~
 
-///////////////////////////////////////////////
-/// Give rotten potions their original look ///
-///////////////////////////////////////////////
+//! Give rotten potions their original look ///
 
 COPY_EXISTING ~potn23.itm~ ~override~
  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
@@ -3100,9 +3158,7 @@ COPY_EXISTING ~potn32.itm~ ~override~
  END
 BUT_ONLY
 
-////////////////////////////////////////////
-/// Remove Noblewoman from Nashkel Manor ///
-////////////////////////////////////////////
+//! Remove Noblewoman from Nashkel Manor ///
 
 COPY_EXISTING ~%nml2%.are~ override
   PATCH_IF SOURCE_SIZE > 0x28f BEGIN
@@ -3124,9 +3180,7 @@ COPY_EXISTING ~%nml2%.are~ override
   END
 BUT_ONLY
 
-//////////////////////////////////
-/// Fix Ye Old Inn panic scene ///
-//////////////////////////////////
+//! Fix Ye Old Inn panic scene ///
 
 <<<<<<<< stweaks-inlined/#gbarsl.d
 REPLACE_ACTION_TEXT ~BARSLIM~ ~ActionOverride("MTWSLIM",EscapeAreaDestroy(90))~ ~MoveToPointNoInterrupt([600.465])
@@ -3143,9 +3197,7 @@ COPY_EXISTING ~mtwslim.cre~ ~override/mtwslim.cre~
  SAY NAME2 @4
 BUT_ONLY
 
-//////////////////////////////
-/// Fix Ramazith and Abela ///
-//////////////////////////////
+//! Fix Ramazith and Abela ///
 
 COPY ~stweaks/bcs/initdis.bcs~ override
 
@@ -3264,9 +3316,7 @@ END
 >>>>>>>>
 COMPILE ~...\inlined\#gramazi.d~
 
-/////////////////////////////////////////////////////
-/// Fix Delorna, Helshara, Ithmeera and Shandalar ///
-/////////////////////////////////////////////////////
+//! Fix Delorna, Helshara, Ithmeera and Shandalar ///
 
 COPY_EXISTING ~%nml4%.are~ override
   PATCH_IF SOURCE_SIZE > 0x28f BEGIN
@@ -3531,9 +3581,7 @@ ChangeEnemyAlly("BPIMOEN",GOODCUTOFF)~
 END
 BUT_ONLY
 
-//////////////////////////////////////////
-/// Varci/Lothander fixes/improvements ///
-//////////////////////////////////////////
+//! Varci/Lothander fixes/improvements ///
 
 // Entering and leaving the Diviner's tent will require the entire party
 
@@ -4968,7 +5016,7 @@ COPY_EXISTING LOPOTN20.itm override
 LPF delete_ability END
 BUT_ONLY_IF_IT_CHANGES
 
-// Removes the regular anitote potion and make Lothander's inventory unstealable
+// Removes the regular antidote potion and make Lothander's inventory unstealable
 
 COPY_EXISTING ~lothan.cre~ ~override~
   REMOVE_CRE_ITEM ~POTN20~
@@ -5000,7 +5048,7 @@ COPY_EXISTING ~lothan.cre~ ~override~
   WRITE_BYTE 0x68 80
   WRITE_BYTE 0x69 10
   WRITE_BYTE 0x6a 10
-  WRITE_ASCII SCRIPT_OVERRIDE	~LOTHAN~	#8
+  WRITE_ASCII SCRIPT_OVERRIDE	~#glothan~	#8
   WRITE_ASCII SCRIPT_DEFAULT	~NONE~		#8
   LPF ADD_CRE_EFFECT INT_VAR opcode = 300 timing = 1 target = 0 parameter2 = 1 END
 BUT_ONLY_IF_IT_CHANGES
@@ -5049,6 +5097,9 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~ar7206.bcs~ ~stweaks-inlined/#gar7206.baf~
+
+// Update Lothander's dialogue
+COMPILE ~stweaks/d/lothan.d~
 
 <<<<<<<< stweaks-inlined/#glothan.d
 REPLACE_TRIGGER_TEXT lothan ~SetGlobal(~ ~Global(~ 
@@ -5237,7 +5288,7 @@ THEN
 		SetGlobalTimer("LothTrapTimer","LOCALS",18)
 //DEBUG		DisplayStringHead(Myself,@130)
 		RemoveSpell(4412)
-		SpellNoDec(Myself,4411)
+		SpellNoDecRES("SPCL411",Myself)
 END
 
 // NO ENEMY IN SIGHT, TRAP NOT AVAILABLE / TRAP PLACED, I AM NOT INVISIBLE	->	HIDE
@@ -5377,7 +5428,7 @@ THEN
 //DEBUG		DisplayStringHead(Myself,@145)
 END
 >>>>>>>>
-EXTEND_TOP 	~LOTHAN.BCS~	~stweaks/baf/#glothan.baf~
+EXTEND_TOP 	~#GLOTHAN.BCS~	~stweaks/baf/#glothan.baf~
 
 // Prevent charm and pickpocket when you first encounter Marek - this can cause the quest to break if you obtain it early.
 
@@ -5405,7 +5456,7 @@ COPY_EXISTING ~marek.cre~ ~override~
   LPM
   ADD_CRE_ITEM_FLAGS
   REPLACE_CRE_ITEM		~BRAC01~	#0 	#0 	#0 	~NONE~ 	~GLOVES~	EQUIP
-  WRITE_ASCII SCRIPT_OVERRIDE	~MAREK~	#8
+  WRITE_ASCII SCRIPT_OVERRIDE	~#gmarek~	#8
  BUT_ONLY
 
 COPY_EXISTING ~ar7215.bcs~ ~override~
@@ -5457,7 +5508,7 @@ THEN
 		StartDialogueNoSet(LastTrigger)
 END
 >>>>>>>>
-EXTEND_TOP 	~MAREK.BCS~	~stweaks/baf/#gmarek.baf~
+EXTEND_TOP 	~#GMAREK.BCS~	~stweaks/baf/#gmarek.baf~
 
 // Activate party flag and prevent Marek from leaving this area -- If he can leave then the quest will fail
 
@@ -5478,7 +5529,7 @@ COPY_EXISTING ~ar7215.are~ ~override~
  LPF ALTER_AREA_REGION INT_VAR flag_party_required = 1 STR_VAR region_name = "DOOR7214" END
 BUT_ONLY
 
-// Gives Pumberl and "Script Name"  -- required for Lothan's new dialogue and a different script for Pumberl
+// Gives Pumberl a "Script Name"  -- required for Lothan's new dialogue and a different script for Pumberl
 
 COPY_EXISTING ~pumberl.cre~ ~override~
  WRITE_EVALUATED_ASCII 0x280 ~pumberl~
@@ -5491,11 +5542,7 @@ ADD_TRANS_ACTION ~chanth~ BEGIN 5 END BEGIN 0 END ~TakePartyGold(500)~
 >>>>>>>>
 COMPILE ~stweaks-inlined/#gchanth.d~
 
-COMPILE ~stweaks/d/lothan.d~
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// Give Valen&C a proper name and remove enemy state from statues and add missing trigger to Felonius ///
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//! Give Valen&C a proper name and remove enemy state from statues and add missing trigger to Felonius ///
 
 <<<<<<<< stweaks-inlined/#gfelon.d
 ADD_TRANS_TRIGGER feloni 0 ~PartyGoldGT(299)~ DO 2
@@ -5504,26 +5551,236 @@ COMPILE ~stweaks-inlined/#gfelon.d~
 
 EXTEND_TOP 	~AR7719.BCS~ 	~stweaks/baf/ar7719a.baf~
 
-//////////////////////////////////////////////
-/// Change Petrine animation to non static ///
-//////////////////////////////////////////////
+//! Change Petrine animation to non static ///
 
 COPY_EXISTING ~petrin.cre~ override
   WRITE_LONG 0x28 50960
 BUT_ONLY
 
-////////////////////////////
-/// Add trigger to Garan ///
-////////////////////////////
+//! Give Angel The Cat's ring a unique name ///
+
+COPY_EXISTING ~bgring16.itm~ override
+  SAY NAME2 @330
+BUT_ONLY
+
+//! Fix Colquetle's Family Amulet quest ///
+
+// TO DO: 
+// 1: Make it a plot item (unsellable flag)
+// NO ACTION
+// 2: Add additional lines to dlg for returning party with amulet and more
+// DONE
+// 3: Add a small XP reward and a reputation change (copy EE)
+// DONE
+// 4: Make sense of the Global("HadAmulet")
+// DONE? (It should be an unused global - The line containing it has its triggers changes - See 8)
+// 5: Spawn the new item (AMUL13CO) in the North Nashkel Road
+// DONE
+// 6: Remedy awkwardness of Mr. Colquetle talking like the Player left his house and returned even if they didn't
+// DONE? (I changed two lines so that there is no clear hint at the fact that the Player should have left and then returned)
+// 7: Restore orphaned line
+// DONE
+// 8: Investigate possibility to use a global (or something else) to keep track of whether the player has left and returned
+// DONE? (My idea is to reset the global once the area of Beregost is loaded, which is what happens when the Player leaves Colquetle's)
+// 9: Review code and test
+// DONE?
+
+COPY 		~stweaks/cre/mrcolboy.cre~	~override~
+COPY 		~stweaks/cre/mrcolson.cre~	~override~
+COPY 		~stweaks/cre/mrcolwif.cre~	~override~
+
+COPY_EXISTING ~AR3200.ARE~ ~override~
+PATCH_IF SOURCE_SIZE > 0x28f BEGIN
+  LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2686
+    fj_loc_y          = 874
+    fj_animation      = 0xC900 // peasant man
+    fj_orientation    = 7 // NW
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = ~Dead Man~
+    fj_cre_resref     = MRCOLSON
+  END
+  LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2738
+    fj_loc_y          = 879
+    fj_animation      = 0xC910 // peasant woman
+    fj_orientation    = 2 // SW
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = ~Dead Woman~
+    fj_cre_resref     = MRCOLWIF
+  END
+  LPF fj_are_structure
+    INT_VAR
+    fj_loc_x          = 2708
+    fj_loc_y          = 894
+    fj_animation      = 0xC700 // boy
+    fj_orientation    = 4 // W
+    STR_VAR
+    fj_structure_type = actor
+    fj_name           = ~Dead Boy~
+    fj_cre_resref     = MRCOLBOY
+  END
+
+  LPF fj_are_structure
+    INT_VAR
+    fj_type        = 8 // nonvisible
+    fj_loc_x       = 2689
+    fj_loc_y       = 892
+    fj_box_left    = 2663
+    fj_box_top     =  855
+    fj_box_right   = 2704 
+    fj_box_bottom  = 882 
+    fj_trap_loc_x  = 2689
+    fj_trap_loc_y  =869
+    fj_vertex_0    = 2663 + (881 << 16)
+    fj_vertex_1    = 2672 + (863 << 16)
+    fj_vertex_2    = 2689 + (866 << 16)
+    fj_vertex_3    = 2683 + (853 << 16)
+    fj_vertex_4    = 2704 + (859 << 16)
+    fj_vertex_5    = 2698 + (878 << 16)
+    fj_vertex_6    = 2678 + (874 << 16)
+    fj_vertex_7    = 2670 + (884 << 16)
+    STR_VAR
+    fj_structure_type = container
+    fj_name           = ~Body~
+  END
+  LPF fj_are_structure
+    INT_VAR
+    fj_con_itm_idx    = SHORT_AT 0x74 - 1 // a new container will be last in the file
+    fj_flags          = 0 // identified
+    STR_VAR
+    fj_name           = amul13co
+    fj_structure_type = itm
+  END
+END
+
+<<<<<<<< inlined/mtbe11.d
+REPLACE_STATE_TRIGGER ~mtbe11~ 2 ~NumberOfTimesTalkedTo(0) PartyHasItem("AMUL13CO")~
+REPLACE_STATE_TRIGGER ~mtbe11~ 9 ~Global("Amulet","GLOBAL",2) Global("AtColquetle", "GLOBAL", 0)~
+REPLACE_STATE_TRIGGER ~mtbe11~ 10 ~Global("Amulet","GLOBAL",1) Global("AtColquetle", "GLOBAL", 0)~
+REPLACE_TRANS_ACTION ~mtbe11~ BEGIN 3 4 END BEGIN 0 END ~TakePartyItem("AMUL13")~ ~TakePartyItem("AMUL13CO")~
+
+ADD_STATE_TRIGGER ~mtbe11~ 12 ~Global("Amulet","GLOBAL",3)~
+ADD_TRANS_ACTION ~mtbe11~ BEGIN  0 1 2 END BEGIN END ~SetGlobal("AtColquetle", "GLOBAL", 1)~
+ADD_TRANS_ACTION  ~mtbe11~ BEGIN 5 END BEGIN END ~SetGlobal("Amulet","GLOBAL",3) AddexperienceParty(250)~
+ADD_TRANS_ACTION ~mtbe11~ BEGIN 6 7 END BEGIN END ~AddexperienceParty(250) ReputationInc(-1)~
+ADD_TRANS_ACTION ~mtbe11~ BEGIN 8 END BEGIN END ~AddexperienceParty(250) ReputationInc(1)~
+ADD_TRANS_ACTION ~mtbe11~ BEGIN 10 END BEGIN END ~SetGlobal("Amulet","GLOBAL",3)~
+
+APPEND ~mtbe11~
+IF ~PartyHasItem("AMUL13CO") Global("Amulet","GLOBAL",0) NumTimesTalkedToGT(0) ReactionLT(LastTalkedToBy(Myself),NEUTRAL_LOWER)~ THEN BEGIN 13
+  SAY @333 /* ~You dare come back! I should really call the guards and have you arrest—no, why bother now? Please, just leave me alone with my grief over my missing son. I told the fool not to travel in such times, especially with wife and child in tow, but he would not listen. Now I have no idea where he—wait! Where did you—? WHERE DID YOU GET THAT AMULET?!~ */
+  IF ~ReactionGT(LastTalkedToBy(Myself),NEUTRAL_UPPER)~ THEN REPLY @335 /* ~This trinket? It is but a scrap left behind by some vulturous marauders. It catches the light quite nicely though.~ */ DO ~SetGlobal("Amulet","GLOBAL",1) SetGlobal("AtColquetle", "GLOBAL", 1)~ GOTO 3
+  IF ~ReactionLT(LastTalkedToBy(Myself),FRIENDLY_LOWER)~ THEN REPLY @335 /* ~This trinket? It is but a scrap left behind by some vulturous marauders. It catches the light quite nicely though.~ */ DO ~SetGlobal("Amulet","GLOBAL",1) SetGlobal("AtColquetle", "GLOBAL", 1)~ GOTO 4
+  IF ~~ THEN REPLY @336 /* ~Some fools dared the road to Nashkel and were cut down by bandits. They had no further use for it, or anything else they carried. It was a shame to see, but I profited in the end so all is well.~ */ DO ~SetGlobal("Amulet","GLOBAL",1) SetGlobal("AtColquetle", "GLOBAL", 1)~ GOTO 5
+  IF ~~ THEN REPLY @337 /* ~It was certainly a piteous sight. A young family cut down in a cowardly raid. This was among their meager belongings.~ */ DO ~SetGlobal("Amulet","GLOBAL",1) SetGlobal("AtColquetle", "GLOBAL", 1)~ GOTO 3
+END
+IF ~PartyHasItem("AMUL13CO") Global("Amulet","GLOBAL",0) NumTimesTalkedToGT(0) ReactionGT(LastTalkedToBy(Myself),HOSTILE_UPPER)~ THEN BEGIN 14
+  SAY @334 /* ~You are back? Please, I can't have visitors today. I am quite unwell with grief over my missing son. I told the fool not to travel in such times, especially with wife and child in tow, but he would not listen. Now I have no idea where he—wait! Where did you—? WHERE DID YOU GET THAT AMULET?!~ */
+  IF ~ReactionGT(LastTalkedToBy(Myself),NEUTRAL_UPPER)~ THEN REPLY @335 /* ~This trinket? It is but a scrap left behind by some vulturous marauders. It catches the light quite nicely though.~ */ DO ~SetGlobal("Amulet","GLOBAL",1) SetGlobal("AtColquetle", "GLOBAL", 1)~ GOTO 3
+  IF ~ReactionLT(LastTalkedToBy(Myself),FRIENDLY_LOWER)~ THEN REPLY @335 /* ~This trinket? It is but a scrap left behind by some vulturous marauders. It catches the light quite nicely though.~ */ DO ~SetGlobal("Amulet","GLOBAL",1) SetGlobal("AtColquetle", "GLOBAL", 1)~ GOTO 4
+  IF ~~ THEN REPLY @336 /* ~Some fools dared the road to Nashkel and were cut down by bandits. They had no further use for it, or anything else they carried. It was a shame to see, but I profited in the end so all is well.~ */ DO ~SetGlobal("Amulet","GLOBAL",1) SetGlobal("AtColquetle", "GLOBAL", 1)~ GOTO 5
+  IF ~~ THEN REPLY @337 /* ~It was certainly a piteous sight. A young family cut down in a cowardly raid. This was among their meager belongings.~ */ DO ~SetGlobal("Amulet","GLOBAL",1) SetGlobal("AtColquetle", "GLOBAL", 1)~ GOTO 3
+END
+IF ~Global("Amulet","GLOBAL",2) Global("AtColquetle", "GLOBAL", 1)~ THEN BEGIN 15
+  SAY @338 /* ~I'm in your debt, stranger, but I'd rather be alone with my grief. Please, leave me.~ */
+  IF ~~ THEN EXIT
+END
+IF ~Global("Amulet","GLOBAL",1) Global("AtColquetle", "GLOBAL", 1)~ THEN BEGIN 16
+  SAY @339 /* ~What now?! You tempt the very fates by daring to talk to ME again! I'll not suffer your presence a second more than I have to! Begone!~ */
+  IF ~~ THEN DO ~SetGlobal("Amulet","GLOBAL",3)~ EXIT
+END
+IF ~Global("Amulet","GLOBAL",0) NumTimesTalkedToGT(0) ReactionGT(LastTalkedToBy(Myself),HOSTILE_UPPER)~ THEN BEGIN 17
+  SAY @340 /* ~I wish to be left alone. Please, leave.~ */
+  IF ~~ THEN EXIT
+END
+IF ~Global("Amulet","GLOBAL",0) NumTimesTalkedToGT(0) ReactionLT(LastTalkedToBy(Myself),NEUTRAL_LOWER)~ THEN BEGIN 18
+  SAY @341 /* ~Was I not clear enough the first time? You're not welcome here. Leave my house!~ */
+  IF ~~ THEN EXIT
+END
+IF ~GlobalGT("Amulet","GLOBAL",0) StateCheck(Myself,STATE_CHARMED)~ THEN BEGIN 19
+  SAY @342 /* ~Please don't bother me, especially if you call me friend. My son is dead, killed along with his wife and child by those accursed bandits!~ */
+  IF ~~ THEN EXIT
+END
+END
+
+SET_WEIGHT ~mtbe11~ 11	#0
+SET_WEIGHT ~mtbe11~ 19	#1
+SET_WEIGHT ~mtbe11~ 13	#2 
+SET_WEIGHT ~mtbe11~ 14	#3
+SET_WEIGHT ~mtbe11~ 2	#4
+SET_WEIGHT ~mtbe11~ 0	#5
+SET_WEIGHT ~mtbe11~ 1	#6
+SET_WEIGHT ~mtbe11~ 12	#7
+SET_WEIGHT ~mtbe11~ 15	#8 
+SET_WEIGHT ~mtbe11~ 16	#9
+SET_WEIGHT ~mtbe11~ 17	#10
+SET_WEIGHT ~mtbe11~ 18	#11
+SET_WEIGHT ~mtbe11~ 9	#12
+SET_WEIGHT ~mtbe11~ 10	#13
+
+>>>>>>>>
+COMPILE ~inlined/mtbe11.d~
+
+COPY_EXISTING ~bgamul13.itm~ ~override/amul13co.itm~
+  SAY NAME2 @332 /* ~Colquetle's Family Amulet~ */
+  SAY UNIDENTIFIED_DESC @343 /* ~This amulet, which resembles an ordinary bloodstone amulet, has the Colquetle's family insignia engraved on the back of its center stone. The Colquetle live in Beregost.~ */
+BUT_ONLY
+
+<<<<<<<< inlined/#gar6700.baf
+IF
+	Global("AtColquetle", "GLOBAL", 1)
+THEN
+	RESPONSE #100
+		SetGlobal("AtColquetle", "GLOBAL", 0)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~AR6700.BCS~ ~inlined/#gar6700.baf~
+
+// Let's fix the butler's dialogue too!
+
+<<<<<<<< inlined/mtbe10.d
+REPLACE_STATE_TRIGGER ~mtbe10~ 1 ~NumTimesTalkedToGT(0)~
+
+SET_WEIGHT ~mtbe10~ 2	#0
+SET_WEIGHT ~mtbe10~ 0	#1
+SET_WEIGHT ~mtbe10~ 1	#2 
+>>>>>>>>
+COMPILE ~inlined/mtbe10.d~
+
+//! Give Arkion's amulet a unique name and description ///
+
+COPY_EXISTING ~bgamul13.itm~ override
+  SAY NAME2 @331
+  SAY DESC @346
+BUT_ONLY
+
+//! Give Nemphre's ring a unique name and description ///
+
+COPY_EXISTING ~bgring12.itm~ override
+  SAY NAME2 @344
+  SAY DESC @345
+BUT_ONLY
+
+//! Add missing Monk flag to a few itms ///
+
+COPY_EXISTING ~misc9o.itm~ override
+ ~misc7t.itm~ override
+ WRITE_BYTE 0x21 (THIS BOR BIT5)
+BUT_ONLY IF_EXISTS
+
+//! Add trigger to Garan ///
 
 <<<<<<<< stweaks-inlined/#ggaran.d
 ADD_TRANS_TRIGGER ~garan~ 0 ~Global("KillDaughter","GLOBAL",1)~ DO 3
 >>>>>>>>
 COMPILE ~stweaks-inlined/#ggaran.d~
 
-////////////////////////////////////////////////
-/// Give XP for avoiding fight with Tel-Anon ///
-////////////////////////////////////////////////
+//! Give XP for avoiding fight with Tel-Anon ///
 
 <<<<<<<< stweaks-inlined/#gtelan.d
 REPLACE_TRANS_ACTION ~telano~ BEGIN 9 END BEGIN 0 END ~EscapeAreaDestroy(90)~
@@ -5532,9 +5789,7 @@ EscapeAreaDestroy(90)~
 >>>>>>>>
 COMPILE ~stweaks-inlined/#gtelan.d~
 
-////////////////////////////////////////////////////
-/// Change Class for attacking group in Beregost ///
-////////////////////////////////////////////////////
+//! Change Class for attacking group in Beregost ///
 
 COPY_EXISTING ~merc.cre~ override
   WRITE_BYTE 0x273 2
@@ -5547,9 +5802,7 @@ EscapeArea()~
 >>>>>>>>
 COMPILE ~stweaks-inlined/#galain.d~
 
-//////////////////////////////////////////////
-/// Make Brielbara leave, not turn hostile ///
-//////////////////////////////////////////////
+//! Make Brielbara leave, not turn hostile ///
 
 <<<<<<<< stweaks-inlined/#gbriel.d
 REPLACE_ACTION_TEXT ~BRIELB~ ~Enemy()~ ~MoveToPointNoInterrupt([856.499])
@@ -5557,18 +5810,14 @@ DestroySelf()~
 >>>>>>>>
 COMPILE ~stweaks-inlined/#gbriel.d~
 
-/////////////////////////////////////////////////
-/// Fix Menda's global variable not being set ///
-/////////////////////////////////////////////////
+//! Fix Mendas's global variable not being set ///
 
 <<<<<<<< stweaks-inlined/#gmenda1.d
 ADD_TRANS_ACTION ~MENDA1~ BEGIN 0 END BEGIN 1 2 END ~SetGlobal("MetMendas","GLOBAL",1)~
 >>>>>>>>
 COMPILE ~stweaks-inlined/#gmenda1.d~
 
-//////////////////////////////////////
-/// Reduce Noober's dialogue limit ///
-//////////////////////////////////////
+//! Reduce Noober's dialogue limit ///
 
 <<<<<<<< stweaks-inlined/#gnoob.d
 REPLACE_TRIGGER_TEXT ~noober~ ~NumTimesTalkedToLT(31)~ ~NumTimesTalkedToLT(15)~
@@ -5576,9 +5825,8 @@ REPLACE_TRIGGER_TEXT ~noober~ ~NumberOfTimesTalkedTo(31)~ ~NumberOfTimesTalkedTo
 >>>>>>>>
 COMPILE ~stweaks-inlined/#gnoob.d~
 
-/////////////////////////////////////////////////////////////////
-/// Parties with evil members should have a chance of leaving ///
-/////////////////////////////////////////////////////////////////
+//! Parties with evil members should have a chance of leaving ///
+
 <<<<<<<< stweaks-inlined/#gphanda.d
 REPLACE PHANDA
 IF ~  NumberOfTimesTalkedTo(0)
@@ -5606,9 +5854,7 @@ ChangeEnemyAlly("BPIMOEN",GOODCUTOFF)~
 END
 BUT_ONLY
 
-///////////////////////////////////////////////////////
-/// Tanya, the fishermen and the quest for the body ///
-///////////////////////////////////////////////////////
+//! Tanya, the fishermen and the quest for the body ///
 
 <<<<<<<< stweaks-inlined/#gsonn.d
 REPLACE_ACTION_TEXT ~sonner~ ~SetGlobal("HostileFishermen","GLOBAL",1)~ ~~
@@ -5847,13 +6093,11 @@ REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH ~SetGlobal("TenyaHit","GLOBAL",1)~ 
 APPEND_FILE ~.../Fisher754-inlined/TENYA1.baf~
 END
 
-////////////////////////////////
-// WaterQueen House revision ///
-////////////////////////////////
+//! WaterQueen House revision ///
 
 /// STORE \\\
 
-/*COPY 	~stweaks/sto/tem0003.sto~ 	~override~
+/* COPY 	~stweaks/sto/tem0003.sto~ 	~override~
     SAY 0xc @283
 
 COPY	~stweaks/itm/gwebowl.itm~ 	~override~
@@ -5876,23 +6120,25 @@ COPY	~stweaks/bam2/umbneck.bam~ 	~override~
 
 COPY 	~stweaks/bcs/pumber.bcs~ ~override~
 
-COPY_EXISTING ~pumber2.cre~ ~override\pumber3.cre~
-COPY_EXISTING ~pumber2.cre~ ~override\pumber4.cre~
-COPY_EXISTING ~pumber2.cre~ ~override\pumber5.cre~
-COPY_EXISTING ~pumber2.cre~ ~override\pumber6.cre~
+COPY_EXISTING ~pumber2.cre~ ~override/pumber3.cre~
+COPY_EXISTING ~pumber2.cre~ ~override/pumber4.cre~
+COPY_EXISTING ~pumber2.cre~ ~override/pumber5.cre~
+COPY_EXISTING ~pumber2.cre~ ~override/pumber6.cre~
 
-COPY_EXISTING ~pumber.bcs~ ~override\pumber2.bcs~
-COPY_EXISTING ~pumber.bcs~ ~override\pumber3.bcs~
-COPY_EXISTING ~pumber.bcs~ ~override\pumber4.bcs~
-COPY_EXISTING ~pumber.bcs~ ~override\pumber5.bcs~
-COPY_EXISTING ~pumber.bcs~ ~override\pumber6.bcs~
+COPY_EXISTING ~wtasight.bcs~ ~override/#gwtasgt.bcs~
+COPY_EXISTING ~pumber.bcs~ ~override/#gpumbl.bcs~
+COPY_EXISTING ~pumber.bcs~ ~override/#gpumb2.bcs~
+COPY_EXISTING ~pumber.bcs~ ~override/#gpumb3.bcs~
+COPY_EXISTING ~pumber.bcs~ ~override/#gpumb4.bcs~
+COPY_EXISTING ~pumber.bcs~ ~override/#gpumb5.bcs~
+COPY_EXISTING ~pumber.bcs~ ~override/#gpumb6.bcs~
 
 COPY_EXISTING ~pumberl.cre~ ~override~
  WRITE_BYTE 0x2d 60
  WRITE_BYTE 0x2e 60
  WRITE_BYTE 0x30 59
- WRITE_ASCII SCRIPT_CLASS ~pumber~ #8
- WRITE_ASCII SCRIPT_DEFAULT ~wtasight~ #8
+ WRITE_ASCII SCRIPT_CLASS ~#gpumbl~ #8
+ WRITE_ASCII SCRIPT_DEFAULT ~#gwtasgt~ #8
  REPLACE_CRE_ITEM		~CHAN01~	#0 	#0 	#0 	~NONE~ 	~ARMOR~		EQUIP
  REPLACE_CRE_ITEM		~BLUN02~	#0 	#0 	#0 	~NONE~ 	~WEAPON~	EQUIP
  REMOVE_KNOWN_SPELL		~SPPR208~
@@ -5905,9 +6151,9 @@ BUT_ONLY
 
 COPY_EXISTING ~pumber2.cre~ ~override~
  WRITE_EVALUATED_ASCII 0x280 ~pumber2~
- WRITE_ASCII SCRIPT_CLASS ~pumber2~ #8
+ WRITE_ASCII SCRIPT_CLASS ~#gpumb2~ #8
  WRITE_ASCII SCRIPT_GENERAL ~None~ #8
- WRITE_ASCII SCRIPT_DEFAULT ~wtasight~ #8
+ WRITE_ASCII SCRIPT_DEFAULT ~#gwtasgt~ #8
  REPLACE_CRE_ITEM		~LEAT01~	#0 	#0 	#0 	~NONE~ 	~ARMOR~		EQUIP
  REPLACE_CRE_ITEM		~BLUN04~	#0 	#0 	#0 	~NONE~ 	~WEAPON~	EQUIP
  REPLACE_CRE_ITEM		~SHLD01~	#0 	#0 	#0 	~NONE~ 	~SHIELD~	EQUIP
@@ -5921,9 +6167,9 @@ BUT_ONLY
 
 COPY_EXISTING ~pumber3.cre~ ~override~
  WRITE_EVALUATED_ASCII 0x280 ~pumber3~
- WRITE_ASCII SCRIPT_CLASS ~pumber3~ #8
+ WRITE_ASCII SCRIPT_CLASS ~#gpumb3~ #8
  WRITE_ASCII SCRIPT_GENERAL ~None~ #8
- WRITE_ASCII SCRIPT_DEFAULT ~wtasight~ #8
+ WRITE_ASCII SCRIPT_DEFAULT ~#gwtasgt~ #8
  REPLACE_CRE_ITEM		~LEAT01~	#0 	#0 	#0 	~NONE~ 	~ARMOR~		EQUIP
  REPLACE_CRE_ITEM		~BLUN04~	#0 	#0 	#0 	~NONE~ 	~WEAPON~	EQUIP
  REPLACE_CRE_ITEM		~SHLD01~	#0 	#0 	#0 	~NONE~ 	~SHIELD~	EQUIP
@@ -5937,9 +6183,9 @@ BUT_ONLY
 
 COPY_EXISTING ~pumber4.cre~ ~override~
  WRITE_EVALUATED_ASCII 0x280 ~pumber4~
- WRITE_ASCII SCRIPT_CLASS ~pumber4~ #8
+ WRITE_ASCII SCRIPT_CLASS ~#gpumb4~ #8
  WRITE_ASCII SCRIPT_GENERAL ~None~ #8
- WRITE_ASCII SCRIPT_DEFAULT ~wtasight~ #8
+ WRITE_ASCII SCRIPT_DEFAULT ~#gwtasgt~ #8
  REPLACE_CRE_ITEM		~LEAT01~	#0 	#0 	#0 	~NONE~ 	~ARMOR~		EQUIP
  REPLACE_CRE_ITEM		~BLUN04~	#0 	#0 	#0 	~NONE~ 	~WEAPON~	EQUIP
  REPLACE_CRE_ITEM		~SHLD01~	#0 	#0 	#0 	~NONE~ 	~SHIELD~	EQUIP
@@ -5953,9 +6199,9 @@ BUT_ONLY
 
 COPY_EXISTING ~pumber5.cre~ ~override~
  WRITE_EVALUATED_ASCII 0x280 ~pumber5~
- WRITE_ASCII SCRIPT_CLASS ~pumber5~ #8
+ WRITE_ASCII SCRIPT_CLASS ~#gpumb5~ #8
  WRITE_ASCII SCRIPT_GENERAL ~None~ #8
- WRITE_ASCII SCRIPT_DEFAULT ~wtasight~ #8
+ WRITE_ASCII SCRIPT_DEFAULT ~#gwtasgt~ #8
  REPLACE_CRE_ITEM		~LEAT01~	#0 	#0 	#0 	~NONE~ 	~ARMOR~		EQUIP
  REPLACE_CRE_ITEM		~BLUN04~	#0 	#0 	#0 	~NONE~ 	~WEAPON~	EQUIP
  REPLACE_CRE_ITEM		~SHLD01~	#0 	#0 	#0 	~NONE~ 	~SHIELD~	EQUIP
@@ -5969,9 +6215,9 @@ BUT_ONLY
 
 COPY_EXISTING ~pumber6.cre~ ~override~
  WRITE_EVALUATED_ASCII 0x280 ~pumber6~
- WRITE_ASCII SCRIPT_CLASS ~pumber6~ #8
+ WRITE_ASCII SCRIPT_CLASS ~#gpumb6~ #8
  WRITE_ASCII SCRIPT_GENERAL ~None~ #8
- WRITE_ASCII SCRIPT_DEFAULT ~wtasight~ #8
+ WRITE_ASCII SCRIPT_DEFAULT ~#gwtasgt~ #8
  REPLACE_CRE_ITEM		~LEAT01~	#0 	#0 	#0 	~NONE~ 	~ARMOR~		EQUIP
  REPLACE_CRE_ITEM		~BLUN04~	#0 	#0 	#0 	~NONE~ 	~WEAPON~	EQUIP
  REPLACE_CRE_ITEM		~SHLD01~	#0 	#0 	#0 	~NONE~ 	~SHIELD~	EQUIP
@@ -5987,7 +6233,7 @@ COPY_EXISTING ~jalant.cre~ ~override~
  WRITE_ASCII SCRIPT_OVERRIDE ~jalant~ #8
  WRITE_ASCII SCRIPT_CLASS ~shout~ #8
  WRITE_ASCII SCRIPT_GENERAL ~None~ #8
- WRITE_ASCII SCRIPT_DEFAULT ~wtasight~ #8
+ WRITE_ASCII SCRIPT_DEFAULT ~#gwtasgt~ #8
  REPLACE_CRE_ITEM		~HELM01~	#0 	#0 	#0 	~NONE~ 	~ARMOR~		EQUIP
  REPLACE_CRE_ITEM		~PLAT01~	#0 	#0 	#0 	~NONE~ 	~ARMOR~		EQUIP
  REPLACE_CRE_ITEM		~BLUN07~	#0 	#0 	#0 	~NONE~ 	~WEAPON~	EQUIP
@@ -6810,7 +7056,7 @@ THEN
 		SetGlobal("WaterQueenTempleForbidden","GLOBAL",2)
 END
 >>>>>>>>
-EXTEND_BOTTOM 	~PUMBER.BCS~ 	~stweaks-inlined/#gpumber.baf~
+EXTEND_BOTTOM 	~#GPUMBL.BCS~ 	~stweaks-inlined/#gpumber.baf~
 
 <<<<<<<< stweaks-inlined/#gpumberall.baf
 IF
@@ -6907,11 +7153,11 @@ THEN
 		Spell(SecondNearestEnemyOf(Myself),CLERIC_HOLD_PERSON)
 END
 >>>>>>>>
-EXTEND_BOTTOM 	~PUMBER2.BCS~ 	~stweaks-inlined/#gpumberall.baf~
-EXTEND_BOTTOM 	~PUMBER3.BCS~ 	~stweaks-inlined/#gpumberall.baf~
-EXTEND_BOTTOM 	~PUMBER4.BCS~ 	~stweaks-inlined/#gpumberall.baf~
-EXTEND_BOTTOM 	~PUMBER5.BCS~ 	~stweaks-inlined/#gpumberall.baf~
-EXTEND_BOTTOM 	~PUMBER6.BCS~ 	~stweaks-inlined/#gpumberall.baf~
+EXTEND_BOTTOM 	~#GPUMB2.BCS~ 	~stweaks-inlined/#gpumberall.baf~
+EXTEND_BOTTOM 	~#GPUMB3.BCS~ 	~stweaks-inlined/#gpumberall.baf~
+EXTEND_BOTTOM 	~#GPUMB4.BCS~ 	~stweaks-inlined/#gpumberall.baf~
+EXTEND_BOTTOM 	~#GPUMB5.BCS~ 	~stweaks-inlined/#gpumberall.baf~
+EXTEND_BOTTOM 	~#GPUMB6.BCS~ 	~stweaks-inlined/#gpumberall.baf~
 
 <<<<<<<< stweaks-inlined/#gpumber2.baf
 IF
@@ -6934,7 +7180,7 @@ THEN
 		Shout(99)
 END
 >>>>>>>>
-EXTEND_BOTTOM 	~PUMBER2.BCS~ 	~stweaks-inlined/#gpumber2.baf~
+EXTEND_BOTTOM 	~#GPUMB2.BCS~ 	~stweaks-inlined/#gpumber2.baf~
 
 <<<<<<<< stweaks-inlined/#gpumber3.baf
 IF
@@ -6956,7 +7202,7 @@ THEN
 		SetGlobal("pumber3move","LOCALS",2)
 END
 >>>>>>>>
-EXTEND_BOTTOM 	~PUMBER3.BCS~ 	~stweaks-inlined/#gpumber3.baf~
+EXTEND_BOTTOM 	~#GPUMB3.BCS~ 	~stweaks-inlined/#gpumber3.baf~
 
 <<<<<<<< stweaks-inlined/#gpumber4.baf
 IF
@@ -6977,7 +7223,7 @@ THEN
 		SetGlobal("pumber4move","LOCALS",2)
 END
 >>>>>>>>
-EXTEND_BOTTOM 	~PUMBER4.BCS~ 	~stweaks-inlined/#gpumber4.baf~
+EXTEND_BOTTOM 	~#GPUMB4.BCS~ 	~stweaks-inlined/#gpumber4.baf~
 
 <<<<<<<< stweaks-inlined/#gpumber5.baf
 IF
@@ -7000,7 +7246,7 @@ THEN
 		SetGlobal("pumber5move","LOCALS",2)
 END
 >>>>>>>>
-EXTEND_BOTTOM 	~PUMBER5.BCS~ 	~stweaks-inlined/#gpumber5.baf~
+EXTEND_BOTTOM 	~#GPUMB5.BCS~ 	~stweaks-inlined/#gpumber5.baf~
 
 <<<<<<<< stweaks-inlined/#gpumber6.baf
 IF
@@ -7021,7 +7267,7 @@ THEN
 		SetGlobal("pumber6move","LOCALS",2)
 END
 >>>>>>>>
-EXTEND_BOTTOM 	~PUMBER6.BCS~ 	~stweaks-inlined/#gpumber6.baf~
+EXTEND_BOTTOM 	~#GPUMB6.BCS~ 	~stweaks-inlined/#gpumber6.baf~
 
 <<<<<<<< stweaks-inlined/#jalantlocalcheck.baf
 IF
@@ -7329,8 +7575,8 @@ END
 END
 REPLACE_STATE_TRIGGER ~jalant~ 16 ~Global("ReturnedBook","GLOBAL",1)~
 ADD_TRANS_ACTION ~jalant~ BEGIN 10 12 END BEGIN 0 END ~SetGlobal("WaterQueenTempleForbidden","GLOBAL",20)~
-REPLACE_TRANS_ACTION ~jalant~ BEGIN 14 END BEGIN 0 END ~Shout(1)~ ~Global("WaterQueenTempleForbidden","GLOBAL",2) Shout(99)~
-REPLACE_TRANS_ACTION ~jalant~ BEGIN 11 END BEGIN 0 END ~Enemy()~ ~Global("WaterQueenTempleForbidden","GLOBAL",2) Shout(99) Enemy()~
+REPLACE_TRANS_ACTION ~jalant~ BEGIN 14 END BEGIN 0 END ~Shout(1)~ ~SetGlobal("WaterQueenTempleForbidden","GLOBAL",2) Shout(99)~
+REPLACE_TRANS_ACTION ~jalant~ BEGIN 11 END BEGIN 0 END ~Enemy()~ ~SetGlobal("WaterQueenTempleForbidden","GLOBAL",2) Shout(99) Enemy()~
 REPLACE_TRANS_ACTION ~jalant~ BEGIN 6 END BEGIN 0 END ~SetGlobal("HelpJalantha","GLOBAL",1)~ ~SetGlobal("HelpJalantha","GLOBAL",1) SetGlobal("WaterQueenTempleForbidden","GLOBAL",10) ClearAllActions() StartCutSceneMode() StartCutScene("JALCUT")~
 REPLACE_TRANS_ACTION ~jalant~ BEGIN 15 END BEGIN 0 END ~GiveItem("MISC54",LastTalkedToBy)~ ~DropItem("MISC54",[-1.-1]) SetGlobal("WaterQueenTempleForbidden","GLOBAL",11)~
 REPLACE_TRANS_ACTION ~jalant~ BEGIN 15 END BEGIN 0 END ~TakePartyGold(2000)~ ~TakePartyGold(2000) ClearAllActions() StartCutSceneMode() StartCutScene("JALCUT")~
@@ -7351,11 +7597,9 @@ EXIT
 END
 END
 >>>>>>>>
-COMPILE ~stweaks-inlined/#gjalantha.d~
-*/
-//////////////////////////////////////////////////////////////////////////
-/// Seal the doors at Felonius if the Degrodel mission has not started ///
-//////////////////////////////////////////////////////////////////////////
+COMPILE ~stweaks-inlined/#gjalantha.d~ */
+
+//! Seal the doors at Felonius if the Degrodel mission has not started ///
 
 COPY_EXISTING ~AR7700.ARE~ ~override~
  LPF ALTER_AREA_DOOR INT_VAR lock_difficulty = 100 door_hp = 100 STR_VAR door_name = "DOOR0719" door_script = "DR0719"END
@@ -7365,9 +7609,7 @@ BUT_ONLY
 EXTEND_TOP 	~DR0719.BCS~ 	~stweaks/baf/door0719.baf~
 EXTEND_TOP 	~DR0719b.BCS~ 	~stweaks/baf/door0719b.baf~
 
-//////////////////////////////////////////////////////////////////////
-/// Remove extra info in journal entry and a senseless gold reward ///
-//////////////////////////////////////////////////////////////////////
+//! Remove extra info in journal entry and a senseless gold reward ///
 
 <<<<<<<< .../stweaks/#gdryad.d
 REPLACE_ACTION_TEXT ~DRYAD~ ~GivePartyGold(20)~ ~~
@@ -7382,9 +7624,7 @@ ChangeEnemyAlly("BPIMOEN",GOODCUTOFF)~
 END
 BUT_ONLY
 
-//////////////////////////////
-/// Firebead's Contingency ///
-//////////////////////////////
+//! Firebead's Contingency ///
 
 APPEND ~spell.ids~ ~3128 FIREB1_WARD~ UNLESS ~3128 FIREB1_WARD~
 APPEND ~spell.ids~ ~3129 FIREB1_CONTINGENCY~ UNLESS ~3129 FIREB1_CONTINGENCY~
@@ -7398,24 +7638,20 @@ COPY ~stweaks/fbead/spin128.spl~ override
 COPY ~stweaks/fbead/spin129.spl~ override
 
 <<<<<<<< .../inlined/#gcutsar.d
-REPLACE ~%tsu%CUTSAR~
+REPLACE ~CUTSAR~
 IF ~~ THEN BEGIN 1 // from:
   SAY @212 /* ~I'm sorry that you feel that way, old man.~ [SAREV11] */
-  IF ~  !Global("HelpFirebead","GLOBAL",2)
-~ THEN DO ~StartCutSceneMode()
-StartCutScene("ch1cut04")
-~ EXIT
-  IF ~  Global("HelpFirebead","GLOBAL",2)
-~ THEN DO ~StartCutSceneMode()
-StartCutScene("ch1cutz4")
-~ EXIT
+  IF ~!Global("HelpFirebead","GLOBAL",2)~ THEN DO ~StartCutSceneMode()
+StartCutScene("ch1cut04")~ EXIT
+  IF ~Global("HelpFirebead","GLOBAL",2)~ THEN DO ~StartCutSceneMode()
+StartCutScene("ch1cutz4")~ EXIT
 END
 END
 >>>>>>>>
 COMPILE EVALUATE_BUFFER ~.../inlined/#gcutsar.d~
 
 <<<<<<<< .../inlined/#ggorion.d
-REPLACE ~%tsu%GORION~
+REPLACE ~GORION~
 IF ~See(Player1)~ THEN BEGIN 0 // from:
   SAY @213 /* ~This is very unnerving, I know, but you must trust me. It is very important that you pack your possessions so that we may leave Candlekeep immediately. Hurry, for there is no time to tarry! The keep is well protected, but not invulnerable.~ */
   IF ~HPPercentLT(Player1,100)~ THEN REPLY @214 /* ~I'm ready to go right now.~ */ DO ~ClearAllActions()
@@ -7474,9 +7710,7 @@ REPLACE_ACTION_TEXT ~fireb1~ ~ForceSpell(Player1,CLERIC_PROTECT_FROM_EVIL)~ ~For
 >>>>>>>>
 COMPILE ~.../inlined/#gfireb1.d~
 
-////////////////////////////////
-/// Rashad minor restoration ///
-////////////////////////////////
+//! Rashad minor restoration ///
 
 <<<<<<<< .../inlined/#grasspk.baf
 IF
@@ -7503,9 +7737,7 @@ SET_WEIGHT ~rashad~ 5 #-1
 >>>>>>>>
 COMPILE ~.../stweaks/#grash.d~
 
-////////////////////////////////////////
-/// Add possibility to charm Quenash ///
-////////////////////////////////////////
+//! Add possibility to charm Quenash ///
 
 <<<<<<<< .../stweaks/#gquenas.d
 APPEND QUENAS
@@ -7529,20 +7761,154 @@ REPLACE_TRIGGER_TEXT ~QUENAS~ ~True()~ ~!Global("Baldurian","GLOBAL",2)~
 >>>>>>>>
 COMPILE ~.../stweaks/#gquenas.d~
 
-////////////////////////////////////////////////////////////////////////////////////
-/// Change Koveras ring so that it will make sense (ITEM REVISION INCLUDES THIS) ///
-////////////////////////////////////////////////////////////////////////////////////
-/*
-COPY ~stweaks/misc/RING25.ITM~  ~override~
+//! Minor improvement to dialogue with slaver ///
+
+<<<<<<<< stweaks-inlined/#gslaver.d
+REPLACE ~SLAVER1~
+IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
+  SAY @305 /* ~Is there somethin' that ye wanted?~ */
+  IF ~Global("Slv1Building","LOCALS",0)~ THEN REPLY @306 /* ~What is this building?~ */ DO ~SetGlobal("Slv1Building","LOCALS",1)~ GOTO 4
+  IF ~Global("Slv1Rumors","LOCALS",0)~ THEN REPLY @307 /* ~I've heard talk of strange things going on around here—rumors of people being led about in chains. What can you tell me about that?~ */ DO ~SetGlobal("Slv1Rumors","LOCALS",1)~ GOTO 5
+  IF ~Global("Slv1Building","LOCALS",0)~ THEN REPLY @308 /* ~I'd like to go inside, if you don't mind.~ */ DO ~SetGlobal("Slv1Building","LOCALS",1)~ GOTO 6
+  IF ~~ THEN REPLY @309 /* ~Nothing, thank you.~ */ GOTO 3
+END
+IF ~Global("Slv1Warning","LOCALS",0)
+NumTimesTalkedToGT(0)~ THEN BEGIN 1 
+  SAY @323 /* ~Now what?~ */
+  IF ~Global("Slv1Building","LOCALS",0)~ THEN REPLY @306 /* ~What is this building?~ */ DO ~SetGlobal("Slv1Building","LOCALS",1)~ GOTO 4
+  IF ~Global("Slv1Rumors","LOCALS",0)~ THEN REPLY @307 /* ~I've heard talk of strange things going on around here—rumors of people being led about in chains. What can you tell me about that?~ */ DO ~SetGlobal("Slv1Rumors","LOCALS",1)~ GOTO 5
+  IF ~Global("Slv1Building","LOCALS",0)~ THEN REPLY @308 /* ~I'd like to go inside, if you don't mind.~ */ DO ~SetGlobal("Slv1Building","LOCALS",1)~ GOTO 6
+  IF ~Global("Slv1Building","LOCALS",1)
+Global("Slv1Rumors","LOCALS",1)~ THEN REPLY @324 /* ~What's with all the secrecy?~ */ GOTO 9
+  IF ~~ THEN REPLY @309 /* ~Nothing, thank you.~ */ GOTO 3
+END
+IF ~Global("Slv1Warning","LOCALS",1)~ THEN BEGIN 2
+  SAY @325 /* ~Ye should've never bothered me again!~ */
+  IF ~~ THEN DO ~Enemy()~ EXIT
+END
+IF ~~ THEN BEGIN 3
+  SAY @310 /* ~Then be on yer way, blast it. And mind yer business.~ */
+  IF ~~ THEN EXIT
+END
+IF ~~ THEN BEGIN 4
+  SAY @311 /* ~It's none of ye business.  Be off with ye.~ */
+  IF ~Global("Slv1Rumors","LOCALS",0)~ THEN REPLY @307 /* ~I've heard talk of strange things going on around here—rumors of people being led about in chains. What can you tell me about that?~ */ DO ~SetGlobal("Slv1Rumors","LOCALS",1)~ GOTO 5
+  IF ~Global("Slv1Building","LOCALS",0)~ THEN REPLY @308 /* ~I'd like to go inside, if you don't mind.~ */ DO ~SetGlobal("Slv1Building","LOCALS",1)~ GOTO 6
+  IF ~Global("Slv1Building","LOCALS",1)
+Global("Slv1Rumors","LOCALS",1)~ THEN REPLY @324 /* ~What's with all the secrecy?~ */ GOTO 9
+  IF ~~ THEN REPLY @312 /* ~I suppose I'll be going, then.~ */ GOTO 3
+END
+IF ~~ THEN BEGIN 5
+  SAY @313  /* ~Ye should pay no heed to th' queer minds o' others, an' pay more heed to yer business... an' yer health, fer that matter.~ */
+  IF ~Global("Slv1Building","LOCALS",0)~ THEN REPLY @314 /* ~Could you perhaps illuminate for me, then, what this building is for?~ */ DO ~SetGlobal("Slv1Building","LOCALS",1)~ GOTO 4
+  IF ~Global("Slv1Building","LOCALS",0)~ THEN REPLY @315 /* ~Perhaps I could go inside, then, if you don't mind?~ */ DO ~SetGlobal("Slv1Building","LOCALS",1)~ GOTO 6
+  IF ~Global("Slv1Building","LOCALS",1)
+Global("Slv1Rumors","LOCALS",1)~ THEN REPLY @324 /* ~What's with all the secrecy?~ */ GOTO 9
+  IF ~~ THEN REPLY @316 /* ~I may do that.  Farewell.~ */ GOTO 3
+END
+IF ~~ THEN BEGIN 6
+  SAY @317 /* ~I does mind. This be none o' yer business, so begone with ye.~ */
+  IF ~Global("Slv1Building","LOCALS",0)~ THEN REPLY @314 /* ~Could you perhaps illuminate for me, then, what this building is for?~ */ DO ~SetGlobal("Slv1Building","LOCALS",1)~ GOTO 4
+  IF ~Global("Slv1Rumors","LOCALS",0)~ THEN REPLY @307 /* ~I've heard talk of strange things going on around here—rumors of people being led about in chains. What can you tell me about that?~ */ DO ~SetGlobal("Slv1Rumors","LOCALS",1)~ GOTO 5
+  IF ~Global("Slv1Building","LOCALS",1)
+Global("Slv1Rumors","LOCALS",1)~ THEN REPLY @324 /* ~What's with all the secrecy?~ */ GOTO 9
+  IF ~~ THEN REPLY @318 /* ~Very well, then. Another time, perhaps.~ */ GOTO 3
+END
+END
+
+APPEND ~SLAVER1~
+IF ~~ THEN BEGIN 7
+  SAY @319 /* ~About bleedin' time. And don' be findin' yer way back.~ */
+  IF ~~ THEN DO ~SetGlobal("Slv1Warning","LOCALS",1)~ EXIT
+END
+IF ~~ THEN BEGIN 8
+  SAY @320 /* ~Ye should've learned to keep yer nose out of our affairs!~ */
+  IF ~~ THEN DO ~Enemy()~ EXIT
+END
+IF ~~ THEN BEGIN 9
+  SAY @322 /* ~Didn't ye hear th' first time? I said none o' yer business. Git!~ */
+  IF ~~ THEN REPLY @321 /* ~I'm making it my business as of right now.~ */ GOTO 8
+  IF ~~ THEN REPLY @312 /* ~I suppose I'll be going, then.~ */ GOTO 7
+END
+END
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~stweaks-inlined/#gslaver.d~
+
+//! Minor fix for looping dialogue with Phaere ///
+
+<<<<<<<< .../inlined/#gphaere.d
+ADD_TRANS_TRIGGER ~udphae01~ 101 ~Global("CANTDOPHAERE","LOCALS",0)~ DO 1
+ADD_TRANS_ACTION ~udphae01~ BEGIN 101 END BEGIN 1 END ~SetGlobal("CANTDOPHAERE","LOCALS",1)~ 
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~.../inlined/#gphaere.d~
+
+//! Fix for missing gender checks in dialogue with Tyrianna ///
+
+<<<<<<<< .../inlined/#gplgirl01.d
+EXTEND_BOTTOM ~plgirl01~ 12
+  IF ~Gender(LastTalkedToBy(), FEMALE)~ THEN REPLY @326 /* ~Get back upstairs, brat! I'll decide when it's safe for you to leave!~ */  GOTO 13
+  IF ~Gender(LastTalkedToBy(), MALE)~ THEN REPLY @327 /* ~I would appreciate it if you would go back upstairs. It is for your own safety.~ */  GOTO 14
+END
+EXTEND_BOTTOM ~plgirl01~ 15
+  IF ~Gender(LastTalkedToBy(), FEMALE)~ THEN REPLY @326 /* ~Get back upstairs, brat! I'll decide when it's safe for you to leave!~ */  GOTO 16
+  IF ~Gender(LastTalkedToBy(), MALE)~ THEN REPLY @327 /* ~I would appreciate it if you would go back upstairs. It is for your own safety.~ */  GOTO 17
+END
+ADD_TRANS_TRIGGER  ~plgirl01~ 12 ~Gender(LastTalkedToBy(), MALE)~ DO 0
+ADD_TRANS_TRIGGER  ~plgirl01~ 12 ~Gender(LastTalkedToBy(), FEMALE)~ DO 1
+ADD_TRANS_TRIGGER  ~plgirl01~ 15 ~Gender(LastTalkedToBy(), MALE)~ DO 0
+ADD_TRANS_TRIGGER  ~plgirl01~ 15 ~Gender(LastTalkedToBy(), FEMALE)~ DO 1
+>>>>>>>>
+COMPILE EVALUATE_BUFFER ~.../inlined/#gplgirl01.d~
+
+//! Minor tweak for dialogue with Soulafein ///
+
+<<<<<<<< .../inlined/#gudsola01.d
+APPEND ~udsola01~
+  IF ~~ THEN BEGIN ~#g136~
+    SAY @328
+    IF ~~ THEN GOTO 137
+  END
+END
+
+ALTER_TRANS ~udsola01~ BEGIN 142 END BEGIN 0 END BEGIN "EPILOGUE" ~GOTO #g136~ END
+>>>>>>>>
+COMPILE ~.../inlined/#gudsola01.d~
+
+//! Minor tweak for dialogue with archers trainer ///
+
+<<<<<<<< .../inlined/#gamarch02.d
+ADD_STATE_TRIGGER  ~amarch02~ 5 ~Global("#GDONTCOMEBACK","LOCALS",2)~
+REPLACE_STATE_TRIGGER ~amarch02~ 6 ~Global("#GDONTCOMEBACK","LOCALS",1)~
+ADD_TRANS_ACTION ~amarch02~ BEGIN 8 END BEGIN END ~SetGlobal("#GIAMCURIOUS","LOCALS",1)~
+ADD_TRANS_TRIGGER ~amarch02~ 6  ~Global("#GIAMCURIOUS","LOCALS",0)~ DO 2
+ADD_TRANS_ACTION ~amarch02~ BEGIN 0 END BEGIN END ~SetGlobal("#GDONTCOMEBACK","LOCALS",1)~ 
+ADD_TRANS_ACTION ~amarch02~ BEGIN 4 END BEGIN 0 END ~SetGlobal("#GDONTCOMEBACK","LOCALS",2)~
+ADD_TRANS_ACTION ~amarch02~ BEGIN 6 END BEGIN 1 END ~SetGlobal("#GDONTCOMEBACK","LOCALS",2)~
+ADD_TRANS_ACTION ~amarch02~ BEGIN 5 END BEGIN END ~SetGlobal("#GDONTCOMEBACK","LOCALS",0)
+SetGlobal("#GIAMCURIOUS","LOCALS",1)~
+
+APPEND ~amarch02~
+  IF ~~ THEN BEGIN ~#glastwarning~
+    SAY @329 /* ~Make sure you won't bother me again! This is your last warning.~ */
+    IF ~~ THEN DO ~SetGlobal("#GDONTCOMEBACK","LOCALS",2)~ EXIT
+  END
+END
+
+ALTER_TRANS ~amarch02~ BEGIN 6 END BEGIN 0 END BEGIN "EPILOGUE" ~GOTO #glastwarning~ END
+ALTER_TRANS ~amarch02~ BEGIN 1 END BEGIN 2 END BEGIN "EPILOGUE" ~GOTO 4~ END
+>>>>>>>>
+COMPILE ~.../inlined/#gamarch02.d~
+
+//! Change Koveras ring so that it will make sense (ITEM REVISION INCLUDES THIS) ///
+
+/* COPY ~stweaks/misc/RING25.ITM~  ~override~
  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   SAY DESC @1
  END
-BUT_ONLY 
-*/
-/////////////////////////////////////////////////////////////////////////
-/// Try and fix the mess with the 6th floor of the Candlekeep library ///
-/// DEPRECATED BECAUSE NOW INCLUDED IN BG1 UB 15.1+		      ///
-/////////////////////////////////////////////////////////////////////////
+BUT_ONLY */
+
+//! Try and fix the mess with the 6th floor of the Candlekeep library ///
+//! DEPRECATED BECAUSE NOW INCLUDED IN BG1 UB 15.1+ ///
 
 /*
 
@@ -7597,19 +7963,15 @@ EXTEND_BOTTOM ~ar6508.bcs~ ~stweaks-inlined/#ggatew.baf~
 
 */
 
-/////////////////////////////////////////////////////////////////////////////
-//! Minor BG1 UB Adjustments ////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////
-
+//!!Minor BG1 UB Adjustments ///
+//!!DEPRECATED BECAUSE NOW INCLUDED IN CUSTOMIZED BG1 UB 16.1+ ///
 BEGIN ~Minor BG1 UB Adjustments~
 DEPRECATED @2
 REQUIRE_PREDICATE (GAME_IS ~bgt tutu tutu_totsc~) ~This component only applies to BGT or Tutu.~
-REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-ATWEAKS.TP2~ 0) ~This component requires the presence of BG1 Unfinished Business.~
-DESIGNATED 80
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-BG1UB.TP2~ 0) ~This component requires the presence of BG1 Unfinished Business.~
+DESIGNATED 90
 
-/////////////////////////////////
-/// Adjust messed up lahl.dlg ///
-/////////////////////////////////
+//! Adjust messed up lahl.dlg ///
 
 ACTION_IF (GAME_IS ~bgt~) THEN BEGIN
 
@@ -7645,9 +8007,7 @@ STRING_SET_EVALUATE 75168 ~%palinchange%~
 
 END
 
-//////////////////////////////////
-/// Restored unshey's dialogue ///
-//////////////////////////////////
+//! Restored unshey's dialogue ///
 
 ACTION_IF !(GAME_IS ~bg1 totsc~) THEN BEGIN
 <<<<<<<< .../bg1ub/ubunsh.d
@@ -7681,13 +8041,11 @@ END
 
 COMPILE EVALUATE_BUFFER ~.../bg1ub/ubunsh.d~
 
-//////////////////////////////////////////////////////////////////////////////////
-//! Restored Elfsong Tavern Movie/////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////
-
+//!!Restored Elfsong Tavern Movie ///
+//!!DEPRECATED BECAUSE NOW INCLUDED IN BG1 UB 14+ ///
 BEGIN ~Restore Elfsong Tavern Movie~
 REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
-DESIGNATED 90
+DESIGNATED 100
 DEPRECATED @2
 
 EXTEND_TOP ~ar7705.bcs~ ~stweaks/mov/elftav.baf~
@@ -7698,34 +8056,25 @@ AT_INTERACTIVE_NOW ~stweaks/stwemov_in.bat~
 
 AT_UNINSTALL ~stweaks/stwemov_un.bat~
 
-//////////////////////////////////////////////////////////////////////////////////
-//! Restored Lizardmen Animation//////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////
-
+//!!Restored Lizardmen Animation ///
 BEGIN ~Restore brown lizard man missing weapons~
 REQUIRE_PREDICATE (GAME_IS ~bg2 tob tutu tutu_totsc~) ~This component only applies to the BG2 engine.~
-DESIGNATED 100
+DESIGNATED 110
 
 COPY ~stweaks/bam~ ~override~
 
-//////////////////////////////////////////////////////////////////////////////////
-//! Revised Reputation table&Flaming Fist's Low Rep Spawning//////////////////////
-//////////////////////////////////////////////////////////////////////////////////
-
+//!!Revised Reputation table&Flaming Fist's Low Rep Spawning ///
 BEGIN ~Revised Reputation table&Flaming Fist's Low Rep Spawning~
 REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
-DESIGNATED 200
+DESIGNATED 120
 
 COPY ~stweaks/2da/reputati.2da~ override
 COMPILE ~stweaks/baf/actflam.baf~
 
-//////////////////////////////////////////////////////////////////////////////////
-//! Fix for SCS oversensitive SHOUT script interrupting dialogue initiation///////
-//////////////////////////////////////////////////////////////////////////////////
-
+//!!Fix for SCS oversensitive SHOUT script interrupting dialogue initiation ///
 BEGIN ~Fix a few SCS Cres that should not respond to shouts for help~
 REQUIRE_COMPONENT ~setup-stratagems.tp2~ ~6010~ ~This component requires SCS 'Better Call for Help'~
-DESIGNATED 300
+DESIGNATED 130
 
 
 /* 						!!!!THIS SOLUTION BELOW DOES NOT SEEM TO WORK ON BGT!!!!
@@ -7798,62 +8147,10 @@ COPY_EXISTING 	~iron3.cre~ 	~override~
     END
 BUT_ONLY
 
-/////////////////////////////////////////////////////////////////////////////////////////////
-//! Change initdlg.bcs to force dialogue with Protagonist rather than any party member///////
-/////////////////////////////////////////////////////////////////////////////////////////////
-
-BEGIN ~Force initiating dialogue with Protagonist rather than any party member~
+//!!Fix for BGT NPCs disappearing after talking ///
+BEGIN ~Awful hack around the BGT NPCs disappearing act (install late/after Virtue)~
 REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
-DESIGNATED 400
-
-COPY ~stweaks/bcs/p1initd.bcs~ ~override~
-
-COPY_EXISTING 	~BELTBRD.CRE~ 	~override~
-		~BGCARBOS.CRE~	~override~
-		~BGSHANK.CRE~	~override~
-		~C6SQUIRE.CRE~	~override~
-		~ELMIN2.CRE~	~override~
-		~ELMIN3.CRE~	~override~
-		~ELMIN5.CRE~	~override~
-		~FIREBE.CRE~	~override~
-		~GATEWA.CRE~	~override~
-		~LARZE.CRE~	~override~
-		~WATCH6.CRE~	~override~
-READ_ASCII SCRIPT_OVERRIDE override
-PATCH_IF (~%override%~ STR_EQ ~INITDLG~ = 1) BEGIN
-	WRITE_ASCII SCRIPT_OVERRIDE	~p1initd~	#8
-END
-BUT_ONLY
-
-COPY_EXISTING 	~BENJY.CRE~ 	~override~
-		~CHLOE.CRE~ 	~override~
-		~DRUIDAD.CRE~ 	~override~
-		~ELMIN1.CRE~ 	~override~
-		~GATEWA2.CRE~ 	~override~
-		~IMOEN1.CRE~ 	~override~
-		~IMOEN2.CRE~ 	~override~
-		~IMOEN4.CRE~ 	~override~
-		~IMOEN61.CRE~ 	~override~
-		~IMOEN1.CRE~ 	~override~
-		~IMOENDRM.CRE~ 	~override~
-		~LANTAN.CRE~ 	~override~
-		~SORREL.CRE~ 	~override~
-		~TAMOKO.CRE~ 	~override~
-		~WASLEEP.CRE~ 	~override~
-		~WIRTHI.CRE~ 	~override~
-READ_ASCII SCRIPT_CLASS class
-PATCH_IF (~%class%~ STR_EQ ~INITDLG~ = 1) BEGIN
-	WRITE_ASCII SCRIPT_CLASS	~p1initd~	#8
-END
-BUT_ONLY
-
-/////////////////////////////////////////////////////////////////////////////////////////
-//! Fix for BGT NPCs disappearing after talking//////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////
-
-BEGIN ~AWful hack around the BGT NPCs disappearing act (install late/after Virtue)~
-REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
-DESIGNATED 500
+DESIGNATED 140
 
 COPY_EXISTING ~ajantis.bcs~  ~override/ajantis.bcs~
               ~ar6801.bcs~   ~override/ar6801.bcs~
@@ -7894,3 +8191,291 @@ DestroySelf()~
 BUT_ONLY
 
 COMPILE ~stweaks/d/escfix.d~
+
+//!!Remove general description for unidentified items ///
+BEGIN ~Make magical items require identification to provide a description~
+REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
+FORBID_COMPONENT ~item_rev.tp2~ ~0~ ~This component is not compatible with Item Revisions (Revised)~
+DESIGNATED 150
+
+COPY_EXISTING_REGEXP ~^.+\.itm$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // Valid item check
+   READ_SHORT 0x42 lore
+   PATCH_IF lore > 0 BEGIN
+     SAY UNIDENTIFIED_DESC ~Identification is required to display this item's properties.~
+    END
+  END
+BUT_ONLY
+
+//!!Enforce consistent weight for item category ///
+BEGIN ~Standardize items' weight~
+REQUIRE_PREDICATE (GAME_IS ~bgt~) ~This component only applies to BGT.~
+DESIGNATED 160
+
+// Correct category for some specific items
+COPY_EXISTING ~miscbz.itm~ ~override~
+  ~book32.itm~ ~override~
+  ~book94.itm~ ~override~
+  ~book95.itm~ ~override~
+  ~book96.itm~ ~override~
+  ~misc1f.itm~ ~override~
+  ~plot01g.itm~ ~override~
+  ~plot01i.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // Valid item check
+    READ_SHORT 0x1c item_type // Item type
+    PATCH_IF item_type != 0x37 BEGIN
+         SET new_category = 37
+         WRITE_SHORT 0x1c %new_category% // It's a book
+    END
+  END
+BUT_ONLY
+
+COPY_EXISTING ~misc4v.itm~ ~override~
+  ~misc4w.itm~ ~override~
+  ~misc5j.itm~ ~override~
+  ~misc5p.itm~ ~override~
+  ~misc5y.itm~ ~override~
+  ~misc6a.itm~ ~override~
+  ~misc6f.itm~ ~override~
+  ~misc6r.itm~ ~override~
+  ~misc6u.itm~ ~override~
+  ~misc7c.itm~ ~override~
+  ~misc7g.itm~ ~override~
+  ~misc7m.itm~ ~override~
+  ~misc7o.itm~ ~override~
+  ~misc7s.itm~ ~override~
+  ~misc8a.itm~ ~override~
+  ~misc8b.itm~ ~override~
+  ~misc8c.itm~ ~override~
+  ~misc8d.itm~ ~override~
+  ~misc8e.itm~ ~override~
+  ~misc8f.itm~ ~override~
+  ~misc8i.itm~ ~override~
+  ~misc8n.itm~ ~override~
+  ~misc8p.itm~ ~override~
+  ~misc9l.itm~ ~override~
+  ~miscak.itm~ ~override~
+  ~misccc.itm~ ~override~
+  ~plot01c.itm~ ~override~
+  ~plot01d.itm~ ~override~
+  ~plot01e.itm~ ~override~
+  ~plot01m.itm~ ~override~
+  ~plot01n.itm~ ~override~
+  ~plot03f.itm~ ~override~
+  ~plot03g.itm~ ~override~
+  ~plot03h.itm~ ~override~
+  ~plot03i.itm~ ~override~
+  ~plot06a.itm~ ~override~
+  ~plot06b.itm~ ~override~
+  ~scrla9.itm~ ~override~
+  ~scrlaa.itm~ ~override~
+  ~wishscrl.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // Valid item check
+    READ_SHORT 0x1c item_type // Item type
+    PATCH_IF item_type != 0x11 BEGIN
+         SET new_category = 11
+         WRITE_SHORT 0x1c %new_category% // It's a scroll
+    END
+  END
+BUT_ONLY
+
+COPY_EXISTING ~edwinkey.itm~ ~override~
+  ~misc83.itm~ ~override~
+  ~misc93.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // Valid item check
+    READ_SHORT 0x1c item_type // Item type
+    PATCH_IF item_type != 0x8 BEGIN
+         SET new_category = 8
+         WRITE_SHORT 0x1c %new_category% // It's a key
+    END
+  END
+BUT_ONLY
+
+COPY_EXISTING ~misc1j.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // Valid item check
+    READ_SHORT 0x1c item_type // Item type
+    PATCH_IF item_type != 0x34 BEGIN
+         SET new_category = 34
+         WRITE_SHORT 0x1c %new_category% // It's a gem
+    END
+  END
+BUT_ONLY
+
+COPY_EXISTING ~misc73.itm~ ~override~
+  ~key04.itm~ ~override~
+  ~key05.itm~ ~override~
+  ~key06.itm~ ~override~
+  ~key14.itm~ ~override~
+  ~key15.itm~ ~override~
+  ~key16.itm~ ~override~
+  ~key17.itm~ ~override~
+  ~key18.itm~ ~override~
+  ~key19.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // Valid item check
+    READ_SHORT 0x1c item_type // Item type
+    PATCH_IF item_type != 0x0 BEGIN
+         SET new_category = 0
+         WRITE_SHORT 0x1c %new_category% // It's miscellaneous
+    END
+  END
+BUT_ONLY
+
+// General description patching macro
+DEFINE_PATCH_MACRO ~update_item_descriptions~ BEGIN
+  ident=1
+  FOR (index = 0x54 ; index >= 0x50 ; index -= 4) BEGIN // Loop through descriptions
+    READ_LONG "%index%" "valid"
+    PATCH_IF ("%valid%" < 2147483646) AND ("%valid%" >= 0) BEGIN // Verify description is valid
+      READ_STRREF "%index%" "description"
+      INNER_PATCH_SAVE new_desc ~%description%~ BEGIN
+        LAUNCH_PATCH_MACRO ~%text_update%~
+      END
+      SAY_EVALUATED "%index%" ~%new_desc%~
+     // PATCH_PRINT ~%new_desc%~
+      ident -=1
+    END
+  END
+END
+
+// Macros used for amulet weight description update
+DEFINE_PATCH_MACRO ~revised_one_weight~ BEGIN
+  SPRINT t1 ~Weight:.*~
+  SPRINT t2 ~Weight: 1~
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_two_weight~ BEGIN
+  SPRINT t1 ~Weight:.*~
+  SPRINT t2 ~Weight: 2~
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_three_weight~ BEGIN
+  SPRINT t1 ~Weight:.*~
+  SPRINT t2 ~Weight: 3~
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+DEFINE_PATCH_MACRO ~revised_zero_weight~ BEGIN
+  SPRINT t1 ~Weight:.*~
+  SPRINT t2 ~Weight: 0~
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+// Patch items
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // Valid item check
+    READ_SHORT 0x1c item_type // Item type
+    PATCH_IF item_type=0x1 BEGIN // amulets
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 1) BEGIN
+        SET new_weight = 1
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_one_weight
+        LPM update_item_descriptions
+      END
+    END
+    PATCH_IF item_type=0x6 BEGIN // gloves
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 2) BEGIN
+        SET new_weight = 2
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_two_weight
+        LPM update_item_descriptions
+      END
+    END
+    PATCH_IF item_type=0x3 BEGIN // belts
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 2) BEGIN
+        SET new_weight = 2
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_two_weight
+        LPM update_item_descriptions
+      END
+    END
+    PATCH_IF item_type=0x4 BEGIN // boots
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 3) BEGIN
+        SET new_weight = 3
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_three_weight
+        LPM update_item_descriptions
+      END
+    END
+    PATCH_IF item_type=0x8 BEGIN // keys
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 0) BEGIN
+        SET new_weight = 0
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_zero_weight
+        LPM update_item_descriptions
+      END
+    END
+    PATCH_IF (item_type=0x11 || item_type=0x50) BEGIN // scrolls
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 0) BEGIN
+        SET new_weight = 0
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_zero_weight
+        LPM update_item_descriptions
+      END
+    END
+    PATCH_IF item_type=0x37 BEGIN // books
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 2) BEGIN
+        SET new_weight = 2
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_two_weight
+        LPM update_item_descriptions
+      END
+    END
+    PATCH_IF item_type=0x34 BEGIN // gems
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 0) BEGIN
+        SET new_weight = 0
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_zero_weight
+        LPM update_item_descriptions
+      END
+    END
+    PATCH_IF item_type=0x9 BEGIN // potions
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 1) BEGIN
+        SET new_weight = 1
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_one_weight
+        LPM update_item_descriptions
+      END
+    END
+  END
+BUT_ONLY
+
+// These are books but need to maintain their category so we just change their weight
+COPY_EXISTING ~misc3a.itm~ ~override~
+  ~misc3a1.itm~ ~override~
+  ~misc3a2.itm~ ~override~
+  ~misc3a3.itm~ ~override~
+  ~misc3a4.itm~ ~override~
+  ~misc3a5.itm~ ~override~
+  ~misc3a6.itm~ ~override~
+  ~misc3a7.itm~ ~override~
+  ~misc3a8.itm~ ~override~
+  ~misc3a9.itm~ ~override~
+  ~book03.itm~ ~override~
+  ~book04.itm~ ~override~
+  ~book05.itm~ ~override~
+  ~book06.itm~ ~override~
+  ~tome01.itm~ ~override~
+  ~tome02.itm~ ~override~
+  ~tome03.itm~ ~override~
+  ~tome04.itm~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // Valid item check
+      READ_LONG 0x4c weight
+      PATCH_IF (weight != 2) BEGIN
+        SET new_weight = 2
+        WRITE_LONG 0x4c %new_weight%
+        SPRINT text_update revised_two_weight
+        LPM update_item_descriptions
+      END
+    END
+BUT_ONLY
